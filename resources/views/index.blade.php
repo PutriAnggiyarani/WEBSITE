@@ -57,6 +57,76 @@
     </div>
 
     <section id="about-us" class="padding-large">
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-2" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
+                <div class="modal-content rounded-4" style="width: 600px">
+                    <div class="modal-header px-4 mb-0 mt-2">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-center">
+                            <img src="{{ url('assets/images/logo.png') }}" alt="">
+                        </div>
+                        <div class="mt-4 px-4">
+                            <h5 class="fw-bold">Selamat Datang !!</h5>
+                            <p style="color: #595959;">Silakan login untuk melanjutkan Berbelanja</p>
+                            <form action="#">
+                                <div class="mb-4 position-relative">
+                                    <input type="text" class="form-control rounded-3 py-2 custom-input" id="email" placeholder="Alamat Email" 
+                                        onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                        onblur="this.placeholder = this.getAttribute('data-placeholder');">
+                                        <label for="email" class="floating-label">Alamat Email</label>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <input type="text" class="form-control rounded-3 py-2 custom-input" id="password" placeholder="Password" 
+                                        onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                        onblur="this.placeholder = this.getAttribute('data-placeholder');">
+                                        <label for="password" class="floating-label">Password</label>
+                                </div>
+                                <div class="text-end mb-3">
+                                    <a href="#" style="font-size: 12px; color: #66525E;">Lupa Kata Sandi?</a>
+                                </div>
+                                <a href="#" class="btn btn-primary w-100 mb-4">Login</a>                     
+                            </form>
+                            <div class="text-center line-container px-5 mb-4">
+                                <span class="line"></span>
+                                <span class="text">atau</span>
+                                <span class="line"></span>
+                            </div>
+                            <div class="d-flex justify-content-center mb-4">
+                                <a href="#" class="d-flex justify-content-center border align-items-center rounded-5" style="width: 340px; height: 50px; border-color: #66525E !important;">
+                                    <img src="{{ url('assets/images/google.png') }}" alt="" class="me-4">
+                                    <p class="mb-0 mt-1">Lanjutkan dengan Google</p>
+                                </a>
+                            </div>
+                            <div class="text-center">
+                                <p style="color: #a7a7a7;">Belum punya akun? <span style="color: #66525E;"><a href="#">Daftar Disini</a></span></p>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+        <!-- OTP Modal -->
+        {{-- <div class="modal fade" id="otpModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    This is the login modal content.
+                    </div>
+                </div>
+            </div>
+        </div> --}}
         <div class="container-fluid padding-side" data-aos="fade-up">
         <h3 class="display-3 text-center fw-semibold col-lg-4 offset-lg-4">
             PRODUK BARU

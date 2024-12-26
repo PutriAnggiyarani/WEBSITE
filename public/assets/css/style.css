@@ -3045,3 +3045,22 @@ color: transparent;
         width: 100%; /* Ensure the profile data takes full width */
     }
 }
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between the lines and the text */
+}
+
+.line {
+flex-grow: 1; /* Makes the line stretch */
+height: 1px;
+background-color: #ccc; /* Line color */
+}
+
+.text {
+font-size: 14px;
+color: #595959;
+font-weight: bold; /* Optional: Make the text bold */
+}
