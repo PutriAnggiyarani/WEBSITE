@@ -49,18 +49,20 @@
                             <div class="card-front">
                                 <div class="center-wrap">
                                     <div class="section text-center">
-                                        <h4 class="mb-4 pb-3">Log In</h4>
+                                    <img src="{{ url('assets/images/logo.png') }}" class="mb-4" />
+                                        <h4 class="">Selamat Datang !!</h4>
+                                        <p class="login-text">Silahkan login untuk mengakses halaman Admin!</p>
                                         <div class="form-group">
                                             <input type="email" name="logemail" class="form-style"
-                                                placeholder="Your Email" id="logemail" autocomplete="off">
+                                                placeholder="Email" id="logemail" autocomplete="off">
                                             <i class="input-icon uil uil-at"></i>
                                         </div>
                                         <div class="form-group mt-2">
                                             <input type="password" name="logpass" class="form-style"
-                                                placeholder="Your Password" id="logpass" autocomplete="off">
+                                                placeholder="Password" id="logpass" autocomplete="off">
                                             <i class="input-icon uil uil-lock-alt"></i>
                                         </div>
-                                        <a class="btn mt-4" id="submitBtn">submit</a>
+                                        <a class="btn mt-4" id="submitBtn">Login</a>
                                         <!-- <p class="mb-0 mt-4 text-center"><a href="#0" class="link">Forgot your
                                                 password?</a></p> -->
                                     </div>

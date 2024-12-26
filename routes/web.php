@@ -122,8 +122,20 @@ Route::get('/editproduct', function () {
     return view('admin.editproduct');
 });
 
+Route::get('/ulasanproduk', function () {
+    return view('admin.ulasanproduct');
+});
+
 Route::get('/category', function () {
     return view('admin.category');
+});
+
+Route::get('/listcategory', function () {
+    return view('admin.listcategory');
+});
+
+Route::get('/detailcategory', function () {
+    return view('admin.detailkategori');
 });
 
 Route::get('/transaction', function () {
@@ -149,3 +161,12 @@ Route::get('/loginadmin', function () {
 Route::get('/register', function () {
     return view('admin.register');
 });
+
+Route::get('/chat', function () {
+    return view('admin.chat');
+});
+
+Route::get('/promo', function () {
+    return view('admin.promosi');
+});
+

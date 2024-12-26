@@ -81,7 +81,7 @@
 
                 <li class="nav-item dropdown">
                     <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-                        <img src="{{ url('assets/img/icons/notification-bing.svg') }}" alt="img"> <span
+                        <img src="{{ url('assets/admin/img/icons/notification-bing.svg') }}" alt="img"> <span
                             class="badge rounded-pill">4</span>
                     </a>
                     <div class="dropdown-menu notifications">
@@ -239,12 +239,20 @@
                             <a href="{{ url('/category') }}"><i data-feather="layers"></i><span>Category</span></a>
                         </li>
                         <li class="{{ Request::is('transaction*') ? 'active' : '' }}">
-                            <a href="{{ url('/transaction') }}"><img src="{{ url('assets/admin/img/icons/purchase1.svg') }}"
+                            <a href="{{ url('/transaction') }}"><img src="{{ url('assets/admin/img/icons/transaksi.png') }}"
                                     alt="img"><span>Transaction</span></a>
                         </li>
                         <li class="{{ Request::is('customer*') ? 'active' : '' }}">
-                            <a href="{{ url('/customer') }}"><img src="{{ url('assets/admin/img/icons/users1.svg') }}"
+                            <a href="{{ url('/customer') }}"><img src="{{ url('assets/admin/img/icons/user.png') }}"
                                     alt="img"><span>Customer</span></a>
+                        </li>
+                        <li class="{{ Request::is('chat*') ? 'active' : '' }}">
+                            <a href="{{ url('/chat') }}"><img src="{{ url('assets/admin/img/icons/chats.png') }}"
+                                    alt="img"><span>Chat</span></a>
+                        </li>
+                        <li class="{{ Request::is('promo*') ? 'active' : '' }}">
+                            <a href="{{ url('/promo') }}"><img src="{{ url('assets/admin/img/icons/promo.png') }}"
+                                    alt="img"><span>Promosi</span></a>
                         </li>
                     </ul>
                 </div>

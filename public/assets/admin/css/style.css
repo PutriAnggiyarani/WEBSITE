@@ -1,4 +1,6 @@
 @import "../../../../css2";
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bakbak+One&family=Bebas+Neue&family=Cardo:ital,wght@0,400;0,700;1,400&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=News+Cycle:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Staatliches&family=Tangerine:wght@400;700&display=swap');
+
 
 .css-equal-content,
 .css-equal-heights {
@@ -560,7 +562,8 @@ h1 {
 
 h2 {
     font-weight: 400;
-    font-size: 30px
+    font-size: 30px;
+    font-family: "Josefin Sans", serif;
 }
 
 @media(max-width:767px) {
@@ -588,7 +591,8 @@ h3 {
 
 h4 {
     font-weight: 400;
-    font-size: 21px
+    font-size: 21px;
+    font-family: "Josefin Sans", serif;
 }
 
 @media(max-width:1023px) {
@@ -616,7 +620,8 @@ h5 {
 
 h6 {
     font-weight: 400;
-    font-size: 18px
+    font-size: 18px;
+    font-family: "Josefin Sans", serif;
 }
 
 @media(max-width:1023px) {
@@ -1307,13 +1312,14 @@ div#global-loader,
     font-size: 14px;
     font-weight: 700;
     padding: 14px 10px;
+    border-radius: 20px;
     -webkit-transition: all .2s ease;
     -ms-transition: all .2s ease;
-    transition: all .2s ease
+    transition: all .2s ease;
 }
 
 .btn-submit:hover {
-    background: #fe820e;
+    background: #D0C9CD;
     color: #fff
 }
 
@@ -1331,6 +1337,7 @@ div#global-loader,
     font-size: 14px;
     font-weight: 700;
     padding: 14px 10px;
+    border-radius: 20px;
     -webkit-transition: all .5s ease;
     -ms-transition: all .5s ease;
     transition: all .5s ease
@@ -2018,6 +2025,12 @@ a:hover {
     background: #fff
 }
 
+.form-group input[type=text]::placeholder {
+    color: #66525E;
+    opacity: 1;
+    font-family:"Josefin Sans", serif;
+}
+
 .dropdown-menu {
     padding: 0
 }
@@ -2060,11 +2073,12 @@ a:hover {
 }
 
 .form-group label {
+    font-family: "Josefin Sans", serif;
     margin-bottom: 8px;
     color: #212b36;
     font-weight: 500;
     font-size: 14px;
-    display: block
+    display: block;
 }
 
 .form-group label .manitory {
@@ -2093,14 +2107,14 @@ a:hover {
 
 .form-group input[type=text],
 .form-group input[type=password] {
-    border: 1px solid rgba(145, 158, 171, .32);
+    border: 2px solid #BFBFBF;
     height: 40px;
     width: 100%;
     font-size: 14px;
     font-weight: 500;
     color: #637381;
     padding: 10px 15px;
-    border-radius: 5px
+    border-radius: 7px
 }
 
 .form-group .btn-filters {
@@ -4627,7 +4641,7 @@ span.select2-container.select2-container--default.select2-container--open {
     color: #212b36;
     position: relative;
     display: block;
-    padding: 8px 8px 8px 40px
+    padding: 8px 8px 8px 40px;
 }
 
 .sidebar .sidebar-menu>ul>li.submenu ul li a.active {
@@ -4740,7 +4754,8 @@ span.select2-container.select2-container--default.select2-container--open {
 .sidebar .sidebar-right ul li a {
     font-weight: 400;
     font-size: 14px;
-    color: #212b36
+    color: #212b36;
+    font-family: "Josefin Sans", serif;
 }
 
 .sidebar .sidebar-right ul li a.active {
@@ -5248,10 +5263,11 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .table thead th {
-    font-weight: 600;
+    font-weight: 800;
     color: #212b36;
     padding: 10px;
-    white-space: nowrap
+    white-space: nowrap;
+    font-family: "Josefin Sans", serif;
 }
 
 .table tbody {
@@ -5264,11 +5280,12 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .table tbody tr td {
     padding: 10px;
-    color: #637381;
+    color: #212b36;
     font-weight: 500;
     border-bottom: 1px solid #e9ecef;
     vertical-align: middle;
-    white-space: nowrap
+    white-space: nowrap;
+    font-family: "Josefin Sans", serif;
 }
 
 .table tbody tr td .product-img img {
@@ -6029,11 +6046,12 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .page-header .btn-added {
-    background: #7a5a5a;
+    background: #66525E;
     padding: 7px 15px;
     color: #fff;
     font-weight: 700;
-    font-size: 14px
+    font-size: 14px;
+    font-family: "Josefin Sans", serif;
 }
 
 .page-header .btn-added img {
@@ -6193,10 +6211,14 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .image-upload {
-    border: 1px solid rgba(145, 158, 171, .32);
+    border: 2px solid #BFBFBF;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    color: #637381;
     position: relative;
     margin-bottom: 35px;
-    border-radius: 5px
+    border-radius: 7px
 }
 
 .image-upload:hover {
@@ -7116,6 +7138,10 @@ span.select2-container.select2-container--default.select2-container--open {
     background: #ea5455
 }
 
+.badges.bg-lightblue {
+    background: #71aaff
+}
+
 .badges.bg-lightyellow {
     background: #f90
 }
@@ -7126,6 +7152,10 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .badges.bg-lightgrey {
     background: #637381
+}
+
+.badges.bg-lightblack {
+    background: #737373
 }
 
 .add-icon span,
@@ -7161,9 +7191,13 @@ span.select2-container.select2-container--default.select2-container--open {
     border: 0 !important
 }
 
+.row {
+    display: flex;
+    justify-content: flex-end; /* Menempatkan .total-order di sebelah kanan */
+}
+
 .total-order {
-    max-width: 430px;
-    width: 100%;
+    width: 1337px;
     margin: 30px 30px 30px auto
 }
 
@@ -8136,7 +8170,7 @@ span.select2-container.select2-container--default.select2-container--open {
     position: absolute;
     left: 0;
     top: 0;
-    background: #7367f0;
+    background: #987070;
     border-radius: 4px 0
 }
 
@@ -8351,4 +8385,312 @@ span.select2-container.select2-container--default.select2-container--open {
     position: absolute;
     top: 50%;
     right: 10px
+}
+
+.btn-size {
+    border: 2px solid #BFBFBF;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    /* margin: 5px; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-size:hover {
+    background-color: #BFBFBF;
+    color: #fff;
+}
+
+.btn-color {
+    border: 2px solid #BFBFBF;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-color:hover {
+    transform: scale(1.1);
+}
+
+.btn-add-size, .btn-add-color {
+    border: 2px solid #BFBFBF;
+    background-color: #fff;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 15px;
+    /* margin: 5px; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rating-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ulasan-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; /* Menampilkan elemen secara vertikal */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Josefin Sans", serif;
+}
+
+.rating-icon {
+    color: #fcaf23;
+    font-size: 38px;
+    margin-right: 15px;
+}
+
+.rating-value {
+    font-size: 60px;
+    margin-right: 5px;
+    font-weight: 600;
+    font-family: "Josefin Sans", serif;
+}
+
+.rating-subtext {
+    align-self: flex-end;
+    font-size: 26px;
+    color: #999999;
+    margin: 0;
+    font-family: "Josefin Sans", serif;
+}
+
+.filter-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 15px;
+    font-family: "Josefin Sans", serif;
+}
+
+.review-container {
+    width: 100%;
+}
+
+.review-container .review .star-review {
+    margin-top: 50px;
+}
+
+.imgulasan {
+    display: inline-block;
+    border: 3px solid #66525E;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+.rating-image {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.namaulasan {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.chat {
+    background-color: #66525E;
+    padding: 10px 15px;
+    /* border-radius: 8px; */
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Josefin Sans", serif;
+}
+
+.chat-online {
+    color: #34ce57
+}
+
+.chat-offline {
+    color: #e4606d
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    max-height: 800px;
+    overflow-y: scroll;
+    background-color: #F0EEEf;
+}
+
+.chat-message-left,
+.chat-message-right {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.chat-message-left {
+    margin-right: auto
+}
+
+.chat-message-right {
+    flex-direction: row-reverse;
+    margin-left: auto;
+    background-color: #F0EEEf;
+}
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-container .search-icon {
+    position: absolute;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}
+
+.search-container .form-control {
+    padding-left: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #66525E;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    font-family: "Josefin Sans", serif;
+    margin: 0 10px; /* Jarak kanan-kiri */
+}
+
+.search-container .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-color: #007bff;
+    outline: none;
+}
+
+.flex-grow-0 {
+    flex-grow: 0!important;
+}
+.border-top {
+    border-top: 1px solid #dee2e6!important;
+}
+
+.col-12.col-lg-7.col-xl-9 {
+    background-color: #F0EEEf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Optional: adjust if you want to control the height */
+    text-align: center;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.center-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    font-family: "Josefin Sans", serif;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-container img {
+    margin-right: 15px;
+}
+
+.chat-container .flex-grow-1 {
+    font-size: 16px;
+    flex-grow: 1;
+    justify-content: space-between; /* Memberikan ruang antara elemen dan menempatkan .time-off di sebelah kanan */
+    align-items: center;
+}
+
+.chat-container .small {
+    font-size: 12px;
+    color: #555;
+}
+
+.chat-container .time {
+    font-family: "Josefin Sans", serif;
+    color: #34c579;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.chat-container .time-off {
+    font-family: "Josefin Sans", serif;
+    color: #BFBFBF;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.chat-container .notification {
+    background-color: #34c579; /* Warna latar belakang untuk lingkaran */
+    color: white;
+    border-radius: 50%; /* Membuat lingkaran */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-family: "Josefin Sans", serif;
+    margin-top: 5px; /* Mengurangi margin-top untuk menjaga keselarasan vertikal */
+    margin-left: 10px; /* Memberikan jarak antara waktu dan lingkaran */
+}
+
+.notification {
+    background-color: #34c579; /* Warna latar belakang untuk lingkaran */
+    color: white;
+    border-radius: 50%; /* Membuat lingkaran */
+    width: 20px;
+    height: 20px;
+}
+
+.color-box {
+    display: inline-block; /* Membuat kotak warna berada dalam satu baris */
+    width: 30px; /* Lebar kotak */
+    height: 30px; /* Tinggi kotak */
+    margin-right: 10px; /* Memberikan jarak antar kotak */
+    border-radius: 5px; /* Untuk membuat sudut kotak menjadi melengkung */
 }

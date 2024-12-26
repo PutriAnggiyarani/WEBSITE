@@ -22,11 +22,11 @@
                 <img src="{{ url('assets/images/pdetail1.png') }}" class="small-img img-fluid active mb-2 rounded-4" alt="Small Image 1" />
                 <img src="{{ url('assets/images/pdetail2.png') }}" class="small-img img-fluid mb-2 rounded-4" alt="Small Image 2" />
                 <img src="{{ url('assets/images/pedetail3.png') }}" class="small-img img-fluid rounded-4" alt="Small Image 3" />
-            </div>                    
+            </div>
             <div class="main-image border-0">
                 <img src="{{ url('assets/images/pdetail.png') }}" class="custom-img rounded-4" alt="Main Image" />
             </div>
-        </div>                  
+        </div>
         <div class="col-12 col-md-7 mt-1">
             <div class="product-view">
                 <h4 class="card-title fw-bold">
@@ -99,18 +99,18 @@
                             <button class="color-option" style="background-color: #00BFFF;"></button>
                         </div>
                     </div>
-                </div>                                  
+                </div>
             </div>
             <div class="mt-4 d-flex quantity">
                 <div class="input-group align-items-center rounded-5 me-2 d-flex justify-content-center">
                     <span class="btn btn1 btn-minus d-flex align-items-center"><i class="fa fa-minus"></i></span>
                     <input type="text" value="1" class="input-quantity" />
                     <span class="btn btn1 btn-plus d-flex align-items-center"><i class="fa fa-plus"></i></span>
-                </div>                        
+                </div>
                 <a href="" class="btn btn-primary d-flex align-items-center justify-content-center" id="addtocart">
                     <img src="{{ url('assets/images/carticon2.png') }}" alt="Cart Icon" class="me-2">
                     Masukan Keranjang
-                </a>                        
+                </a>
             </div>
             <div class="mt-4 btn-group" role="group" aria-label="Basic outlined example" style="max-width: 480px; width: 100%;">
                 <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
@@ -119,7 +119,7 @@
                 <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa fa-heart me-2"></i> Add To Wishlist
                 </a>
-            </div>  
+            </div>
         </div>
     </div>
 </div>
@@ -219,14 +219,14 @@
                                     </div>
                                     <input type="checkbox" class="custom-checkbox text-center">
                                 </div>
-                            </div>                                                
-                        </div>             
+                            </div>
+                        </div>
                     </div>
                     <div class="review-container w-100 mt-4">
                         <div class="d-flex justify-content-between align-items-center d-md-none" id="filterReviewDiv">
                             <h5 class="fw-bold mb-0">Ulasan Produk</h5>
                             <img src="{{ url('assets/images/filter.png') }}" alt="" id="filterIcon">
-                        </div>                                
+                        </div>
                         <div class="review mt-4">
                             <div class="profile-review d-flex">
                                 <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
@@ -368,11 +368,11 @@
                         <a href="" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
                             <p>Lihat Semua Ulasan ></p>
                         </a>
-                    </div>   
-                </div>                                             
+                    </div>
+                </div>
             </div>
         </div>
-    </div>                                              
+    </div>
 </section>
 
 <script>
@@ -438,7 +438,7 @@
     // Add click event listener to the show-more button
     document.querySelector('.show-more').addEventListener('click', function(event) {
         const moreColors = document.querySelector('.color-selection.more');
-        
+
         // Check if currently hidden
         const isHidden = moreColors.classList.contains('hidden');
 
