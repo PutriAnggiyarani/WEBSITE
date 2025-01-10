@@ -3064,3 +3064,63 @@ font-size: 14px;
 color: #595959;
 font-weight: bold; /* Optional: Make the text bold */
 }
+
+.modal-login .modal-content {
+    height: fit-content;
+}
+
+/* Hide the icon by default */
+.responsive-icon {
+    display: none;
+}
+
+.otp-field {
+    flex-direction: row;
+    column-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.otp-field input {
+height: 45px;
+width: 42px;
+border-radius: 6px;
+background-color: #F2F2F2;
+color: #444444;
+outline: none;
+font-size: 1.125rem;
+text-align: center;
+border: none;
+}
+
+.otp-field input:focus {
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.otp-field input::-webkit-inner-spin-button,
+.otp-field input::-webkit-outer-spin-button {
+display: none;
+}
+
+.modal-otp .modal-content {
+    width: 500px;
+    height: fit-content;
+}
+
+.agreement-container .error-message {
+    display: block;
+    margin-top: 5px; /* Space between the agreement text and the error message */
+}
+
+
+@media (max-width: 768px) {
+    .modal-login .modal-content {
+        width: 370px !important;
+        height: fit-content !important;
+    }
+
+    .responsive-icon {
+        display: inline-block;
+    }
+}

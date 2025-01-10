@@ -113,7 +113,7 @@
                 </a>
             </div>
             <div class="mt-4 btn-group" role="group" aria-label="Basic outlined example" style="max-width: 480px; width: 100%;">
-                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
+                <a href="{{ route('chat-customer') }}" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa-regular fa-message me-2"></i> Chat
                 </a>
                 <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">

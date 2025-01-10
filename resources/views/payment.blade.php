@@ -3,10 +3,13 @@
 <section id="payment">
     <div class="container-fluid padding-side d-flex justify-content-center align-items-center">
         <div class="confirmation-payment px-4 py-4 rounded-4">
-            <div class="header d-flex align-items-center">
-                <span class="me-2"><i class="fa-solid fa-angle-left"
-                        style="color: #66525E; font-size: 26px;"></i></span>
-                <h5 class="mb-1 fw-bold" style="color: #66525E;">Kembali</h5>
+            <div class="header">
+                <a href="{{ route('order-tracking') }}" class="d-flex align-items-center">
+                    <span class="me-2">
+                        <i class="fa-solid fa-angle-left" style="color: #66525E; font-size: 26px;"></i>
+                    </span>
+                    <h5 class="mb-1 fw-bold" style="color: #66525E;">Kembali</h5>
+                </a>
             </div>
             <div class="body px-3 py-0 mt-4">
                 <div class="d-flex justify-content-center">
@@ -157,7 +160,7 @@
                                         <p class="text-center">Terimakasih atas pembelian Anda</p>
                                     </div>
                                     <div class="d-flex justify-content-center mb-3">
-                                        <a href=""
+                                        <a href="{{ route('order-tracking-done') }}"
                                             class="btn btn-primary btn-success rounded-4 d-flex justify-content-center align-items-center">Lihat
                                             Pesanan</a>
                                     </div>
