@@ -21,26 +21,26 @@
                     <h6 class="fw-bold mb-0" style="color: #66525E;">Natasha Putri</h6>
                 </div>
                 <div class="divider-line-delivery mt-3"></div>
-                <a href="profile.html">
+                <a href="{{ route('profilecustomer') }}">
                     <div class="items-sidebar d-flex align-items-center mt-2 py-1">
                         <img src="{{url('assets/images/profilesidebar.png')}}" alt="" class="me-3">
                         <p class="mb-0 fw-semibold">Profil Saya</p>
                     </div>
                 </a>
-                <a href="favorite.html">
+                <a href="{{ route('favorite') }}">
                     <div class="items-sidebar d-flex align-items-center mt-4 py-1">
                         <img src="{{url('assets/images/favorite.png')}}" alt="" class="me-3">
                         <p class="mb-0 fw-semibold">Favorite Saya</p>
                     </div>
                 </a>
-                <a href="order.html">
+                <a href="{{ route('order') }}">
                     <div class="items-sidebar d-flex align-items-center mt-4 py-1">
                         <img src="{{url('assets/images/ordericon.png')}}" alt="" class="me-3">
                         <p class="mb-0 fw-semibold">Pesanan Saya</p>
                     </div>
                 </a>
                 <div class="divider-line"></div>
-                <a href="add-address.html">
+                <a href="{{ route('add-address') }}">
                     <div class="items-sidebar d-flex align-items-center mt-4 py-1">
                         <img src="{{url('assets/images/location.png')}}" alt="" class="me-3">
                         <p class="mb-0 fw-semibold">Lokasi Saya</p>

@@ -15,87 +15,87 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
 
 Route::get('/profilecustomer', function () {
     return view('profile');
-});
+})->name('profilecustomer');
 
 Route::get('/editprofile', function () {
     return view('editprofile');
-});
+})->name('editprofile');
 
 Route::get('/cart', function () {
     return view('cart');
-});
+})->name('cart');
 
 Route::get('/checkout', function () {
     return view('checkout');
-});
+})->name('checkout');
 
 Route::get('/payment', function () {
     return view('payment');
-});
+})->name('payment');
 
 Route::get('/order', function () {
     return view('order');
-});
+})->name('order');
 
 Route::get('/order-tracking', function () {
     return view('order-tracking');
-});
+})->name('order-tracking');
 
 Route::get('/order-tracking-done', function () {
     return view('order-tracking-done');
-});
+})->name('order-tracking-done');
 
 Route::get('/detailproduct', function () {
     return view('detailproduct');
-});
+})->name('detailproduct');
 
 Route::get('/ktgatasan', function () {
     return view('kategori.ktgatasan');
-});
+})->name('ktgatasan');
 
 Route::get('/about-us', function () {
     return view('about-us');
-});
+})->name('about-us');
 
 Route::get('/add-address', function () {
     return view('add-address');
-});
+})->name('add-address');
 
 Route::get('/favorite', function () {
     return view('favorite');
-});
+})->name('favorite');
 
 Route::get('/chat-customer', function () {
     return view('chat');
-});
+})->name('chat-customer');
 
 Route::get('/ktgbawahan', function () {
     return view('kategori.ktgbawahan');
-});
+})->name('ktgbawahan');
 
 Route::get('/ktghijab', function () {
     return view('kategori.ktghijab');
-});
+})->name('ktghijab');
 
 Route::get('/ktglainnya', function () {
     return view('kategori.ktglainnya');
-});
+})->name('ktglainnya');
 
 Route::get('/ktgmukenah', function () {
     return view('kategori.ktgmukenah');
-});
+})->name('ktgmukenah');
 
 Route::get('/produkbaru', function () {
     return view('kategori.produkbaru');
-});
+})->name('produkbaru');
 
 Route::get('/produkterlaris', function () {
     return view('kategori.produkterlaris');
-});
+})->name('produkterlaris');
 
 //Admin
 Route::get('/dashboard', function () {
