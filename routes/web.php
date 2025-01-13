@@ -170,3 +170,10 @@ Route::get('/promo', function () {
     return view('admin.promosi');
 });
 
+Route::get('/howtobuy', function () {
+    return view('howtobuy');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});

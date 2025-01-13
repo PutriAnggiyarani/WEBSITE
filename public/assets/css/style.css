@@ -49,11 +49,11 @@ CSS STRUCTURE:
 
 5. PAGES STYLE
 5.1 About page
-5.2 Blog page 
-5.3 Booking page 
+5.2 Blog page
+5.3 Booking page
 5.4 Gallery page
-5.5 Reviews page 
-5.5 FAQs page 
+5.5 Reviews page
+5.5 FAQs page
 
 
 
@@ -831,7 +831,7 @@ transform: scale(1.1);
 /*----------------------------------------------*/
 
 /*--------------------------------------------------------------
-5.1 About page 
+5.1 About page
 --------------------------------------------------------------*/
 
 .breadcrumb-item+.breadcrumb-item::before {
@@ -854,7 +854,7 @@ animation: play 1.5s alternate infinite ease-in;
 }
 
 /*--------------------------------------------------------------
-5.2 Blog page 
+5.2 Blog page
 --------------------------------------------------------------*/
 .pagination {
 --bs-pagination-color: var(--black-color);
@@ -870,7 +870,7 @@ animation: play 1.5s alternate infinite ease-in;
 
 
 /*--------------------------------------------------------------
-5.3 Booking page 
+5.3 Booking page
 --------------------------------------------------------------*/
 .form-check-input:checked {
 background-color: var(--primary-color);
@@ -882,7 +882,7 @@ box-shadow: none;
 }
 
 /*--------------------------------------------------------------
-5.4 Gallery page 
+5.4 Gallery page
 --------------------------------------------------------------*/
 button.filter-button {
 border: 0;
@@ -919,7 +919,7 @@ color: var(--primary-color);
 
 
 /*--------------------------------------------------------------
-5.6 FAQs page 
+5.6 FAQs page
 --------------------------------------------------------------*/
 
 /* accordian style override  */
@@ -1102,10 +1102,10 @@ flex-direction: column;
 .color-options {
 display: inline-flex; /* Use inline-flex to hug the buttons */
 flex-wrap: wrap; /* Allow wrapping to new lines if necessary */
-width: fit-content; 
+width: fit-content;
 gap: 10px; /* Spacing between color options */
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
-border: 1px solid #66525E38; 
+border: 1px solid #66525E38;
 justify-content: center; /* Center align color options */
 }
 
@@ -1360,7 +1360,7 @@ font-size: 32px;
 
 #filterReview {
     display: flex;
-} 
+}
 
 #rating-product li a {
     font-size: 16px;
@@ -1393,7 +1393,7 @@ font-size: 32px;
 }
 
 .review-container .review .star-review {
-    margin-top: 50px; 
+    margin-top: 50px;
 }
 
 .filter-icon {
@@ -1664,7 +1664,7 @@ flex-direction: row;
 }
 
 .icon-quantity-container img {
-    width: 16px !important; 
+    width: 16px !important;
     height: auto;
 }
 
@@ -1969,17 +1969,17 @@ opacity: 1;
 
 /* Customize color and font size of the input text */
 .custom-input {
-font-size: 14px;   
-color: #66525E;       
+font-size: 14px;
+color: #66525E;
 transition: border-color 0.3s ease;
 }
 
 /* Optionally style the input when focused */
 .custom-input:focus {
-color: #66525E;    
-font-size: 14px;   
-outline: none;      
-border-color: #66525E; 
+color: #66525E;
+font-size: 14px;
+outline: none;
+border-color: #66525E;
 }
 
 .agreement p {
@@ -1991,8 +1991,8 @@ color: #8C8C8C;
 color: var(--bs-btn-disabled-color);
 background-color: var(--bs-btn-disabled-bg);
 border-color: var(--bs-btn-disabled-border-color);
-cursor: not-allowed; 
-opacity: 0.65; 
+cursor: not-allowed;
+opacity: 0.65;
 }
 
 .modal-payment {
@@ -2420,36 +2420,36 @@ opacity: 1;  /* Fully visible when 'show' class is added */
 }
 
 /* .icon-circle {
-width: 40px; 
-height: 40px; 
+width: 40px;
+height: 40px;
 border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
-background-color: #F0EEEF; 
+background-color: #F0EEEF;
 position: relative;
-z-index: 1; 
-border: 4px solid #D3D3D3; 
+z-index: 1;
+border: 4px solid #D3D3D3;
 }
 
 .icon-circle.active {
-border-color: #8E8273; 
+border-color: #8E8273;
 }
 
 .progress-line-container {
 position: absolute;
-top: 30%; 
-left: 6%; 
-right: 10%; 
-z-index: 0; 
+top: 30%;
+left: 6%;
+right: 10%;
+z-index: 0;
 }
 
 .progress-line {
-width: calc(100% - 24px); 
-height: 6px; 
-background-color: #D3D3D3; 
+width: calc(100% - 24px);
+height: 6px;
+background-color: #D3D3D3;
 position: relative;
-left: 20px; 
+left: 20px;
 } */
 
 @media (max-width: 768px) {
@@ -3044,4 +3044,9 @@ color: transparent;
     .data-profile {
         width: 100%; /* Ensure the profile data takes full width */
     }
+}
+
+.form-check-label {
+    font-size: 16px; /* Mengatur ukuran font label */
+    color: #333; /* Mengubah warna teks */
 }

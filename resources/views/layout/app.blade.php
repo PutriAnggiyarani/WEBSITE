@@ -27,6 +27,8 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f2289c4a36.js" crossorigin="anonymous"></script>
 
@@ -258,7 +260,7 @@
                                 class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
                                 placeholder="Search something here!" style="color: #99A2A5; width: 400px;"
                             />
-                        </form> 
+                        </form>
                     </div>
                     <div class="d-flex justify-content-center align-items-center d-lg-none me-3">
                         <a href="javascript:void(0)" id="search-icon-toggle" class="p-0">
@@ -330,7 +332,7 @@
                                 <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
                             </div>
                         </div>
-                    </div>                
+                    </div>
                     <div class="profile-dropdown">
                         <a href="#" class="me-3" id="profileIcon">
                             <img src="{{ url('assets/images/profileicon.png') }}" alt="Profile Icon" />
@@ -353,7 +355,7 @@
                                 <p class="mb-0 fw-semibold">Daftar Alamat</p>
                             </a>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
             </div>
@@ -377,11 +379,10 @@
                 </div>
                 <!-- Informasi Pelanggan -->
                 <div class="col-6 col-sm-4 col-md-2 mb-4 mb-lg-0 text-start">
-                    <h1 class="fw-bold" style="font-size: 14px">INFORMASI PELANGGAN:</h1>
-                    <ul class="nav flex-column mb-4 mt-4">
-                        <li class="nav-item mb-3"><a href="#" class="p-0">Cara Pembelian</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="p-0">Informasi Pembayaran</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="p-0">FAQ</a></li>
+                    <h1 class="fw-bold" style="font-size: 14px">HELP CENTER:</h1>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="{{ url('/howtobuy') }}" class="p-0">How To Buy</a></li>
+                        <li class="nav-item"><a href="{{ url('/faq') }}" class="p-0">FAQ</a></li>
                         <!-- Add Informasi items only for mobile view -->
                         <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Tentang Kami</a></li>
                         <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Privasi dan Kebijakan</a>
@@ -452,6 +453,7 @@
     <script src="{{ url('https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Select the button and add a click event listener
