@@ -109,6 +109,14 @@ Route::get('/review-product', function () {
     return view('review-product');
 })->name('review-product');
 
+Route::get('/howtobuy', function () {
+    return view('howtobuy');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});
+
 //Admin
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -180,14 +188,6 @@ Route::get('/chat', function () {
 
 Route::get('/promo', function () {
     return view('admin.promosi');
-});
-
-Route::get('/howtobuy', function () {
-    return view('howtobuy');
-});
-
-Route::get('/faq', function () {
-    return view('faq');
 });
 
 Route::get('/addvoucher', function () {
