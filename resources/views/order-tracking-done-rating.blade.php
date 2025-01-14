@@ -61,12 +61,11 @@
                         <li class="step0 active d-flex justify-content-center flex-column align-items-center text-center" id="step2"><span class="mt-2 fw-semibold">Belum Bayar</span></li>
                         <li class="step0 active d-flex justify-content-center flex-column align-items-center text-center" id="step3"><span class="mt-2 fw-semibold">Pesanan Dikemas</span></li>
                         <li class="step0 active d-flex justify-content-center flex-column align-items-center text-center" id="step4"><span class="mt-2 fw-semibold">Pesanan Dikirim</span></li>
-                        <li class="step0 active d-flex justify-content-center flex-column align-items-center text-center" id="step5"><span class="mt-2 fw-semibold">Belum Dinilai</span></li>
+                        <li class="step0 active d-flex justify-content-center flex-column align-items-center text-center" id="step5"><span class="mt-2 fw-semibold">Sudah Dinilai</span></li>
                     </ul>
                     <div class="btn-container">
                         <div class="d-flex justify-content-end px-md-5 mt-4">
                             <div class="d-flex flex-column">
-                                <a href="#" class="btn btn-primary rounded-4" data-bs-toggle="modal" data-bs-target="#scrollableModal">Nilai</a>
                                 <a href="{{ route('chat-customer') }}" class="btn btn-primary btn-edit-images rounded-4 mt-3">Hubungi Admin</a>
                                 <a href="{{ route('detailproduct') }}" class="btn btn-primary btn-edit-images rounded-4 mt-3">Beli Lagi</a>
                             </div>
@@ -191,7 +190,7 @@
                                             </div>
                                             <div class="btn-container d-flex justify-content-end mt-5">
                                                 <a href="" class="btn btn-primary btn-edit-images me-3">Batalkan</a>
-                                                <a href="{{ route('order-tracking-done-rating') }}" id="submitButton" class="btn btn-primary">Submit</a>
+                                                <a href="#" id="submitButton" class="btn btn-primary" data-bs-target="#submitModal" data-bs-toggle="modal">Submit</a>
                                             </div>
                                         </div>
                                         <!-- <div class="modal-footer">
@@ -435,6 +434,18 @@
             });
         });
 
+        document.getElementById("submitButton").addEventListener("click", function (event) {
+                event.preventDefault();
+
+                // Close the scrollableModal if it is open
+                let scrollableModal = new bootstrap.Modal(document.getElementById("scrollableModal"));
+                scrollableModal.hide();
+
+                // Show the submitModal
+                let submitModal = new bootstrap.Modal(document.getElementById("submitModal"));
+                submitModal.show();
+            });
+
         // JavaScript to toggle the search form visibility when the icon is clicked
         document.getElementById("search-icon-toggle").addEventListener("click", function() {
             var searchForm = document.getElementById("search-form");
@@ -456,6 +467,7 @@
         //         }
         //     });
         // }
+        
         // Debounced resize event listener
         window.addEventListener('resize', function() {
             clearTimeout(resizeTimeout);  // Clear any previously set timeout

@@ -34,6 +34,10 @@
     <!-- Style untuk Navbar dan Footer -->
     <link rel="stylesheet" type="text/css" href="{{ url('assets/css/style.css') }}" />
 
+    <!-- CSS Alertify -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css"/>
+
     <!-- Stack Styles untuk halaman khusus -->
     @stack('styles')
 
@@ -453,6 +457,8 @@
     </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
     <script src="{{ url('assets/js/jquery-1.11.0.min.js')}}"></script>
     <script type="text/javascript" src="{{ url('assets/js/bootstrap.bundle.min.js')}}"></script>
     <script type="text/javascript" src="{{ url('assets/js/plugins.js')}}"></script>

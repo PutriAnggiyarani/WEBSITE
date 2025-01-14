@@ -67,8 +67,8 @@
                         <div class="d-flex justify-content-between">
                             <p class="fw-semibold mb-0">Silahkan lakukan pembayaran paling lambat 02-10-2024 dengan Bank BCA</p>
                             <div class="d-flex flex-column">
-                                <a href="" class="btn btn-primary rounded-4">Bayar Sekarang</a>
-                                <a href="" class="btn btn-primary btn-edit-images rounded-4 mt-3"> Hubungi Admin</a>
+                                <a href="{{ route('payment') }}" class="btn btn-primary rounded-4">Bayar Sekarang</a>
+                                <a href="{{ route('chat-customer') }}" class="btn btn-primary btn-edit-images rounded-4 mt-3"> Hubungi Admin</a>
                                 <a href="" class="btn btn-primary btn-edit-images rounded-4 mt-3"> Batalkan Pesanan</a>
                             </div>
                         </div>
