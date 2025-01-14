@@ -174,9 +174,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="topnav-dropdown-footer">
-                            <a href="activities.html">View all Notifications</a>
-                        </div>
                     </div>
                 </li>
 
@@ -188,7 +185,8 @@
                     <div class="dropdown-menu menu-drop-user">
                         <div class="profilename">
                             <div class="profileset">
-                                <span class="user-img"><img src="{{ url('assets/admin/img/profiles/avatar-1.png') }}" alt="">
+                                <span class="user-img"><img src="{{ url('assets/admin/img/profiles/avatar-1.png') }}"
+                                        alt="">
                                     <span class="status online"></span></span>
                                 <div class="profilesets">
                                     <h6>Putri Rohmatun</h6>
@@ -199,11 +197,10 @@
                             <a class="dropdown-item" href="{{ url('/profile')}}"> <i class="me-2"
                                     data-feather="user"></i> My
                                 Profile</a>
-                            <a class="dropdown-item" href="generalsettings.html"><i class="me-2"
-                                    data-feather="settings"></i>Settings</a>
                             <hr class="m-0">
-                            <a class="dropdown-item logout pb-0" href="signin.html"><img
-                                    src="{{ url('assets/admin/img/icons/log-out.svg') }}" class="me-2" alt="img">Logout</a>
+                            <a class="dropdown-item logout pb-0" href="{{ url('/loginadmin')}}"><img dmin
+                                    src="{{ url('assets/admin/img/icons/log-out.svg') }}" class="me-2"
+                                    alt="img">Logout</a>
                         </div>
                     </div>
                 </li>
@@ -214,9 +211,8 @@
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="generalsettings.html">Settings</a>
-                    <a class="dropdown-item" href="signin.html">Logout</a>
+                    <a class="dropdown-item" href="{{ url('/profile')}}">My Profile</a>
+                    <a class="dropdown-item" href="{{ url('/loginadmin')}}">Logout</a>
                 </div>
             </div>
 
@@ -227,19 +223,21 @@
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
-                        <li class="{{ Request::is('/') ? 'active' : '' }}">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/admin/img/icons/dashboard.svg') }}"
+                        <li class="{{ Request::is('dashboard*') ? 'active' : '' }}">
+                            <a href="{{ url('/dashboard') }}"><img
+                                    src="{{ url('assets/admin/img/icons/dashboard.svg') }}"
                                     alt="img"><span>Dashboard</span></a>
                         </li>
                         <li class="{{ Request::is('product*') ? 'active' : '' }}">
                             <a href="{{ url('/product') }}"><img src="{{ url('assets/admin/img/icons/product.svg') }}"
                                     alt="img"><span>Product</span></a>
                         </li>
-                        <li class="{{ Request::is('category*') ? 'active' : '' }}">
-                            <a href="{{ url('/category') }}"><i data-feather="layers"></i><span>Category</span></a>
+                        <li class="{{ Request::is('listcategory*') ? 'active' : '' }}">
+                            <a href="{{ url('/listcategory') }}"><i data-feather="layers"></i><span>Category</span></a>
                         </li>
                         <li class="{{ Request::is('transaction*') ? 'active' : '' }}">
-                            <a href="{{ url('/transaction') }}"><img src="{{ url('assets/admin/img/icons/transaksi.png') }}"
+                            <a href="{{ url('/transaction') }}"><img
+                                    src="{{ url('assets/admin/img/icons/transaksi.png') }}"
                                     alt="img"><span>Transaction</span></a>
                         </li>
                         <li class="{{ Request::is('customer*') ? 'active' : '' }}">

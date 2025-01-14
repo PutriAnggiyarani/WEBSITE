@@ -146,8 +146,8 @@ Route::get('/listcategory', function () {
     return view('admin.listcategory');
 });
 
-Route::get('/detailcategory', function () {
-    return view('admin.detailkategori');
+Route::get('/editkategori', function () {
+    return view('admin.editkategori');
 });
 
 Route::get('/transaction', function () {
@@ -182,3 +182,26 @@ Route::get('/promo', function () {
     return view('admin.promosi');
 });
 
+Route::get('/howtobuy', function () {
+    return view('howtobuy');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});
+
+Route::get('/addvoucher', function () {
+    return view('admin.addvoucher');
+});
+
+Route::get('/editvoucher', function () {
+    return view('admin.editvoucher');
+});
+
+Route::get('/detailvoucher', function () {
+    return view('admin.detailvoucher');
+});
+
+Route::get('/detailkategori', function () {
+    return view('admin.detailkategori');
+});

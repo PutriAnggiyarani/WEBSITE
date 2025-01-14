@@ -6,11 +6,8 @@
             <a href="#" class="position-absolute top-50 start-0 translate-middle-y p-1 ms-3">
                 <i class="fa-solid fa-magnifying-glass" style="color: #667479;"></i>
             </a>
-            <input
-                type="text"
-                class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
-                placeholder="Search something here!" style="color: #99A2A5; width: 100%; max-width: 400px;"
-            />
+            <input type="text" class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
+                placeholder="Search something here!" style="color: #99A2A5; width: 100%; max-width: 400px;" />
         </form>
     </div>
     <h6 class="fw-bold mb-0 page-status" style="color: #737373;">
@@ -19,9 +16,12 @@
     <div class="row mt-4">
         <div class="col-12 col-md-3 d-flex mb-3 me-4 custom-image-container">
             <div class="me-3 small-images">
-                <img src="{{ url('assets/images/pdetail1.png') }}" class="small-img img-fluid active mb-2 rounded-4" alt="Small Image 1" />
-                <img src="{{ url('assets/images/pdetail2.png') }}" class="small-img img-fluid mb-2 rounded-4" alt="Small Image 2" />
-                <img src="{{ url('assets/images/pedetail3.png') }}" class="small-img img-fluid rounded-4" alt="Small Image 3" />
+                <img src="{{ url('assets/images/pdetail1.png') }}" class="small-img img-fluid active mb-2 rounded-4"
+                    alt="Small Image 1" />
+                <img src="{{ url('assets/images/pdetail2.png') }}" class="small-img img-fluid mb-2 rounded-4"
+                    alt="Small Image 2" />
+                <img src="{{ url('assets/images/pedetail3.png') }}" class="small-img img-fluid rounded-4"
+                    alt="Small Image 3" />
             </div>
             <div class="main-image border-0">
                 <img src="{{ url('assets/images/pdetail.png') }}" class="custom-img rounded-4" alt="Main Image" />
@@ -46,7 +46,8 @@
             </div>
             <div class="mt-3">
                 <p>
-                    Hijab Bella Square berbahan pollycotton yang lembut dan nyaman, dengan finishing jahit tepi rapi. Ukuran 115x115 cm, hijab ini mudah dibentuk dan cocok untuk berbagai kesempatan.
+                    Hijab Bella Square berbahan pollycotton yang lembut dan nyaman, dengan finishing jahit tepi rapi.
+                    Ukuran 115x115 cm, hijab ini mudah dibentuk dan cocok untuk berbagai kesempatan.
                 </p>
             </div>
             <!-- Remaining content omitted for brevity -->
@@ -54,49 +55,88 @@
                 <h6 class="fw-bold">Warna</h6>
                 <div class="color-options-container">
                     <div class="color-options rounded-4 py-3 px-3 d-flex align-items-center">
-                        <button class="option-color" style="background-color: #CEA297;"></button>
-                        <button class="option-color" style="background-color: #7F7671;"></button>
-                        <button class="option-color" style="background-color: #1E3265;"></button>
-                        <button class="option-color" style="background-color: #552D19;"></button>
-                        <button class="option-color" style="background-color: #726651;"></button>
-                        <button class="option-color" style="background-color: #D8C7A9;"></button>
-                        <button class="option-color" style="background-color: #C49D74;"></button>
-                        <button class="option-color" style="background-color: #AF8A78;"></button>
-                        <button class="option-color" style="background-color: #A26D4B;"></button>
-                        <button class="option-color" style="background-color: #C19F79;"></button>
-                        <button class="option-color" style="background-color: #F0E1C0;"></button>
-                        <button class="option-color" style="background-color: #EDEBD4;"></button>
-                        <button class="option-color" style="background-color: #603B21;"></button>
+                        <button class="color-option" style="background-color: #CEA297;"
+                            data-color-name="Beige"></button>
+                        <button class="color-option" style="background-color: #7F7671;"
+                            data-color-name="Gray Taupe"></button>
+                        <button class="color-option" style="background-color: #1E3265;"
+                            data-color-name="Dark Blue"></button>
+                        <button class="color-option" style="background-color: #552D19;"
+                            data-color-name="Chocolate Brown"></button>
+                        <button class="color-option" style="background-color: #726651;"
+                            data-color-name="Khaki"></button>
+                        <button class="color-option" style="background-color: #D8C7A9;"
+                            data-color-name="Light Cream"></button>
+                        <button class="color-option" style="background-color: #C49D74;"
+                            data-color-name="Golden Tan"></button>
+                        <button class="color-option" style="background-color: #AF8A78;"
+                            data-color-name="Rosy Brown"></button>
+                        <button class="color-option" style="background-color: #A26D4B;"
+                            data-color-name="Sienna"></button>
+                        <button class="color-option" style="background-color: #C19F79;"
+                            data-color-name="Desert Sand"></button>
+                        <button class="color-option" style="background-color: #F0E1C0;"
+                            data-color-name="Pale Sand"></button>
+                        <button class="color-option" style="background-color: #EDEBD4;"
+                            data-color-name="Ivory"></button>
+                        <button class="color-option" style="background-color: #603B21;"
+                            data-color-name="Dark Coffee"></button>
                         <button class="show-more border-0 bg-white"> > </button>
                     </div>
                     <div class="color-selection more hidden rounded-4"> <!-- Hide this initially -->
                         <div class="color-options rounded-4 py-3 px-3">
-                            <button class="color-option" style="background-color: #CEA297;"></button>
-                            <button class="color-option" style="background-color: #7F7671;"></button>
-                            <button class="color-option" style="background-color: #1E3265;"></button>
-                            <button class="color-option" style="background-color: #552D19;"></button>
-                            <button class="color-option" style="background-color: #726651;"></button>
-                            <button class="color-option" style="background-color: #D8C7A9;"></button>
-                            <button class="color-option" style="background-color: #C49D74;"></button>
-                            <button class="color-option" style="background-color: #AF8A78;"></button>
-                            <button class="color-option" style="background-color: #A26D4B;"></button>
-                            <button class="color-option" style="background-color: #C19F79;"></button>
-                            <button class="color-option" style="background-color: #F0E1C0;"></button>
-                            <button class="color-option" style="background-color: #EDEBD4;"></button>
-                            <button class="color-option" style="background-color: #603B21;"></button>
-                            <button class="color-option" style="background-color: #B0C4DE;"></button>
-                            <button class="color-option" style="background-color: #4682B4;"></button>
-                            <button class="color-option" style="background-color: #5F9EA0;"></button>
-                            <button class="color-option" style="background-color: #2E8B57;"></button>
-                            <button class="color-option" style="background-color: #FFD700;"></button>
-                            <button class="color-option" style="background-color: #FF4500;"></button>
-                            <button class="color-option" style="background-color: #DDA0DD;"></button>
-                            <button class="color-option" style="background-color: #B22222;"></button>
-                            <button class="color-option" style="background-color: #F08080;"></button>
-                            <button class="color-option" style="background-color: #98FB98;"></button>
-                            <button class="color-option" style="background-color: #FF69B4;"></button>
-                            <button class="color-option" style="background-color: #ADFF2F;"></button>
-                            <button class="color-option" style="background-color: #00BFFF;"></button>
+                            <button class="color-option" style="background-color: #CEA297;"
+                                data-color-name="Beige"></button>
+                            <button class="color-option" style="background-color: #7F7671;"
+                                data-color-name="Gray Taupe"></button>
+                            <button class="color-option" style="background-color: #1E3265;"
+                                data-color-name="Dark Blue"></button>
+                            <button class="color-option" style="background-color: #552D19;"
+                                data-color-name="Chocolate Brown"></button>
+                            <button class="color-option" style="background-color: #726651;"
+                                data-color-name="Khaki"></button>
+                            <button class="color-option" style="background-color: #D8C7A9;"
+                                data-color-name="Light Cream"></button>
+                            <button class="color-option" style="background-color: #C49D74;"
+                                data-color-name="Golden Tan"></button>
+                            <button class="color-option" style="background-color: #AF8A78;"
+                                data-color-name="Rosy Brown"></button>
+                            <button class="color-option" style="background-color: #A26D4B;"
+                                data-color-name="Sienna"></button>
+                            <button class="color-option" style="background-color: #C19F79;"
+                                data-color-name="Desert Sand"></button>
+                            <button class="color-option" style="background-color: #F0E1C0;"
+                                data-color-name="Pale Sand"></button>
+                            <button class="color-option" style="background-color: #EDEBD4;"
+                                data-color-name="Ivory"></button>
+                            <button class="color-option" style="background-color: #603B21;"
+                                data-color-name="Dark Coffee"></button>
+                            <button class="color-option" style="background-color: #B0C4DE;"
+                                data-color-name="Light Steel Blue"></button>
+                            <button class="color-option" style="background-color: #4682B4;"
+                                data-color-name="Steel Blue"></button>
+                            <button class="color-option" style="background-color: #5F9EA0;"
+                                data-color-name="Cadet Blue"></button>
+                            <button class="color-option" style="background-color: #2E8B57;"
+                                data-color-name="Sea Green"></button>
+                            <button class="color-option" style="background-color: #FFD700;"
+                                data-color-name="Gold"></button>
+                            <button class="color-option" style="background-color: #FF4500;"
+                                data-color-name="Orange Red"></button>
+                            <button class="color-option" style="background-color: #DDA0DD;"
+                                data-color-name="Plum"></button>
+                            <button class="color-option" style="background-color: #B22222;"
+                                data-color-name="Fire Brick"></button>
+                            <button class="color-option" style="background-color: #F08080;"
+                                data-color-name="Light Coral"></button>
+                            <button class="color-option" style="background-color: #98FB98;"
+                                data-color-name="Pale Green"></button>
+                            <button class="color-option" style="background-color: #FF69B4;"
+                                data-color-name="Hot Pink"></button>
+                            <button class="color-option" style="background-color: #ADFF2F;"
+                                data-color-name="Green Yellow"></button>
+                            <button class="color-option" style="background-color: #00BFFF;"
+                                data-color-name="Deep Sky Blue"></button>
                         </div>
                     </div>
                 </div>
@@ -112,8 +152,10 @@
                     Masukan Keranjang
                 </a>
             </div>
-            <div class="mt-4 btn-group" role="group" aria-label="Basic outlined example" style="max-width: 480px; width: 100%;">
-                <a href="{{ route('chat-customer') }}" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
+            <div class="mt-4 btn-group" role="group" aria-label="Basic outlined example"
+                style="max-width: 480px; width: 100%;">
+                <a href="{{ route('chat-customer') }}"
+                    class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa-regular fa-message me-2"></i> Chat
                 </a>
                 <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center" id="addtowishlist">
@@ -127,17 +169,21 @@
     <div class="container-fluid padding-side mt-4">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item flex-fill" role="presentation">
-                <a class="nav-link active" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="true">Ulasan Produk</a>
+                <a class="nav-link active" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab"
+                    aria-controls="reviews" aria-selected="true">Ulasan Produk</a>
             </li>
             <li class="nav-item flex-fill" role="presentation">
-                <a class="nav-link" id="details-tab" data-bs-toggle="tab" href="#details" role="tab" aria-controls="details" aria-selected="false">Detail Produk</a>
+                <a class="nav-link" id="details-tab" data-bs-toggle="tab" href="#details" role="tab"
+                    aria-controls="details" aria-selected="false">Detail Produk</a>
             </li>
         </ul>
         <div class="tab-content mt-3" id="myTabContent">
             <div class="tab-pane fade" id="details" role="tabpanel" aria-labelledby="details-tab">
                 <p class="">
-                    Bella Square adalah hijab segi empat yang terbuat dari bahan **pollycotton** berkualitas tinggi. Pollycotton dikenal karena kombinasi serat polyester dan katun yang memberikan kelembutan,
-                    kenyamanan, serta daya tahan yang baik. Hijab ini terasa ringan namun tetap memberikan struktur yang pas, sehingga mudah dibentuk dan tidak licin saat dikenakan. Cocok untuk digunakan sehari-hari
+                    Bella Square adalah hijab segi empat yang terbuat dari bahan **pollycotton** berkualitas tinggi.
+                    Pollycotton dikenal karena kombinasi serat polyester dan katun yang memberikan kelembutan,
+                    kenyamanan, serta daya tahan yang baik. Hijab ini terasa ringan namun tetap memberikan struktur yang
+                    pas, sehingga mudah dibentuk dan tidak licin saat dikenakan. Cocok untuk digunakan sehari-hari
                     maupun untuk acara formal, Bella Square memberikan kesan elegan dan rapi.
                     <br>
                     <br>
@@ -146,7 +192,8 @@
                     Finishing : Dijahit dengan tepi rapi, memastikan ketahanan dan tampilan yang lebih halus.
                     <br>
                     <br>
-                    Tersedia dalam berbagai pilihan warna, hijab Bella Square menawarkan fleksibilitas dalam styling, sehingga Anda bisa tampil cantik dan nyaman sepanjang hari dengan kesan yang tetap elegan.
+                    Tersedia dalam berbagai pilihan warna, hijab Bella Square menawarkan fleksibilitas dalam styling,
+                    sehingga Anda bisa tampil cantik dan nyaman sepanjang hari dengan kesan yang tetap elegan.
                 </p>
 
             </div>
@@ -229,7 +276,8 @@
                         </div>
                         <div class="review mt-4">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -239,10 +287,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -252,7 +303,8 @@
                         </div>
                         <div class="review mt-5">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -262,10 +314,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -275,7 +330,8 @@
                         </div>
                         <div class="review mt-5">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -285,10 +341,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -298,7 +357,8 @@
                         </div>
                         <div class="review mt-5">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -308,10 +368,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -321,7 +384,8 @@
                         </div>
                         <div class="review mt-5">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -331,10 +395,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -344,7 +411,8 @@
                         </div>
                         <div class="review mt-5">
                             <div class="profile-review d-flex">
-                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                    style="width: 50px; height: 50px;">
                                 <p class="fw-semibold">U*****3</p>
                             </div>
                             <div class="star-review mt-2 d-flex">
@@ -354,10 +422,13 @@
                                 <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                 <span class="fa fa-star checked" style="color: #fcaf23"></span>
                             </div>
-                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                            <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat
+                                Pramuka</p>
                             <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang
+                                paling aku suka, hijab ini gak licin!
+                                Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi
+                                hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
                                 diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                             </p>
                             <div class="d-flex">
@@ -382,20 +453,20 @@
     const btnPlus = document.querySelector('.btn-plus');
 
     // Add event listeners for the minus and plus buttons
-    btnMinus.addEventListener('click', function() {
+    btnMinus.addEventListener('click', function () {
         let currentValue = parseInt(inputQuantity.value);
         if (currentValue > 1) { // Ensure the value doesn't go below 1
             inputQuantity.value = currentValue - 1;
         }
     });
 
-    btnPlus.addEventListener('click', function() {
+    btnPlus.addEventListener('click', function () {
         let currentValue = parseInt(inputQuantity.value);
         inputQuantity.value = currentValue + 1; // Increase the value by 1
     });
 
     let isDescending = true; // Start with descending order (5 stars first)
-    document.getElementById('caretToggle').addEventListener('click', function() {
+    document.getElementById('caretToggle').addEventListener('click', function () {
         // Toggle between ascending and descending order
         isDescending = !isDescending;
 
@@ -414,10 +485,10 @@
         const ratingRows = Array.from(ratingContainer.querySelectorAll('.rating-row'));
 
         ratingRows.sort((a, b) => {
-        const ratingA = parseInt(a.getAttribute('data-rating'));
-        const ratingB = parseInt(b.getAttribute('data-rating'));
+            const ratingA = parseInt(a.getAttribute('data-rating'));
+            const ratingB = parseInt(b.getAttribute('data-rating'));
 
-        return isDescending ? ratingB - ratingA : ratingA - ratingB;
+            return isDescending ? ratingB - ratingA : ratingA - ratingB;
         });
 
         // Re-append sorted rows
@@ -426,7 +497,7 @@
 
     // Add click event listener to the show-more button
     // Initialize dropdown states on page load
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         const moreColors = document.querySelector('.color-selection.more');
         if (moreColors) {
             moreColors.style.maxHeight = '0'; // Ensure it starts collapsed
@@ -436,7 +507,7 @@
     });
 
     // Add click event listener to the show-more button
-    document.querySelector('.show-more').addEventListener('click', function(event) {
+    document.querySelector('.show-more').addEventListener('click', function (event) {
         const moreColors = document.querySelector('.color-selection.more');
 
         // Check if currently hidden
@@ -468,17 +539,17 @@
         const allDropdowns = document.querySelectorAll('.color-selection.more');
 
         allDropdowns.forEach(dropdown => {
-        if (dropdown !== currentDropdown) {
-            dropdown.classList.add('hidden'); // Hide any other dropdowns
-            dropdown.style.maxHeight = '0'; // Collapse other dropdowns
-            dropdown.style.transform = 'translate(-50%, -10%)'; // Move down while hidden
-            dropdown.style.opacity = '0'; // Fade out
-        }
+            if (dropdown !== currentDropdown) {
+                dropdown.classList.add('hidden'); // Hide any other dropdowns
+                dropdown.style.maxHeight = '0'; // Collapse other dropdowns
+                dropdown.style.transform = 'translate(-50%, -10%)'; // Move down while hidden
+                dropdown.style.opacity = '0'; // Fade out
+            }
         });
     }
 
     // Close the dropdown if clicking outside of it
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         const dropdown = document.querySelector('.color-selection.more');
         const showMoreButton = document.querySelector('.show-more');
 
@@ -491,21 +562,21 @@
         }
     });
 
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         const filterIcon = document.getElementById("filterIcon");
         const closeModalFilter = document.querySelector(".close-modal-filter");
         const ratingContainer = document.querySelector(".rating-container");
 
-        filterIcon.addEventListener("click", function() {
+        filterIcon.addEventListener("click", function () {
             ratingContainer.classList.toggle("show"); // Toggle the "show" class
         });
 
-        closeModalFilter.addEventListener("click", function() {
+        closeModalFilter.addEventListener("click", function () {
             ratingContainer.classList.remove("show"); // Hide the modal with smooth transition
         });
 
         // JavaScript to toggle the search form visibility when the icon is clicked
-        document.getElementById("search-icon-toggle").addEventListener("click", function() {
+        document.getElementById("search-icon-toggle").addEventListener("click", function () {
             var searchForm = document.getElementById("search-form");
             searchForm.classList.toggle("d-none");
         });

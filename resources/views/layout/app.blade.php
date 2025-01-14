@@ -28,6 +28,8 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/f2289c4a36.js" crossorigin="anonymous"></script>
 
@@ -195,180 +197,204 @@
     <header id="header">
         <nav id="primary-header" class="navbar navbar-expand-lg py-4">
             <div class="container-fluid padding-side">
-            <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex align-items-center">
-                    <!-- Navbar Icon Button (Visible Only on Smaller Screens, Left of Logo in Responsive Mode) -->
-                    <button
-                    class="navbar-toggler border-0 d-flex d-lg-none order-1 p-2 shadow-none"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#bdNavbar"
-                    aria-controls="bdNavbar"
-                    aria-expanded="false"
-                    >
-                    <i class="fa-solid fa-bars"></i>
-                    </button>
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <!-- Navbar Icon Button (Visible Only on Smaller Screens, Left of Logo in Responsive Mode) -->
+                        <button class="navbar-toggler border-0 d-flex d-lg-none order-1 p-2 shadow-none" type="button"
+                            data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
 
-                    <!-- Logo (Right of Navbar Icon on Smaller Screens, Left Position on Larger Screens) -->
-                    <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ url('/') }}">
-                        <img src="{{ url('assets/images/logo.png') }}" class="logo img-fluid" />
-                    </a>
+                        <!-- Logo (Right of Navbar Icon on Smaller Screens, Left Position on Larger Screens) -->
+                        <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ url('/dashboard') }}">
+                            <img src="{{ url('assets/images/logo.png') }}" class="logo img-fluid" />
+                        </a>
 
-                    <!-- Offcanvas Menu (Visible on Smaller Screens) -->
-                    <div class="header-bottom offcanvas offcanvas-start order-lg-2" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
-                        <div class="offcanvas-header px-4 pb-0">
-                            <button
-                                type="button"
-                                class="btn-close btn-close-black mt-2"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"
-                                data-bs-target="#bdNavbar"
-                            ></button>
-                        </div>
-                        <div class="offcanvas-body align-items-center">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" aria-current="page" href="{{ url('/') }}" style="font-size: 14px;"><i class="fa-solid fa-house me-2 responsive-icon"></i>Beranda</a>
-                                </li>
-                                <li class="nav-item px-3 dropdown">
-                                    <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 14px;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="me-2 responsive-icon"><path fill="currentColor" fill-rule="evenodd"
-                                            d="M464 144c8.837 0 16 7.163 16 16v304c0 8.836-7.163 16-16 16H160c-8.837 0-16-7.164-16-16V160c0-8.837 7.163-16 16-16zm-52 68H212v200h200zm493.333 
-                                            87.686c6.248 6.248 6.248 16.379 0 22.627l-181.02 181.02c-6.248 6.248-16.378 6.248-22.627 0l-181.019-181.02c-6.248-6.248-6.248-16.379 0-22.627l181.02-181.02c6.248-6.248 
-                                            16.378-6.248 22.627 0zm-84.853 11.313L713 203.52L605.52 311L713 418.48zM464 544c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H160c-8.837 0-16-7.163-16-16V560c0-8.836 
-                                            7.163-16 16-16zm-52 68H212v200h200zm452-68c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H560c-8.837 0-16-7.163-16-16V560c0-8.836 7.163-16 16-16zm-52 68H612v200h200z"/>
-                                        </svg>Produk Kami
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                                        <li><a href="{{ route('ktghijab') }}" class="dropdown-item">Hijab</a></li>
-                                        <li><a href="{{ route('ktgatasan') }}" class="dropdown-item">Atasan</a></li>
-                                        <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a></li>
-                                        <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a></li>
-                                        <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item px-3">
-                                    <a class="nav-link p-0" href="{{ route('about-us') }}" style="font-size: 14px;"><i class="fa-solid fa-circle-info me-2 responsive-icon"></i>Tentang Kami</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center">
-                    <div class="search d-lg-block d-none me-4">
-                        <form class="position-relative align-items-center">
-                            <a
-                                href="#"
-                                class="position-absolute top-50 start-0 translate-middle-y p-1 ms-3"
-                            >
-                            <i class="fa-solid fa-magnifying-glass" style="color: #667479;"></i>
-                            </a>
-                            <input
-                                type="text"
-                                class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
-                                placeholder="Search something here!" style="color: #99A2A5; width: 400px;"
-                            />
-                        </form> 
-                    </div>
-                    <div class="d-flex justify-content-center align-items-center d-lg-none me-3">
-                        <a href="javascript:void(0)" id="search-icon-toggle" class="p-0">
-                            <img src="{{ url('assets/images/searchicon.png') }}" alt="Search Icon">
-                        </a>
-                    </div>
-                    @if (Route::is('index'))
-                        <a href="#" class="btn btn-primary d-flex align-items-center" style="height: 42px; border-radius: 10px;" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</a>
-                    @endif
-                    @if (!Route::is('index'))
-                        <a href="{{ route('chat-customer') }}" class="me-3">
-                            <img src="{{ url('assets/images/chaticon.png') }}" alt="" />
-                        </a>
-                        <div class="cart-dropdown">
-                            <a href="#" class="me-3" id="cartIcon">
-                                <img src="{{ url('assets/images/carticon.png') }}" alt="Cart Icon" />
-                            </a>
-                            <div class="dropdown-content rounded-3 px-3 py-2">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="mb-0">Keranjang (5)</h6>
-                                    <a href="{{ route('cart') }}" style="text-decoration: underline;">
-                                        <p>Lihat Semua</p>
-                                    </a>
-                                </div>
-                                <div class="item-cart d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
-                                        <div class="title-cart me-2">
-                                            <h6 class="fw-bold">Hijab Paris Premium</h6>
-                                            <p class="rounded-3 px-2">Warna : Beige</p>
-                                        </div>
-                                    </div>
-                                    <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
-                                </div>
-                                <div class="item-cart d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
-                                        <div class="title-cart me-2">
-                                            <h6 class="fw-bold">Hijab Paris Premium</h6>
-                                            <p class="rounded-3 px-2">Warna : Beige</p>
-                                        </div>
-                                    </div>
-                                    <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
-                                </div>
-                                <div class="item-cart d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
-                                        <div class="title-cart me-2">
-                                            <h6 class="fw-bold">Hijab Paris Premium</h6>
-                                            <p class="rounded-3 px-2">Warna : Beige</p>
-                                        </div>
-                                    </div>
-                                    <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
-                                </div>
-                                <div class="item-cart d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <img class="rounded-2 me-2" src="{{ url('assets/images/cart2.png') }}" alt="">
-                                        <div class="title-cart me-2">
-                                            <h6 class="fw-bold">Serenade Strips</h6>
-                                            <p class="rounded-3 px-2">Warna : Pink</p>
-                                        </div>
-                                    </div>
-                                    <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
-                                </div>
-                                <div class="item-cart d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center mt-2">
-                                        <img class="rounded-2 me-2" src="{{ url('assets/images/cart3.png') }}" alt="">
-                                        <div class="title-cart me-2">
-                                            <h6 class="fw-bold">Scuba Slim-Fit Pants</h6>
-                                            <p class="rounded-3 px-2">Warna : Pink</p>
-                                        </div>
-                                    </div>
-                                    <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
-                                </div>
+                        <!-- Offcanvas Menu (Visible on Smaller Screens) -->
+                        <div class="header-bottom offcanvas offcanvas-start order-lg-2" id="bdNavbar"
+                            aria-labelledby="bdNavbarOffcanvasLabel">
+                            <div class="offcanvas-header px-4 pb-0">
+                                <button type="button" class="btn-close btn-close-black mt-2" data-bs-dismiss="offcanvas"
+                                    aria-label="Close" data-bs-target="#bdNavbar"></button>
+                            </div>
+                            <div class="offcanvas-body align-items-center">
+                                <ul class="navbar-nav mb-2 mb-lg-0">
+                                    <li class="nav-item px-3">
+                                        <a class="nav-link p-0" aria-current="page" href="{{ url('/') }}"
+                                            style="font-size: 14px;"><i
+                                                class="fa-solid fa-house me-2 responsive-icon"></i>Beranda</a>
+                                    </li>
+                                    <li class="nav-item px-3 dropdown">
+                                        <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button"
+                                            aria-expanded="false" style="font-size: 14px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 1024 1024" class="me-2 responsive-icon">
+                                                <path fill="currentColor" fill-rule="evenodd"
+                                                    d="M464 144c8.837 0 16 7.163 16 16v304c0 8.836-7.163 16-16 16H160c-8.837 0-16-7.164-16-16V160c0-8.837 7.163-16 16-16zm-52 68H212v200h200zm493.333
+                                            87.686c6.248 6.248 6.248 16.379 0 22.627l-181.02 181.02c-6.248 6.248-16.378 6.248-22.627 0l-181.019-181.02c-6.248-6.248-6.248-16.379 0-22.627l181.02-181.02c6.248-6.248
+                                            16.378-6.248 22.627 0zm-84.853 11.313L713 203.52L605.52 311L713 418.48zM464 544c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H160c-8.837 0-16-7.163-16-16V560c0-8.836
+                                            7.163-16 16-16zm-52 68H212v200h200zm452-68c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H560c-8.837 0-16-7.163-16-16V560c0-8.836 7.163-16 16-16zm-52 68H612v200h200z" />
+                                            </svg>Produk Kami
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
+                                            <li><a href="{{ route('ktghijab') }}" class="dropdown-item">Hijab</a></li>
+                                            <li><a href="{{ route('ktgatasan') }}" class="dropdown-item">Atasan</a></li>
+                                            <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a>
+                                            </li>
+                                            <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a>
+                                            </li>
+                                            <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item px-3">
+                                        <a class="nav-link p-0" href="{{ route('about-us') }}"
+                                            style="font-size: 14px;"><i
+                                                class="fa-solid fa-circle-info me-2 responsive-icon"></i>Tentang
+                                            Kami</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="profile-dropdown">
-                            <a href="#" class="me-3" id="profileIcon">
-                                <img src="{{ url('assets/images/profileicon.png') }}" alt="Profile Icon" />
-                            </a>
-                            <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
-                                <a href="{{ route('profilecustomer') }}" class="dropdown-item d-flex align-items-center">
-                                    <img src="{{ url('assets/images/pdropdown.png') }}" class="me-3" alt="">
-                                    <p class="mb-0 fw-semibold">Profil Saya</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="search d-lg-block d-none me-4">
+                            <form class="position-relative align-items-center">
+                                <a href="#" class="position-absolute top-50 start-0 translate-middle-y p-1 ms-3">
+                                    <i class="fa-solid fa-magnifying-glass" style="color: #667479;"></i>
                                 </a>
-                                <a href="{{ route('favorite') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                    <img src="{{ url('assets/images/ldropdown.png') }}" class="me-3" alt="">
-                                    <p class="mb-0 fw-semibold">Favorite Saya</p>
-                                </a>
-                                <a href="{{ route('order') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                    <img src="{{ url('assets/images/odropdown.png') }}" class="me-3" alt="">
-                                    <p class="mb-0 fw-semibold">Pesanan Saya</p>
-                                </a>
-                                <a href="{{ route('add-address') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                    <img src="{{ url('assets/images/locdropdown.png') }}" class="me-3" alt="">
-                                    <p class="mb-0 fw-semibold">Daftar Alamat</p>
-                                </a>
-                            </div>
+                                <input type="text" class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
+                                    placeholder="Search something here!" style="color: #99A2A5; width: 400px;" />
+                            </form>
                         </div>
-                    @endif
+                        <div class="d-flex justify-content-center align-items-center d-lg-none me-3">
+                            <a href="javascript:void(0)" id="search-icon-toggle" class="p-0">
+                                <img src="{{ url('assets/images/searchicon.png') }}" alt="Search Icon">
+                            </a>
+                        </div>
+                        @if (Route::is('index'))
+                            <a href="#" class="btn btn-primary d-flex align-items-center"
+                                style="height: 42px; border-radius: 10px;" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Masuk</a>
+                        @endif
+                        @if (!Route::is('index'))
+                                <a href="{{ route('chat-customer') }}" class="me-3">
+                                    <img src="{{ url('assets/images/chaticon.png') }}" alt="" />
+                                </a>
+                                <div class="cart-dropdown">
+                                    <a href="#" class="me-3" id="cartIcon">
+                                        <img src="{{ url('assets/images/carticon.png') }}" alt="Cart Icon" />
+                                    </a>
+                                    <div class="dropdown-content rounded-3 px-3 py-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <h6 class="mb-0">Keranjang (5)</h6>
+                                            <a href="{{ route('cart') }}" style="text-decoration: underline;">
+                                                <p>Lihat Semua</p>
+                                            </a>
+                                        </div>
+                                        <div class="item-cart d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
+                                                <div class="title-cart me-2">
+                                                    <h6 class="fw-bold">Hijab Paris Premium</h6>
+                                                    <p class="rounded-3 px-2">Warna : Beige</p>
+                                                </div>
+                                            </div>
+                                            <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
+                                        </div>
+                                        <div class="item-cart d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
+                                                <div class="title-cart me-2">
+                                                    <h6 class="fw-bold">Hijab Paris Premium</h6>
+                                                    <p class="rounded-3 px-2">Warna : Beige</p>
+                                                </div>
+                                            </div>
+                                            <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
+                                        </div>
+                                        <div class="item-cart d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img class="rounded-2 me-2" src="{{ url('assets/images/cart1.png') }}" alt="">
+                                                <div class="title-cart me-2">
+                                                    <h6 class="fw-bold">Hijab Paris Premium</h6>
+                                                    <p class="rounded-3 px-2">Warna : Beige</p>
+                                                </div>
+                                            </div>
+                                            <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
+                                        </div>
+                                        <div class="item-cart d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img class="rounded-2 me-2" src="{{ url('assets/images/cart2.png') }}" alt="">
+                                                <div class="title-cart me-2">
+                                                    <h6 class="fw-bold">Serenade Strips</h6>
+                                                    <p class="rounded-3 px-2">Warna : Pink</p>
+                                                </div>
+                                            </div>
+                                            <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
+                                        </div>
+                                        <div class="item-cart d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center mt-2">
+                                                <img class="rounded-2 me-2" src="{{ url('assets/images/cart3.png') }}" alt="">
+                                                <div class="title-cart me-2">
+                                                    <h6 class="fw-bold">Scuba Slim-Fit Pants</h6>
+                                                    <p class="rounded-3 px-2">Warna : Pink</p>
+                                                </div>
+                                            </div>
+                                            <p class="fw-semibold" style="color: #66525E;">Rp. 35.000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-dropdown">
+                                    <a href="#" class="me-3" id="profileIcon">
+                                        <img src="{{ url('assets/images/profileicon.png') }}" alt="Profile Icon" />
+                                    </a>
+                                    <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
+                                        <a href="{{ route('profilecustomer') }}"
+                                            class="dropdown-item d-flex align-items-center">
+                                            <img src="{{ url('assets/images/pdropdown.png') }}" class="me-3" alt="">
+                                            <p class="mb-0 fw-semibold">Profil Saya</p>
+                                        </a>
+                                        <a href="{{ route('favorite') }}" class="dropdown-item d-flex align-items-center mt-4">
+                                            <img src="{{ url('assets/images/ldropdown.png') }}" class="me-3" alt="">
+                                            <p class="mb-0 fw-semibold">Favorite Saya</p>
+                                        </a>
+                                        <a href="{{ route('order') }}" class="dropdown-item d-flex align-items-center mt-4">
+                                            <img src="{{ url('assets/images/odropdown.png') }}" class="me-3" alt="">
+                                            <p class="mb-0 fw-semibold">Pesanan Saya</p>
+                                        </a>
+                                        <a href="{{ route('add-address') }}"
+                                            class="dropdown-item d-flex align-items-center mt-4">
+                                            <img src="{{ url('assets/images/locdropdown.png') }}" class="me-3" alt="">
+                                            <p class="mb-0 fw-semibold">Daftar Alamat</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-dropdown">
+                                <a href="#" class="me-3" id="profileIcon">
+                                    <img src="{{ url('assets/images/profileicon.png') }}" alt="Profile Icon" />
+                                </a>
+                                <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
+                                    <a href="#" class="dropdown-item d-flex align-items-center">
+                                        <img src="{{ url('assets/images/pdropdown.png') }}" class="me-3" alt="">
+                                        <p class="mb-0 fw-semibold">Profil Saya</p>
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
+                                        <img src="{{ url('assets/images/ldropdown.png') }}" class="me-3" alt="">
+                                        <p class="mb-0 fw-semibold">Favorite Saya</p>
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
+                                        <img src="{{ url('assets/images/odropdown.png') }}" class="me-3" alt="">
+                                        <p class="mb-0 fw-semibold">Pesanan Saya</p>
+                                    </a>
+                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
+                                        <img src="{{ url('assets/images/locdropdown.png') }}" class="me-3" alt="">
+                                        <p class="mb-0 fw-semibold">Daftar Alamat</p>
+                                    </a>
+                                </div>
+                            </div>
+                        @endif
                 </div>
             </div>
             </div>
@@ -392,11 +418,10 @@
                 </div>
                 <!-- Informasi Pelanggan -->
                 <div class="col-6 col-sm-4 col-md-2 mb-4 mb-lg-0 text-start">
-                    <h1 class="fw-bold" style="font-size: 14px">INFORMASI PELANGGAN:</h1>
-                    <ul class="nav flex-column mb-4 mt-4">
-                        <li class="nav-item mb-3"><a href="#" class="p-0">Cara Pembelian</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="p-0">Informasi Pembayaran</a></li>
-                        <li class="nav-item mb-3"><a href="#" class="p-0">FAQ</a></li>
+                    <h1 class="fw-bold" style="font-size: 14px">HELP CENTER:</h1>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="{{ url('/howtobuy') }}" class="p-0">How To Buy</a></li>
+                        <li class="nav-item"><a href="{{ url('/faq') }}" class="p-0">FAQ</a></li>
                         <!-- Add Informasi items only for mobile view -->
                         <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Tentang Kami</a></li>
                         <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Privasi dan Kebijakan</a>
@@ -469,6 +494,7 @@
     <script src="{{ url('https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Select the button and add a click event listener

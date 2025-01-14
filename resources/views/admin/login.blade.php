@@ -49,12 +49,12 @@
                             <div class="card-front">
                                 <div class="center-wrap">
                                     <div class="section text-center">
-                                    <img src="{{ url('assets/images/logo.png') }}" class="mb-4" />
+                                        <img src="{{ url('assets/images/logo.png') }}" class="mb-4" />
                                         <h4 class="">Selamat Datang !!</h4>
                                         <p class="login-text">Silahkan login untuk mengakses halaman Admin!</p>
                                         <div class="form-group">
-                                            <input type="email" name="logemail" class="form-style"
-                                                placeholder="Email" id="logemail" autocomplete="off">
+                                            <input type="email" name="logemail" class="form-style" placeholder="Email"
+                                                id="logemail" autocomplete="off">
                                             <i class="input-icon uil uil-at"></i>
                                         </div>
                                         <div class="form-group mt-2">
@@ -110,7 +110,7 @@
             alert("Please fill out all fields!");
         } else {
             // Jika sudah diisi, arahkan ke halaman lain
-            window.location.href = "{{url('/') }}";
+            window.location.href = "{{url('/dashboard') }}";
         }
     });
 </script>

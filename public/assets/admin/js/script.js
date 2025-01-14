@@ -176,3 +176,11 @@ $(document).ready(function () {
     else { if (window.location.hash == "#DarkMode") { localStorage.setItem('theme', 'light'); } }
     $('ul.tabs li').click(function () { var $this = $(this); var $theTab = $(this).attr('id'); console.log($theTab); if ($this.hasClass('active')) { } else { $this.closest('.tabs_wrapper').find('ul.tabs li, .tabs_container .tab_content').removeClass('active'); $('.tabs_container .tab_content[data-tab="' + $theTab + '"], ul.tabs li[id="' + $theTab + '"]').addClass('active'); } });
 });
+
+$(document).on('click', '.list-group-item', function () {
+    // Sembunyikan elemen center-content
+    $('.center-content').hide();
+
+    // Tampilkan elemen chat-content
+    $('.chat-content').show();
+});
