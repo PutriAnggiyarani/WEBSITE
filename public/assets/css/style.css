@@ -1059,12 +1059,10 @@ iconify-icon.quote {
     /* Scale the card slightly on hover */
 }
 
-.rectangle-image {
-    /* Set a fixed height for the rectangle */
-    object-fit: cover;
-    /* Cover the area, cropping the image if necessary */
-    border-radius: 100%;
-    /* Optional: to give rounded corners */
+.rectangle-image {       /* Set a fixed height for the rectangle */
+    width: 210px;
+    object-fit: cover;   /* Cover the area, cropping the image if necessary */
+    border-radius: 100%;  /* Optional: to give rounded corners */
 }
 
 .custom-icon {
@@ -1389,41 +1387,41 @@ footer {
 
 /* For cross-browser support */
 .search input::-webkit-input-placeholder {
-    color: #99A2A5;
-    font-size: 14px;
+color: #99A2A5;
+font-size: 14px;
 }
 
 .search input::-moz-placeholder {
-    color: #99A2A5;
-    font-size: 14px;
+color: #99A2A5;
+font-size: 14px;
 }
 
 .search input:-ms-input-placeholder {
-    color: #99A2A5;
-    font-size: 14px;
+color: #99A2A5;
+font-size: 14px;
 }
 
 .search input:-moz-placeholder {
-    color: #99A2A5;
-    font-size: 14px;
+color: #99A2A5;
+font-size: 14px;
 }
 
 .product-view h4 {
-    font-size: 42px;
+font-size: 42px;
 }
 
 .rating-container {
-    width: 18%;
-    margin-right: 90px;
+width: 18%;
+margin-right: 90px;
 }
 
 .star-review .fa-star {
-    font-size: 16px;
-    color: #fcaf23;
+font-size: 16px;
+color: #fcaf23;
 }
 
 .price-detail-product h1 {
-    font-size: 32px;
+font-size: 32px;
 }
 
 @media (max-width: 768px) {
@@ -1442,25 +1440,20 @@ footer {
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, 20%);
-        /* Start below the viewport center */
+        transform: translate(-50%, 20%); /* Start below the viewport center */
         background-color: white;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        /* Start hidden */
+        opacity: 0; /* Start hidden */
         z-index: 1000;
         border-radius: 15px;
         overflow-y: auto;
         max-height: 80vh;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-        /* Smooth transition */
+        transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
     }
 
     .rating-container.show {
-        opacity: 1;
-        /* Visible */
-        transform: translate(-50%, -50%);
-        /* Move to center */
+        opacity: 1; /* Visible */
+        transform: translate(-50%, -50%); /* Move to center */
         display: block;
     }
 
@@ -1486,7 +1479,7 @@ footer {
 
     .btn1 {
         font-size: 0.8rem;
-        padding: 20px;
+        padding: 12px;
         height: 50px;
     }
 
@@ -1498,7 +1491,7 @@ footer {
 
     #filterReview {
         display: flex;
-    }
+    } 
 
     #rating-product li a {
         font-size: 16px;
@@ -1531,7 +1524,7 @@ footer {
     }
 
     .review-container .review .star-review {
-        margin-top: 50px;
+        margin-top: 50px; 
     }
 
     .filter-icon {
@@ -1539,8 +1532,7 @@ footer {
     }
 
     .custom-image-container {
-        flex-direction: column;
-        /* Stack images vertically */
+        flex-direction: column; /* Stack images vertically */
     }
 
     .small-images {
@@ -1554,15 +1546,13 @@ footer {
     }
 
     .small-img {
-        flex: 1 1 60px;
-        /* Adjust flex basis for smaller screens */
+        flex: 1 1 60px;           /* Adjust flex basis for smaller screens */
         max-width: 100%;
         max-height: 75px;
     }
 
     .main-image {
-        order: 1;
-        /* Ensure main image is displayed first */
+        order: 1; /* Ensure main image is displayed first */
     }
 }
 
@@ -2913,7 +2903,7 @@ left: 20px;
     }
 
     #progressbar-1-done li:nth-child(1):after {
-        top: 16% !important;
+        top: 18% !important;
     }
 
     #progressbar-1-done li:nth-child(2):after {
@@ -2928,9 +2918,9 @@ left: 20px;
         top: 18% !important;
     }
 
-    #progressbar-1-done .step0 span {
+    /* #progressbar-1-done .step0 span {
         transition: all 0.3s ease;
-    }
+    } */
 
     .modal-rating img {
         width: 70px !important;
@@ -3182,6 +3172,12 @@ left: 20px;
     width: 40%;
 }
 
+@media (max-width: 768px) {
+    .chat-admin {
+        width: 80%;
+    }
+}
+
 #chat-order .footer {
     background-color: #66525E;
     border-radius: 0 0 20px 20px;
@@ -3367,4 +3363,27 @@ left: 20px;
     .responsive-icon {
         display: inline-block;
     }
+
+    .btn-review-product {
+        display: none;
+    }
+}
+
+/* Add a green border when the button is selected */
+.option-color.selected,
+.color-option.selected {
+    border: 3px solid rgb(44, 219, 44);
+    box-sizing: border-box; /* Ensure the border doesn't affect the button size */
+}
+
+.product-review {
+    background-color: #E6E6E6;
+}
+
+.btn-review-product-responsive {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
 }

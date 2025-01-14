@@ -37,98 +37,101 @@
             </div>
             <div id="edit-profile-content" class="px-4 py-4 rounded-4">
                 <h5 class="fw-bold" style="color: #987070;">Edit Profil Pengguna</h5>
-                <div class="content-edit-profile align-items-center justify-content-between">
-                    <div class="data-profile">
-                        <div class="px-3 py-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">User Id</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-profile d-flex justify-content-between"
-                                    style="border-bottom: 1px solid #b7b7b7;">
-                                    <p class="mb-0 fw-semibold" id="userID">12345678910</p>
-                                    <div class="d-flex align-items-center">
-                                        <p class="mb-0 me-1">Salin</p>
-                                        <img src="{{ url('assets/images/copyUserID.png')}}" alt="Copy User ID"
-                                            style="width: 18px; height: 18px; cursor: pointer;" id="copyImage">
+                <form action="#">
+                    <div class="content-edit-profile align-items-center justify-content-between">
+                        <div class="data-profile">
+                            <div class="px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">User Id</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-profile d-flex justify-content-between"
+                                        style="border-bottom: 1px solid #b7b7b7;">
+                                        <p class="mb-0 fw-semibold" id="userID">12345678910</p>
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 me-1">Salin</p>
+                                            <img src="{{ url('assets/images/copyUserID.png')}}" alt="Copy User ID"
+                                                style="width: 18px; height: 18px; cursor: pointer;" id="copyImage">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">Username</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-container">
+                                        <input type="text" class="rounded-3 px-3 py-2" name="username" id="username"
+                                            placeholder=" " value="Username">
+                                        <label for="username">Username</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">Alamat Email</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-container">
+                                        <input type="email" id="email" name="email" class="rounded-3 px-3 py-2"
+                                            placeholder=" " value="user.user@gmail.com">
+                                        <label for="email">Alamat Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">No. Telepon</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-container">
+                                        <input type="tel" id="phone" name="phone" class="rounded-3 px-3 py-2"
+                                            placeholder=" ">
+                                        <label for="phone">No. Telepon</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">Tanggal Lahir</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-container">
+                                        <input type="date" id="birthdate" name="birthdate" class="rounded-3 px-3 py-2"
+                                            placeholder=" ">
+                                        <label for="birthdate">Tanggal Lahir</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-3 py-2 mt-2">
+                                <div class="d-flex align-items-center">
+                                    <h6 class="mb-0 fw-bold" style="width: 300px;">Jenis Kelamin</h6>
+                                    <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
+                                    <div class="input-radio input-profile align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" class="form-check-input custom-radio-gender px-0 py-0 me-2"
+                                                id="male" name="gender" value="male" />
+                                            <p class="mb-0 mt-1">Perempuan</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <input type="radio" class="form-check-input custom-radio-gender px-0 py-0 me-2"
+                                                id="female" name="gender" value="female" />
+                                            <p class="mb-0 mt-1">Laki-Laki</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="px-3 py-2 mt-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">Username</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-container">
-                                    <input type="text" class="rounded-3 px-3 py-2" name="username" id="username"
-                                        placeholder=" " value="Username">
-                                    <label for="username">Username</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-3 py-2 mt-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">Alamat Email</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-container">
-                                    <input type="email" id="email" name="email" class="rounded-3 px-3 py-2"
-                                        placeholder=" " value="user.user@gmail.com">
-                                    <label for="email">Alamat Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-3 py-2 mt-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">No. Telepon</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-container">
-                                    <input type="tel" id="phone" name="phone" class="rounded-3 px-3 py-2"
-                                        placeholder=" ">
-                                    <label for="phone">No. Telepon</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-3 py-2 mt-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">Tanggal Lahir</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-container">
-                                    <input type="date" id="birthdate" name="birthdate" class="rounded-3 px-3 py-2"
-                                        placeholder=" ">
-                                    <label for="birthdate">Tanggal Lahir</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="px-3 py-2 mt-2">
-                            <div class="d-flex align-items-center">
-                                <h6 class="mb-0 fw-bold" style="width: 300px;">Jenis Kelamin</h6>
-                                <p class="mb-0 fw-bold me-5" style="font-size: 26px;">:</p>
-                                <div class="input-radio input-profile align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <input type="radio" class="form-check-input custom-radio-gender px-0 py-0 me-2"
-                                            id="male" name="gender" value="male" />
-                                        <p class="mb-0 mt-1">Perempuan</p>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <input type="radio" class="form-check-input custom-radio-gender px-0 py-0 me-2"
-                                            id="female" name="gender" value="female" />
-                                        <p class="mb-0 mt-1">Laki-Laki</p>
-                                    </div>
+                        <div class="edit-images px-4 py-4 rounded-4">
+                            <div class="text-center">
+                                <img src="{{ url('assets/images/profilebig.png')}}" alt="">
+                                <div class="button-edit-profile mt-3">
+                                    <a href="" class="btn btn-primary btn-edit-images rounded-4 mt-3" id="uploadButton">Ubah
+                                        Foto Profil</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="edit-images px-4 py-4 rounded-4">
-                        <div class="text-center">
-                            <img src="{{ url('assets/images/profilebig.png')}}" alt="">
-                            <div class="button-edit-profile mt-3">
-                                <a href="" class="btn btn-primary btn-edit-images rounded-4 mt-3" id="uploadButton">Ubah
-                                    Foto Profil</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a href="" class="btn btn-primary rounded-4 d-flex align-items-center justify-content-center mt-4"
-                    style="width: 145px; height: 45px;">Submit</a>
+                    <a href="{{ route('profilecustomer') }}" class="btn btn-primary rounded-4 d-flex align-items-center justify-content-center mt-4"
+                        style="width: 145px; height: 45px;">Submit
+                    </a>
+                </form>
             </div>
         </div>
     </div>
