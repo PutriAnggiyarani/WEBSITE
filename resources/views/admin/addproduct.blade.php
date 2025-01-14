@@ -69,9 +69,12 @@
                                 <div class="form-group text-start">
                                     <label for="size">Size</label>
                                     <div class="btn-group" role="group" aria-label="Size selection">
-                                        <button type="button" class="btn btn-outline-secondary btn-size">S</button>
-                                        <button type="button" class="btn btn-outline-secondary btn-size">M</button>
-                                        <button type="button" class="size-btn size-plus btn btn-outline-secondary">
+                                        <button type="button" class="button-option"
+                                            style="background-color:rgb(255, 255, 255);">S</button>
+                                        <button type="button" class="button-option"
+                                            style="background-color:rgb(255, 255, 255);">M</button>
+                                        <button type="button" class="plus-option btn-outline-secondary"
+                                            style="background-color:rgb(255, 255, 255);">
                                             <img src="assets/admin/img/icons/plus.png" alt="Plus">
                                         </button>
                                     </div>
@@ -83,13 +86,13 @@
                                 <div class="form-group text-start">
                                     <label for="warna">Warna</label>
                                     <div class="btn-group" role="group" aria-label="Color selection">
-                                        <button type="button" class="btn btn-color btn-outline-secondary"
-                                            style="background-color: pink; border-color: pink;"></button>
-                                        <button type="button" class="btn btn-color btn-outline-secondary"
-                                            style="background-color: green; border-color: green;"></button>
-                                        <button type="button" class="btn btn-color btn-outline-secondary"
-                                            style="background-color: blue; border-color: blue;"></button>
-                                        <button type="button" class="size-btn size-plus btn btn-outline-secondary">
+                                        <button class="color-option" style="background-color: #CEA297;"></button>
+                                        <button class="color-option" style="background-color: #7F7671;"></button>
+                                        <button class="color-option" style="background-color: #1E3265;"></button>
+                                        <button class="color-option" style="background-color: #552D19;"></button>
+                                        <button class="color-option" style="background-color: #726651;"></button>
+                                        <button type="button" class="plus-option"
+                                            style="background-color:rgb(255, 255, 255);">
                                             <img src="assets/admin/img/icons/plus.png" alt="Plus">
                                         </button>
                                     </div>
