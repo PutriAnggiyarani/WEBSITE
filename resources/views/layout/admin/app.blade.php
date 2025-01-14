@@ -174,9 +174,6 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="topnav-dropdown-footer">
-                            <a href="activities.html">View all Notifications</a>
-                        </div>
                     </div>
                 </li>
 
@@ -200,10 +197,8 @@
                             <a class="dropdown-item" href="{{ url('/profile')}}"> <i class="me-2"
                                     data-feather="user"></i> My
                                 Profile</a>
-                            <a class="dropdown-item" href="generalsettings.html"><i class="me-2"
-                                    data-feather="settings"></i>Settings</a>
                             <hr class="m-0">
-                            <a class="dropdown-item logout pb-0" href="signin.html"><img
+                            <a class="dropdown-item logout pb-0" href="{{ url('/loginadmin')}}"><img dmin
                                     src="{{ url('assets/admin/img/icons/log-out.svg') }}" class="me-2"
                                     alt="img">Logout</a>
                         </div>
@@ -216,9 +211,8 @@
                 <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="profile.html">My Profile</a>
-                    <a class="dropdown-item" href="generalsettings.html">Settings</a>
-                    <a class="dropdown-item" href="signin.html">Logout</a>
+                    <a class="dropdown-item" href="{{ url('/profile')}}">My Profile</a>
+                    <a class="dropdown-item" href="{{ url('/loginadmin')}}">Logout</a>
                 </div>
             </div>
 
