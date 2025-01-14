@@ -30,14 +30,15 @@
 
         <div class="card">
             <div class="card-body">
-                    <div class="page-header">
-                        <h4>Voucher Pengguna</h4>
-                        <div class="page-btn ms-auto">
-                            <a href="{{ url('/addproduct')}}" class="btn btn-added"><img
-                            src="{{ url('assets/admin/img/icons/plus.svg') }}" alt="img" class="me-1">Tambah Produk Baru</a>
-                        </div>
+                <div class="page-header">
+                    <h4>Voucher Pengguna</h4>
+                    <div class="page-btn ms-auto">
+                        <a href="{{ url('/addproduct')}}" class="btn btn-added"><img
+                                src="{{ url('assets/admin/img/icons/plus.svg') }}" alt="img" class="me-1">Tambah Voucher
+                            Baru</a>
                     </div>
-                    <div class="table-responsive">
+                </div>
+                <div class="table-responsive">
                     <table class="table  datanew">
                         <thead>
                             <tr>
@@ -60,18 +61,15 @@
                                     </ul>
                                 </td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/detailvoucher') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/editvoucher') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 " href="javascript:void(0);"><img
+                                            src="{{ url('assets/admin/img/icons/delete1.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
@@ -86,18 +84,15 @@
                                     </ul>
                                 </td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/detailvoucher') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/editvoucher') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 " href="javascript:void(0);"><img
+                                            src="{{ url('assets/admin/img/icons/delete1.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

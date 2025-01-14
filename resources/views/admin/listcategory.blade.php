@@ -8,13 +8,14 @@
                 <h6>Kelola Kategori Anda</h6>
             </div>
             <div class="page-btn">
-                <a href="{{ url('/addproduct')}}" class="btn btn-added"><img
-                        src="{{ url('assets/admin/img/icons/plus.svg') }}" alt="img" class="me-1">Tambah Kategori Baru</a>
+                <a href="{{ url('/category')}}" class="btn btn-added"><img
+                        src="{{ url('assets/admin/img/icons/plus.svg') }}" alt="img" class="me-1">Tambah Kategori
+                    Baru</a>
             </div>
         </div>
 
         <div class="card">
-        <div class="card-body">
+            <div class="card-body">
                 <div class="card" id="filter_inputs">
                     <div class="card-body pb-0">
                         <div class="row">
@@ -66,10 +67,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/detailcategory') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -83,10 +84,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -100,10 +101,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -117,10 +118,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -134,10 +135,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -151,10 +152,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -168,10 +169,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -185,10 +186,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -202,10 +203,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -219,10 +220,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -236,10 +237,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -262,10 +263,10 @@
                                         data-cfemail="c68eb3a4a3b486a3bea7abb6aaa3e8a5a9ab">[email&#160;protected]</a>
                                 </td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">
@@ -275,20 +276,20 @@
                             </tr>
                             <tr>
                                 <<td>1</td>
-                                <td>KTOOO1</td>
-                                <td>Hijab</td>
-                                <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
-                                <td>
-                                    <a class="me-3" href="editcustomer.html">
-                                        <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
-                                    </a>
-                                    <a class="me-3" href="editcustomer.html">
-                                        <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
-                                    </a>
-                                    <a class="me-3 confirm-text" href="javascript:void(0);">
-                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
-                                    </a>
-                                </td>
+                                    <td>KTOOO1</td>
+                                    <td>Hijab</td>
+                                    <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
+                                    <td>
+                                        <a class="me-3" href="{{ url('/editkategori') }}">
+                                            <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
+                                        </a>
+                                        <a class="me-3" href="{{ url('/editkategori') }}">
+                                            <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                        </a>
+                                        <a class="me-3 confirm-text" href="javascript:void(0);">
+                                            <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                        </a>
+                                    </td>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -296,10 +297,10 @@
                                 <td>Hijab</td>
                                 <td><img src="{{ asset('assets/images/ktg.png') }}" alt="Gambar"></td>
                                 <td>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/eye.png') }}" alt="img">
                                     </a>
-                                    <a class="me-3" href="editcustomer.html">
+                                    <a class="me-3" href="{{ url('/editkategori') }}">
                                         <img src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
                                     <a class="me-3 confirm-text" href="javascript:void(0);">

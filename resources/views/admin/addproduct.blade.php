@@ -54,36 +54,46 @@
                             <textarea class="form-control" placeholder="Deskripsi Produk"></textarea>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label>Harga</label>
-                            <input type="text" placeholder="Harga">
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label>Size</label>
-                            <div class="btn-group" role="group" aria-label="Size selection">
-                                <button type="button" class="btn btn-size">S</button>
-                                <button type="button" class="btn btn-size">M</button>
-                                <button type="button" class="size-btn size-plus">
-                                    <img src="assets/admin/img/icons/plus.png" alt="Plus">
-                                </button>
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <!-- Harga -->
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="form-group text-start">
+                                    <label for="harga">Harga</label>
+                                    <input id="harga" type="text" class="form-control" placeholder="Harga">
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Color Button Group -->
-                    <div class="col-lg-3 col-sm-6 col-12">
-                        <div class="form-group">
-                            <label>Warna</label>
-                            <div class="btn-group" role="group" aria-label="Color selection">
-                                <button type="button" class="btn btn-color" style="background-color: pink;"></button>
-                                <button type="button" class="btn btn-color" style="background-color: green;"></button>
-                                <button type="button" class="btn btn-color" style="background-color: blue;"></button>
-                                <button type="button" class="size-btn size-plus">
-                                    <img src="assets/admin/img/icons/plus.png" alt="Plus">
-                                </button>
+                            <!-- Size -->
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <div class="form-group text-start">
+                                    <label for="size">Size</label>
+                                    <div class="btn-group" role="group" aria-label="Size selection">
+                                        <button type="button" class="btn btn-outline-secondary btn-size">S</button>
+                                        <button type="button" class="btn btn-outline-secondary btn-size">M</button>
+                                        <button type="button" class="size-btn size-plus btn btn-outline-secondary">
+                                            <img src="assets/admin/img/icons/plus.png" alt="Plus">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Warna -->
+                            <div class="col-lg-4 col-sm-8 col-12">
+                                <div class="form-group text-start">
+                                    <label for="warna">Warna</label>
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <button type="button" class="btn btn-color btn-outline-secondary"
+                                            style="background-color: pink; border-color: pink;"></button>
+                                        <button type="button" class="btn btn-color btn-outline-secondary"
+                                            style="background-color: green; border-color: green;"></button>
+                                        <button type="button" class="btn btn-color btn-outline-secondary"
+                                            style="background-color: blue; border-color: blue;"></button>
+                                        <button type="button" class="size-btn size-plus btn btn-outline-secondary">
+                                            <img src="assets/admin/img/icons/plus.png" alt="Plus">
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

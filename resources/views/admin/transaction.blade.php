@@ -97,22 +97,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -120,22 +117,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -143,22 +137,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -166,22 +157,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -189,22 +177,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -212,22 +197,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -235,22 +217,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -258,22 +237,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -281,22 +257,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -304,22 +277,19 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                             <tr>
-                            <td>1</td>
+                                <td>1</td>
                                 <td>FMD0001</td>
                                 <td>19-Nov-2024</td>
                                 <td>Dewi Saputri</td>
@@ -327,18 +297,15 @@
                                 <td>Reguler</td>
                                 <td>Rp 740.000</td>
                                 <td class="text-center">
-                                            <a class="me-3" href="{{ url('/transactiondetail') }}"><img
-                                                src="{{ url('assets/admin/img/icons/eye1.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3" href="{{ url('/edittransaction') }}"><img
-                                                src="{{ url('assets/admin/img/icons/edit.svg') }}"
-                                                alt="img">
-                                            </a>
-                                            <a class="me-3 " href="javascript:void(0);"><img
-                                                src="{{ url('assets/admin/img/icons/delete1.svg') }}"
-                                                alt="img">
-                                            </a>
+                                    <a class="me-3" href="{{ url('/transactiondetail') }}"><img
+                                            src="{{ url('assets/admin/img/icons/eye1.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3" href="{{ url('/edittransaction') }}"><img
+                                            src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
+                                    </a>
+                                    <a class="me-3 confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>

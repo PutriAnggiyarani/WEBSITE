@@ -1318,6 +1318,45 @@ div#global-loader,
     transition: all .2s ease;
 }
 
+.btn-ulasan {
+    min-width: 120px;
+    background: #7a5a5a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 10px;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.btn-transaksi {
+    min-width: 120px;
+    background: #7a5a5a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 10px;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.btn-addvoucher {
+    min-width: 120px;
+    background: #7a5a5a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 10px;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
 .btn-submit:hover {
     background: #D0C9CD;
     color: #fff
@@ -2028,7 +2067,7 @@ a:hover {
 .form-group input[type=text]::placeholder {
     color: #66525E;
     opacity: 1;
-    font-family:"Josefin Sans", serif;
+    font-family: "Josefin Sans", serif;
 }
 
 .dropdown-menu {
@@ -7193,7 +7232,8 @@ span.select2-container.select2-container--default.select2-container--open {
 
 .row {
     display: flex;
-    justify-content: flex-end; /* Menempatkan .total-order di sebelah kanan */
+    justify-content: flex-end;
+    /* Menempatkan .total-order di sebelah kanan */
 }
 
 .total-order {
@@ -8419,7 +8459,8 @@ span.select2-container.select2-container--default.select2-container--open {
     transform: scale(1.1);
 }
 
-.btn-add-size, .btn-add-color {
+.btn-add-size,
+.btn-add-color {
     border: 2px solid #BFBFBF;
     background-color: #fff;
     color: #333;
@@ -8447,7 +8488,8 @@ span.select2-container.select2-container--default.select2-container--open {
     padding: 16px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column; /* Menampilkan elemen secara vertikal */
+    flex-direction: column;
+    /* Menampilkan elemen secara vertikal */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -8555,9 +8597,10 @@ span.select2-container.select2-container--default.select2-container--open {
     margin-left: auto;
     background-color: #F0EEEf;
 }
+
 .py-3 {
-    padding-top: 1rem!important;
-    padding-bottom: 1rem!important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
 }
 
 .search-container {
@@ -8582,7 +8625,8 @@ span.select2-container.select2-container--default.select2-container--open {
     font-size: 16px;
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
     font-family: "Josefin Sans", serif;
-    margin: 0 10px; /* Jarak kanan-kiri */
+    margin: 0 10px;
+    /* Jarak kanan-kiri */
 }
 
 .search-container .form-control:focus {
@@ -8592,10 +8636,11 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .flex-grow-0 {
-    flex-grow: 0!important;
+    flex-grow: 0 !important;
 }
+
 .border-top {
-    border-top: 1px solid #dee2e6!important;
+    border-top: 1px solid #dee2e6 !important;
 }
 
 .col-12.col-lg-7.col-xl-9 {
@@ -8603,7 +8648,8 @@ span.select2-container.select2-container--default.select2-container--open {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto; /* Optional: adjust if you want to control the height */
+    height: auto;
+    /* Optional: adjust if you want to control the height */
     text-align: center;
 }
 
@@ -8640,7 +8686,8 @@ span.select2-container.select2-container--default.select2-container--open {
 .chat-container .flex-grow-1 {
     font-size: 16px;
     flex-grow: 1;
-    justify-content: space-between; /* Memberikan ruang antara elemen dan menempatkan .time-off di sebelah kanan */
+    justify-content: space-between;
+    /* Memberikan ruang antara elemen dan menempatkan .time-off di sebelah kanan */
     align-items: center;
 }
 
@@ -8668,29 +8715,40 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .chat-container .notification {
-    background-color: #34c579; /* Warna latar belakang untuk lingkaran */
+    background-color: #34c579;
+    /* Warna latar belakang untuk lingkaran */
     color: white;
-    border-radius: 50%; /* Membuat lingkaran */
+    border-radius: 50%;
+    /* Membuat lingkaran */
     width: 20px;
     height: 20px;
     text-align: center;
     font-family: "Josefin Sans", serif;
-    margin-top: 5px; /* Mengurangi margin-top untuk menjaga keselarasan vertikal */
-    margin-left: 10px; /* Memberikan jarak antara waktu dan lingkaran */
+    margin-top: 5px;
+    /* Mengurangi margin-top untuk menjaga keselarasan vertikal */
+    margin-left: 10px;
+    /* Memberikan jarak antara waktu dan lingkaran */
 }
 
 .notification {
-    background-color: #34c579; /* Warna latar belakang untuk lingkaran */
+    background-color: #34c579;
+    /* Warna latar belakang untuk lingkaran */
     color: white;
-    border-radius: 50%; /* Membuat lingkaran */
+    border-radius: 50%;
+    /* Membuat lingkaran */
     width: 20px;
     height: 20px;
 }
 
 .color-box {
-    display: inline-block; /* Membuat kotak warna berada dalam satu baris */
-    width: 30px; /* Lebar kotak */
-    height: 30px; /* Tinggi kotak */
-    margin-right: 10px; /* Memberikan jarak antar kotak */
-    border-radius: 5px; /* Untuk membuat sudut kotak menjadi melengkung */
+    display: inline-block;
+    /* Membuat kotak warna berada dalam satu baris */
+    width: 30px;
+    /* Lebar kotak */
+    height: 30px;
+    /* Tinggi kotak */
+    margin-right: 10px;
+    /* Memberikan jarak antar kotak */
+    border-radius: 5px;
+    /* Untuk membuat sudut kotak menjadi melengkung */
 }

@@ -188,7 +188,8 @@
                     <div class="dropdown-menu menu-drop-user">
                         <div class="profilename">
                             <div class="profileset">
-                                <span class="user-img"><img src="{{ url('assets/admin/img/profiles/avatar-1.png') }}" alt="">
+                                <span class="user-img"><img src="{{ url('assets/admin/img/profiles/avatar-1.png') }}"
+                                        alt="">
                                     <span class="status online"></span></span>
                                 <div class="profilesets">
                                     <h6>Putri Rohmatun</h6>
@@ -203,7 +204,8 @@
                                     data-feather="settings"></i>Settings</a>
                             <hr class="m-0">
                             <a class="dropdown-item logout pb-0" href="signin.html"><img
-                                    src="{{ url('assets/admin/img/icons/log-out.svg') }}" class="me-2" alt="img">Logout</a>
+                                    src="{{ url('assets/admin/img/icons/log-out.svg') }}" class="me-2"
+                                    alt="img">Logout</a>
                         </div>
                     </div>
                 </li>
@@ -227,19 +229,21 @@
             <div class="sidebar-inner slimscroll">
                 <div id="sidebar-menu" class="sidebar-menu">
                     <ul>
-                        <li class="{{ Request::is('/') ? 'active' : '' }}">
-                            <a href="{{ url('/') }}"><img src="{{ url('assets/admin/img/icons/dashboard.svg') }}"
+                        <li class="{{ Request::is('dashboard*') ? 'active' : '' }}">
+                            <a href="{{ url('/dashboard') }}"><img
+                                    src="{{ url('assets/admin/img/icons/dashboard.svg') }}"
                                     alt="img"><span>Dashboard</span></a>
                         </li>
                         <li class="{{ Request::is('product*') ? 'active' : '' }}">
                             <a href="{{ url('/product') }}"><img src="{{ url('assets/admin/img/icons/product.svg') }}"
                                     alt="img"><span>Product</span></a>
                         </li>
-                        <li class="{{ Request::is('category*') ? 'active' : '' }}">
-                            <a href="{{ url('/category') }}"><i data-feather="layers"></i><span>Category</span></a>
+                        <li class="{{ Request::is('listcategory*') ? 'active' : '' }}">
+                            <a href="{{ url('/listcategory') }}"><i data-feather="layers"></i><span>Category</span></a>
                         </li>
                         <li class="{{ Request::is('transaction*') ? 'active' : '' }}">
-                            <a href="{{ url('/transaction') }}"><img src="{{ url('assets/admin/img/icons/transaksi.png') }}"
+                            <a href="{{ url('/transaction') }}"><img
+                                    src="{{ url('assets/admin/img/icons/transaksi.png') }}"
                                     alt="img"><span>Transaction</span></a>
                         </li>
                         <li class="{{ Request::is('customer*') ? 'active' : '' }}">

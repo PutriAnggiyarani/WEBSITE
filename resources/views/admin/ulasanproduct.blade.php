@@ -96,13 +96,15 @@
                                 </div>
                             </div>
                             <div class="review-container w-100 mt-4">
-                                <div class="d-flex justify-content-between align-items-center d-md-none" id="filterReviewDiv">
+                                <div class="d-flex justify-content-between align-items-center d-md-none"
+                                    id="filterReviewDiv">
                                     <h5 class="fw-bold mb-0">Ulasan Produk</h5>
                                     <img src="{{ url('assets/images/filter.png') }}" alt="" id="filterIcon">
                                 </div>
-                                <div class="review mt-4">
+                                <div class="review mt-4" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -112,10 +114,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -123,9 +129,10 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="review mt-5">
+                                <div class="review mt-5" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -135,10 +142,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -146,9 +157,10 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="review mt-5">
+                                <div class="review mt-5" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -158,10 +170,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -169,9 +185,10 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="review mt-5">
+                                <div class="review mt-5" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -181,10 +198,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -192,9 +213,10 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="review mt-5">
+                                <div class="review mt-5" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -204,10 +226,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -215,9 +241,10 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <div class="review mt-5">
+                                <div class="review mt-5" style="padding-left: 15px;">
                                     <div class="profile-review d-flex">
-                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt="" style="width: 50px; height: 50px;">
+                                        <img class="rounded-5 me-2" src="{{ url('assets/images/profile.png') }}" alt=""
+                                            style="width: 50px; height: 50px;">
                                         <p class="fw-semibold">U*****3</p>
                                     </div>
                                     <div class="star-review mt-2 d-flex">
@@ -227,10 +254,14 @@
                                         <span class="fa fa-star checked me-1" style="color: #fcaf23"></span>
                                         <span class="fa fa-star checked" style="color: #fcaf23"></span>
                                     </div>
-                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih Gading, Coklat Pramuka</p>
+                                    <p class="mt-2 mb-0" style="color: #8E98A8; font-size: 14px;">Variasi : Putih
+                                        Gading, Coklat Pramuka</p>
                                     <p class="mt-1 fw-semibold" style="font-size: 14px;">
-                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja. Dan yang paling aku suka, hijab ini gak licin!
-                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman, gampang
+                                        Warnanya juga banyak pilihan, jadi bisa di-mix and match sama outfit apa aja.
+                                        Dan yang paling aku suka, hijab ini gak licin!
+                                        Jadi gak perlu sering-sering benerin hijab pas lagi dipake. Worth it banget buat
+                                        jadi hijab andalan sehari-hari. Pokoknya, buat kamu yang cari hijab nyaman,
+                                        gampang
                                         diatur, dan banyak pilihan warna, Hijab Paris ini recommended banget deh
                                     </p>
                                     <div class="d-flex">
@@ -238,9 +269,9 @@
                                         <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                                     </div>
                                 </div>
-                                <a href="" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
+                                <!-- <a href="" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
                                     <p>Lihat Semua Ulasan ></p>
-                                </a>
+                                </a> -->
                             </div>
                         </div>
                     </div>

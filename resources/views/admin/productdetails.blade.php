@@ -89,7 +89,8 @@
                         <span class="fa fa-star checked rating-icon"></span>
                         <h6 class="rating-value mb-0 ms-2">5.0</h6>
                         <p class="rating-subtext mb-0 ms-1">/5.0</p>
-                        <a href="javascript:void(0);" class="btn btn-submit ms-auto" style="font-family: Josefin Sans, serif;" >Lihat Semua Ulasan</a>
+                        <a href="{{ url('/ulasanproduk')}}" class="btn-ulasan ms-auto"
+                            style="font-family: Josefin Sans, serif;">Lihat Semua Ulasan</a>
                     </div>
                 </div>
             </div>
