@@ -8657,6 +8657,12 @@ fieldset:disabled .btn {
     color: rgba(var(--bs-body-color-rgb), var(--bs-text-opacity)) !important
 }
 
+.text-start {
+    --bs-text-opacity: 1;
+    color: #6c757d !important;
+    text-align: left;
+}
+
 .text-muted {
     --bs-text-opacity: 1;
     color: #6c757d !important

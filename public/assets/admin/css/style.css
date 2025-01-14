@@ -8575,11 +8575,16 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .chat-messages {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    max-height: 800px;
-    overflow-y: scroll;
-    background-color: #F0EEEf;
+    gap: 15px;
+    justify-content: flex-end;
 }
 
 .chat-message-left,
@@ -8653,11 +8658,23 @@ span.select2-container.select2-container--default.select2-container--open {
     text-align: center;
 }
 
-.center-content {
+.center-content,
+.chat-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.chat-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .center-image {
@@ -8751,4 +8768,94 @@ span.select2-container.select2-container--default.select2-container--open {
     /* Memberikan jarak antar kotak */
     border-radius: 5px;
     /* Untuk membuat sudut kotak menjadi melengkung */
+}
+
+.chat-header {
+    position: absolute;
+    top: 0;
+    left: 285px;
+    width: 75%;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-messages {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+}
+
+.message.received {
+    align-items: flex-start;
+}
+
+.message.sent {
+    align-items: flex-end;
+}
+
+.message-content {
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 70%;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.message.received .message-content {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+    /* Pesan diterima di sebelah kiri */
+}
+
+.message.sent .message-content {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+    /* Pesan dikirim di sebelah kanan */
+}
+
+small {
+    font-size: 0.75rem;
+    color: #888;
+    align-self: flex-end;
+    /* Menempatkan waktu di bawah pesan dengan posisi yang sesuai */
+}
+
+.chat-input {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.chat-input .input-group .form-control {
+    border-radius: 20px 0 0 20px;
+}
+
+.chat-input .input-group .btn {
+    border-radius: 0 20px 20px 0;
+}
+
+.user-img {
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.chat-user-info h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.chat-user-info small {
+    font-size: 12px;
+    color: #6c757d;
 }
