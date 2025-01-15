@@ -145,7 +145,7 @@
                                     <small class="text-start">12:45 PM</small>
                                 </div>
                                 <div class="message sent text-end">
-                                    <div class="message-content bg-primary text-white rounded">
+                                    <div class="message-content text-white rounded">
                                         Yes, produk ini masih tersedia!
                                     </div>
                                     <small class="text-muted">12:46 PM</small>
