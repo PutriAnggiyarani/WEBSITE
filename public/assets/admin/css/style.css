@@ -8817,7 +8817,7 @@ span.select2-container.select2-container--default.select2-container--open {
 }
 
 .message.sent .message-content {
-    background-color: #007bff;
+    background-color: #7a5a5a;
     color: white;
     align-self: flex-end;
     /* Pesan dikirim di sebelah kanan */
