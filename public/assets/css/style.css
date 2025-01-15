@@ -2434,6 +2434,10 @@ font-size: 32px;
     #footer {
         margin-top: 130px;
     }
+
+    .edit-icon {
+        right: 90px;
+    }
 }
 
 .input-profile {
