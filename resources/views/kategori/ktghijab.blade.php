@@ -8,7 +8,7 @@
 <header>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ url('assets/images/ktgatasan/banner.png')}}" alt="Shop Image 1" class="img-fluid">
+            <img src="{{ url('assets/images/ktghijab/banner.png')}}" alt="Shop Image 1" class="img-fluid">
         </div>
     </div>
 </header>

@@ -412,7 +412,7 @@
             <div class="row">
             <div class="col-12 d-flex justify-content-center mt-4">
                 <a
-                href="{{ url('/') }}"
+                href="{{ route('produkbaru') }}"
                 class="btn btn-arrow btn-custom-width btn-primary mt-3"
                 >
                 <span
@@ -641,7 +641,7 @@
             <div class="row">
             <div class="col-12 d-flex justify-content-center mt-4">
                 <a
-                href="{{ url('/') }}"
+                href="{{ route('produkterlaris') }}"
                 class="btn btn-arrow btn-custom-width btn-primary mt-3"
                 >
                 <span>
