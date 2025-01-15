@@ -37,8 +37,10 @@
             </div>
             <div id="profile-content">
                 <div class="images-profile d-flex justify-content-center position-relative">
-                    <img src="{{ url('assets/images/profilebig.png')}}" alt="" class="profile-image">
-                    <a href="{{ url('/editprofile') }}"><i class="fa-solid fa-pen-to-square edit-icon"></i></a>
+                    <div class="edit-profile">
+                        <img src="{{ url('assets/images/profilebig.png')}}" alt="" class="profile-image">
+                        <a href="{{ url('/editprofile') }}"><i class="fa-solid fa-pen-to-square edit-icon"></i></a>
+                    </div>
                     <div class="detail-profile px-5 py-5 rounded-4">
                         <h4 style="color: #987070;" class="fw-bold">Info Profil Pengguna</h4>
                         <div class="px-3 py-2">
