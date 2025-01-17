@@ -1061,6 +1061,7 @@ iconify-icon.quote {
 
 .rectangle-image {
     /* Set a fixed height for the rectangle */
+    width: 210px;
     object-fit: cover;
     /* Cover the area, cropping the image if necessary */
     border-radius: 100%;
@@ -1486,7 +1487,7 @@ footer {
 
     .btn1 {
         font-size: 0.8rem;
-        padding: 20px;
+        padding: 12px;
         height: 50px;
     }
 
@@ -2520,21 +2521,6 @@ input {
     font-size: 14px;
 }
 
-label {
-    position: absolute;
-    left: 10px;
-    /* Adjust for padding */
-    top: 10px;
-    /* Original position of the placeholder */
-    font-size: 14px;
-    color: #66525E;
-    /* Default placeholder color */
-    transition: 0.2s ease all;
-    /* Smooth transition */
-    pointer-events: none;
-    /* Prevent interaction with the label */
-}
-
 input:focus+label,
 input:not(:placeholder-shown)+label {
     top: -13px;
@@ -2913,7 +2899,7 @@ left: 20px;
     }
 
     #progressbar-1-done li:nth-child(1):after {
-        top: 16% !important;
+        top: 18% !important;
     }
 
     #progressbar-1-done li:nth-child(2):after {
@@ -2928,9 +2914,9 @@ left: 20px;
         top: 18% !important;
     }
 
-    #progressbar-1-done .step0 span {
+    /* #progressbar-1-done .step0 span {
         transition: all 0.3s ease;
-    }
+    } */
 
     .modal-rating img {
         width: 70px !important;
@@ -3182,6 +3168,12 @@ left: 20px;
     width: 40%;
 }
 
+@media (max-width: 768px) {
+    .chat-admin {
+        width: 80%;
+    }
+}
+
 #chat-order .footer {
     background-color: #66525E;
     border-radius: 0 0 20px 20px;
@@ -3367,4 +3359,28 @@ left: 20px;
     .responsive-icon {
         display: inline-block;
     }
+
+    .btn-review-product {
+        display: none;
+    }
+}
+
+/* Add a green border when the button is selected */
+.option-color.selected,
+.color-option.selected {
+    border: 3px solid rgb(44, 219, 44);
+    box-sizing: border-box;
+    /* Ensure the border doesn't affect the button size */
+}
+
+.product-review {
+    background-color: #E6E6E6;
+}
+
+.btn-review-product-responsive {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
 }

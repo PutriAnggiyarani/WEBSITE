@@ -158,7 +158,7 @@
                     class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa-regular fa-message me-2"></i> Chat
                 </a>
-                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
+                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center" id="addtowishlist">
                     <i class="fa fa-heart me-2"></i> Add To Wishlist
                 </a>
             </div>
@@ -198,7 +198,7 @@
 
             </div>
             <div class="tab-pane fade show active" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                <div class="comtainer w-100 d-flex">
+                <div class="w-100 d-flex">
                     <div class="rating-container mt-4">
                         <div class="rating-box" id="ratingBox">
                             <span class="fa fa-star checked rating-icon"></span>
@@ -436,7 +436,7 @@
                                 <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                             </div>
                         </div>
-                        <a href="" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
+                        <a href="{{ route('review-product') }}" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
                             <p>Lihat Semua Ulasan ></p>
                         </a>
                     </div>
@@ -581,5 +581,60 @@
             searchForm.classList.toggle("d-none");
         });
     });
+
+    // Ensure this script runs after the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        const addToCartButton = document.getElementById("addtocart");
+
+        addToCartButton.addEventListener("click", function (event) {
+            // Prevent the default link behavior
+            event.preventDefault();
+
+            // Set Sweetalert notifier position and display the success message
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Produk Ditambahkan Ke Daftar Keranjang Anda",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        });
+    });
+
+    // Ensure this script runs after the DOM is fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        const addToCartButton = document.getElementById("addtowishlist");
+
+        addToCartButton.addEventListener("click", function (event) {
+            // Prevent the default link behavior
+            event.preventDefault();
+
+            // Set Sweetalert notifier position and display the success message
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Produk Ditambahkan Ke Daftar Keranjang Anda",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+        // Select all buttons with the class 'option-color' and 'color-option'
+        const colorButtons = document.querySelectorAll('.option-color, .color-option');
+
+        // Add a click event listener to each button
+        colorButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove the 'selected' class from all buttons
+                colorButtons.forEach(btn => btn.classList.remove('selected'));
+                
+                // Add the 'selected' class to the clicked button
+                button.classList.add('selected');
+            });
+        });
+    });
+
 </script>
 @endsection

@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
+Route::get('/index-login', function () {
+    return view('index-login');
+})->name('index-login');
+
 Route::get('/profilecustomer', function () {
     return view('profile');
 })->name('profilecustomer');
@@ -48,6 +52,10 @@ Route::get('/order-tracking', function () {
 Route::get('/order-tracking-done', function () {
     return view('order-tracking-done');
 })->name('order-tracking-done');
+
+Route::get('/order-tracking-done-rating', function () {
+    return view('order-tracking-done-rating');
+})->name('order-tracking-done-rating');
 
 Route::get('/detailproduct', function () {
     return view('detailproduct');
@@ -96,6 +104,18 @@ Route::get('/produkbaru', function () {
 Route::get('/produkterlaris', function () {
     return view('kategori.produkterlaris');
 })->name('produkterlaris');
+
+Route::get('/review-product', function () {
+    return view('review-product');
+})->name('review-product');
+
+Route::get('/howtobuy', function () {
+    return view('howtobuy');
+});
+
+Route::get('/faq', function () {
+    return view('faq');
+});
 
 //Admin
 Route::get('/dashboard', function () {
@@ -168,14 +188,6 @@ Route::get('/chat', function () {
 
 Route::get('/promo', function () {
     return view('admin.promosi');
-});
-
-Route::get('/howtobuy', function () {
-    return view('howtobuy');
-});
-
-Route::get('/faq', function () {
-    return view('faq');
 });
 
 Route::get('/addvoucher', function () {

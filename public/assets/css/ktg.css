@@ -12710,14 +12710,94 @@ fieldset:disabled .btn {
 }
 
 .filter-section {
-    margin: 20px 0;
+    margin-bottom: 16px;
+    /* Jarak antara filter-section */
 }
 
 .filter-section label {
-    font-weight: bold;
     display: block;
-    margin-bottom: 10px;
-    font-family: "Josefin Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.filter-section input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Styling untuk rating */
+.rating {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    /* Ukuran font untuk bintang */
+}
+
+.rating label {
+    display: block;
+    /* Menempatkan setiap label di baris baru */
+    margin-bottom: 8px;
+    /* Jarak antar baris */
+    cursor: pointer;
+}
+
+.rating span {
+    margin-right: 8px;
+    /* Jarak antara bintang dan checkbox */
+    color: gold;
+    /* Warna bintang */
+}
+
+.rating input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: gold;
+    /* Warna checkbox jika didukung oleh browser */
+    cursor: pointer;
+}
+
+.rating input[type="checkbox"]:checked+span {
+    font-weight: bold;
+    /* Memberikan efek jika checkbox dipilih */
+}
+
+/* Optional: Styling untuk menghilangkan border default checkbox di beberapa browser */
+.rating input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+}
+
+.rating input[type="checkbox"]:checked {
+    background-color: gold;
+    /* Warna latar belakang saat dipilih */
+}
+
+.filter-section {
+    margin-bottom: 16px;
+    /* Jarak antara filter-section */
+}
+
+.filter-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.filter-section input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 input[type="number"] {
@@ -12726,22 +12806,6 @@ input[type="number"] {
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 10px;
-}
-
-.rating {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    gap: 10px;
-}
-
-.rating label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.rating input[type="checkbox"] {
-    margin-left: 10px;
 }
 
 .apply-button {

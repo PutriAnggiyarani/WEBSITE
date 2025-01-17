@@ -25,42 +25,49 @@
             <button id="toggle-filter" class="apply-button mobile-only">
                 <i class="fas fa-cog"></i>
             </button>
+
             <div class="sidebar" id="filter-sidebar">
                 <h3>Filter Produk</h3>
                 <hr>
+                <!-- Filter Berdasarkan Harga -->
                 <div class="filter-section">
-                    <label for="min-price">Price</label>
-                    <input type="number" id="min-price" placeholder="Harga Minimum">
-                    <input type="number" id="max-price" placeholder="Harga Maximum">
+                    <label for="min-price">Harga Minimum</label>
+                    <input type="number" id="min-price" placeholder="Masukkan harga minimum">
+
+                    <label for="max-price">Harga Maximum</label>
+                    <input type="number" id="max-price" placeholder="Masukkan harga maksimum">
                 </div>
+
+                <!-- Filter Berdasarkan Rating -->
                 <div class="filter-section">
                     <label for="rating">Rating Produk</label>
                     <div class="rating">
                         <label>
+                            <input type="checkbox">
                             <span>⭐⭐⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
+                        </label>
                         <label>
+                            <input type="checkbox">
                             <span>⭐⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
+                        </label>
                         <label>
+                            <input type="checkbox">
                             <span>⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
+                        </label>
                         <label>
+                            <input type="checkbox">
                             <span>⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
+                        </label>
                         <label>
-                            <span>⭐</span>
                             <input type="checkbox">
-                        </label><br>
+                            <span>⭐</span>
+                        </label>
                     </div>
                 </div>
+
+                <!-- Tombol Terapkan -->
                 <button class="apply-button">Terapkan</button>
             </div>
-
             <div class="product-list">
                 <div class="products">
                     <div class="product">

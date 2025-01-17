@@ -36,6 +36,10 @@
     <!-- Style untuk Navbar dan Footer -->
     <link rel="stylesheet" type="text/css" href="{{ url('assets/css/style.css') }}" />
 
+    <!-- CSS Alertify -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css"/>
+
     <!-- Stack Styles untuk halaman khusus -->
     @stack('styles')
 
@@ -222,33 +226,29 @@
                                                 class="fa-solid fa-house me-2 responsive-icon"></i>Beranda</a>
                                     </li>
                                     <li class="nav-item px-3 dropdown">
-                                        <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button"
-                                            aria-expanded="false" style="font-size: 14px;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                viewBox="0 0 1024 1024" class="me-2 responsive-icon">
+                                        <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 14px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="me-2 responsive-icon">
                                                 <path fill="currentColor" fill-rule="evenodd"
                                                     d="M464 144c8.837 0 16 7.163 16 16v304c0 8.836-7.163 16-16 16H160c-8.837 0-16-7.164-16-16V160c0-8.837 7.163-16 16-16zm-52 68H212v200h200zm493.333
-                                            87.686c6.248 6.248 6.248 16.379 0 22.627l-181.02 181.02c-6.248 6.248-16.378 6.248-22.627 0l-181.019-181.02c-6.248-6.248-6.248-16.379 0-22.627l181.02-181.02c6.248-6.248
-                                            16.378-6.248 22.627 0zm-84.853 11.313L713 203.52L605.52 311L713 418.48zM464 544c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H160c-8.837 0-16-7.163-16-16V560c0-8.836
-                                            7.163-16 16-16zm-52 68H212v200h200zm452-68c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H560c-8.837 0-16-7.163-16-16V560c0-8.836 7.163-16 16-16zm-52 68H612v200h200z" />
+                                                    87.686c6.248 6.248 6.248 16.379 0 22.627l-181.02 181.02c-6.248 6.248-16.378 6.248-22.627 0l-181.019-181.02c-6.248-6.248-6.248-16.379 0-22.627l181.02-181.02c6.248-6.248
+                                                    16.378-6.248 22.627 0zm-84.853 11.313L713 203.52L605.52 311L713 418.48zM464 544c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H160c-8.837 0-16-7.163-16-16V560c0-8.836
+                                                    7.163-16 16-16zm-52 68H212v200h200zm452-68c8.837 0 16 7.164 16 16v304c0 8.837-7.163 16-16 16H560c-8.837 0-16-7.163-16-16V560c0-8.836 7.163-16 16-16zm-52 68H612v200h200z" />
                                             </svg>Produk Kami
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
                                             <li><a href="{{ route('ktghijab') }}" class="dropdown-item">Hijab</a></li>
                                             <li><a href="{{ route('ktgatasan') }}" class="dropdown-item">Atasan</a></li>
-                                            <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a>
-                                            </li>
-                                            <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a>
-                                            </li>
-                                            <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a>
-                                            </li>
+                                            <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a></li>
+                                            <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a></li>
+                                            <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a></li>
                                         </ul>
-                                    </li>
+                                    </li>                                    
                                     <li class="nav-item px-3">
                                         <a class="nav-link p-0" href="{{ route('about-us') }}"
                                             style="font-size: 14px;"><i
                                                 class="fa-solid fa-circle-info me-2 responsive-icon"></i>Tentang
-                                            Kami</a>
+                                            Kami
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
@@ -367,29 +367,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="profile-dropdown">
-                                <a href="#" class="me-3" id="profileIcon">
-                                    <img src="{{ url('assets/images/profileicon.png') }}" alt="Profile Icon" />
-                                </a>
-                                <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
-                                    <a href="#" class="dropdown-item d-flex align-items-center">
-                                        <img src="{{ url('assets/images/pdropdown.png') }}" class="me-3" alt="">
-                                        <p class="mb-0 fw-semibold">Profil Saya</p>
-                                    </a>
-                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
-                                        <img src="{{ url('assets/images/ldropdown.png') }}" class="me-3" alt="">
-                                        <p class="mb-0 fw-semibold">Favorite Saya</p>
-                                    </a>
-                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
-                                        <img src="{{ url('assets/images/odropdown.png') }}" class="me-3" alt="">
-                                        <p class="mb-0 fw-semibold">Pesanan Saya</p>
-                                    </a>
-                                    <a href="#" class="dropdown-item d-flex align-items-center mt-4">
-                                        <img src="{{ url('assets/images/locdropdown.png') }}" class="me-3" alt="">
-                                        <p class="mb-0 fw-semibold">Daftar Alamat</p>
-                                    </a>
-                                </div>
-                            </div>
                         @endif
                 </div>
             </div>
@@ -478,6 +455,8 @@
     </section>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/alertify.min.js"></script>
     <script src="{{ url('assets/js/jquery-1.11.0.min.js')}}"></script>
     <script type="text/javascript" src="{{ url('assets/js/bootstrap.bundle.min.js')}}"></script>
     <script type="text/javascript" src="{{ url('assets/js/plugins.js')}}"></script>
@@ -488,7 +467,7 @@
     <script src="{{ url('https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> --}}
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Select the button and add a click event listener
