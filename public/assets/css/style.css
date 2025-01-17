@@ -1068,6 +1068,8 @@ iconify-icon.quote {
     /* Optional: to give rounded corners */
 }
 
+
+
 .custom-icon {
     width: 23px;
     height: auto;
@@ -2413,7 +2415,7 @@ footer {
     /* Absolute positioning */
     bottom: 3px;
     /* Adjust for vertical position */
-    right: 720px;
+    right: 620px;
     /* Adjust for horizontal position */
     z-index: 3;
     /* Ensure the icon is above the image */
@@ -2433,6 +2435,20 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .detail-profile {
+        bottom: -280%;
+    }
+    
+    #footer {
+        margin-top: 130px;
+    }
+
+    .edit-icon {
+        right: 90px;
+    }
 }
 
 .input-profile {
