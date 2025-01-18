@@ -592,7 +592,7 @@
 
             // Set Sweetalert notifier position and display the success message
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "Produk Ditambahkan Ke Daftar Keranjang Anda",
                 showConfirmButton: false,
@@ -611,7 +611,7 @@
 
             // Set Sweetalert notifier position and display the success message
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "Produk Ditambahkan Ke Daftar Keranjang Anda",
                 showConfirmButton: false,
