@@ -415,7 +415,7 @@
                         <li class="nav-item"><a href="{{ url('/howtobuy') }}" class="p-0">How To Buy</a></li>
                         <li class="nav-item"><a href="{{ url('/faq') }}" class="p-0">FAQ</a></li>
                         <!-- Add Informasi items only for mobile view -->
-                        <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Tentang Kami</a></li>
+                        <li class="nav-item mb-3 d-block d-md-none"><a href="{{ route('about-us') }}" class="p-0">Tentang Kami</a></li>
                         <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Privasi dan Kebijakan</a>
                         </li>
                     </ul>
@@ -425,7 +425,7 @@
                 <div class="col-6 col-sm-4 col-md-2 mb-4 mb-lg-0 d-none d-md-block">
                     <h1 class="fw-bold" style="font-size: 16px">INFORMASI:</h1>
                     <ul class="nav flex-column">
-                        <li class="nav-item"><a href="#" class="p-0">Tentang Kami</a></li>
+                        <li class="nav-item"><a href="{{ route('about-us') }}" class="p-0">Tentang Kami</a></li>
                         <li class="nav-item"><a href="#" class="p-0">Privasi dan Kebijakan</a></li>
                     </ul>
                 </div>
