@@ -51,7 +51,7 @@
                 <div class="navbar-order px-4 py-4 rounded-4">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="d-flex align-items-center">
-                            <span class="me-2"><i class="fa-solid fa-angle-left" style="color: #66525E; font-size: 26px;"></i></span>
+                            <a href="{{ route('order') }}"><span class="me-2"><i class="fa-solid fa-angle-left" style="color: #66525E; font-size: 26px;"></i></span></a>
                             <h5 class="mb-1 fw-bold" style="color: #66525E;">Kembali</h5>
                         </div>
                         <h5 class="mb-1 fw-bold" style="color: #987070;">Menunggu Pembayaran</h5>
