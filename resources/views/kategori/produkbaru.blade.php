@@ -8,7 +8,7 @@
 <header>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="{{ url('assets/images/ktgatasan/banner.png')}}" alt="Shop Image 1" class="img-fluid">
+            <img src="{{ url('assets/images/produkterbaru/banner.png')}}" alt="Shop Image 1" class="img-fluid">
         </div>
     </div>
 </header>
@@ -17,7 +17,7 @@
     <div class="content">
         <div class="ktg">
             <span>
-                <a href="halaman-beranda.html" class="breadcrumb-link">Beranda</a> >
+                <a href="{{ route('index-login') }}" class="breadcrumb-link">Beranda</a> >
                 <span class="active">Hijab</span>
             </span>
         </div>
@@ -64,43 +64,64 @@
             <div class="product-list">
                 <div class="products">
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/1.png') }}" alt="Hijab Bella Square">
-                        <h4>Hijab Bella Square</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod1.png') }}" alt="Hijab Bella Square">
+                        <h4>Button Up Charm</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
 
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/2.png') }}" alt="Hijab Segitiga Inner">
-                        <h4>Hijab Segitiga Inner</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod2.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Ebony Lace Knit</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
 
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/3.png') }}" alt="Hijab Bella Square">
-                        <h4>Hijab Bella Square</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod3.png') }}" alt="Hijab Bella Square">
+                        <h4>Lace Hem Blouse</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
 
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/4.png') }}" alt="Hijab Segitiga Inner">
-                        <h4>Hijab Segitiga Inner</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod4.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Hijab Motif Mossy Rock</h4>
+                        <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                        <p>Rp. 65.000</p>
+                    </div>
+
+                    <div class="product">
+                        <img src="{{ url('assets/images/produkterbaru/prod5.png') }}" alt="Hijab Bella Square">
+                        <h4>Hijab Horizon Camo Scarf</h4>
+                        <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                        <p>Rp. 75.000</p>
+                    </div>
+
+                    <div class="product">
+                        <img src="{{ url('assets/images/produkterbaru/prod6.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Hijab Motif Dried Leaves</h4>
+                        <p>⭐⭐⭐⭐⭐ 5.0/5</p>
+                        <p>Rp. 65.000</p>
+                    </div>
+                    
+                    <div class="product">
+                        <img src="{{ url('assets/images/produkterbaru/prod7.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Patchwork Elegance</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
 
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/5.png') }}" alt="Hijab Bella Square">
-                        <h4>Hijab Bella Square</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod8.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Rose Detail Classic</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
 
                     <div class="product">
-                        <img src="{{ url('assets/images/ktglainnya/6.png') }}" alt="Hijab Segitiga Inner">
-                        <h4>Hijab Segitiga Inner</h4>
+                        <img src="{{ url('assets/images/produkterbaru/prod9.png') }}" alt="Hijab Segitiga Inner">
+                        <h4>Bold Strips Knit</h4>
                         <p>⭐⭐⭐⭐⭐ 5.0/5</p>
                         <p>Rp. 185.000</p>
                     </div>
