@@ -348,21 +348,40 @@
                                     <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
                                         <a href="{{ route('profilecustomer') }}"
                                             class="dropdown-item d-flex align-items-center">
-                                            <img src="{{ url('assets/images/pdropdown.png') }}" class="me-3" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
+                                                <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
+                                                <path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 
+                                                1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 
+                                                0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21"/></g>
+                                            </svg>
                                             <p class="mb-0 fw-semibold">Profil Saya</p>
                                         </a>
                                         <a href="{{ route('favorite') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                            <img src="{{ url('assets/images/ldropdown.png') }}" class="me-3" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
+                                                <path fill="currentColor" d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 
+                                                0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z"/>
+                                            </svg>
                                             <p class="mb-0 fw-semibold">Favorite Saya</p>
                                         </a>
                                         <a href="{{ route('order') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                            <img src="{{ url('assets/images/odropdown.png') }}" class="me-3" alt="">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="me-3">
+                                                <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="30" height="36" x="9" y="8" rx="2"/>
+                                                <path stroke-linecap="round" d="M18 4v6m12-6v6m-14 9h16m-16 8h12m-12 8h8"/></g>
+                                            </svg>
                                             <p class="mb-0 fw-semibold">Pesanan Saya</p>
                                         </a>
-                                        <a href="{{ route('add-address') }}"
-                                            class="dropdown-item d-flex align-items-center mt-4">
-                                            <img src="{{ url('assets/images/locdropdown.png') }}" class="me-3" alt="">
+                                        <a href="{{ route('add-address') }}" class="dropdown-item d-flex align-items-center mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
+                                                <path fill="currentColor" d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 
+                                                12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5"/>
+                                            </svg>
                                             <p class="mb-0 fw-semibold">Daftar Alamat</p>
+                                        </a>
+                                        <a href="{{ route('index') }}" class="dropdown-item d-flex align-items-center mt-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                <path d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2"/><path d="M9 12h12l-3-3m0 6l3-3"/></g>
+                                            </svg>
+                                            <p class="mb-0 fw-semibold">Keluar</p>
                                         </a>
                                     </div>
                                 </div>
