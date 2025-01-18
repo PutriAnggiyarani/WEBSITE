@@ -221,10 +221,12 @@
                             <div class="offcanvas-body align-items-center">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
                                     <li class="nav-item px-3">
-                                        <a class="nav-link p-0" aria-current="page" href="{{ url('/') }}"
-                                            style="font-size: 14px;"><i
-                                                class="fa-solid fa-house me-2 responsive-icon"></i>Beranda</a>
-                                    </li>
+                                        <a class="nav-link p-0" aria-current="page" 
+                                            href="{{ Request::route()->getName() === 'index-login' ? route('index-login') : route('index') }}" 
+                                            style="font-size: 14px;">
+                                            <i class="fa-solid fa-house me-2 responsive-icon"></i>Beranda
+                                        </a>
+                                    </li>                                    
                                     <li class="nav-item px-3 dropdown">
                                         <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 14px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="me-2 responsive-icon">
