@@ -57,85 +57,87 @@
                         <a href="javascript:void(0);" id="dibatalkan-link" class="nav-link custom-nav-link">Dibatalkan</a>
                     </div>
                 </div>
-                <div class="navbar-order px-5 py-4 rounded-4 mt-4" id="waiting-paid">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="no-order d-flex">
-                            <img src="{{ url('assets/images/logo.png') }}" alt="" style="width: 61px; height: 32px;" class="me-2">
-                            <p class="mb-0 mt-1 fw-semibold" style="color: #737373;">No Order : F00000000001</p>
-                        </div>
-                        <h6 class="mb-0 fw-bold status" style="color: #66525E;">Belum Bayar</h6>
-                    </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="order-item">
-                        <div class="d-flex align-items-center px-3 py-3">
-                            <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
-                            <div class="cart-description">
-                                <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
-                                <h6 class="mb-2 fw-bold">1x</h6>
-                                <p class="mb-0 rounded-3">Warna : Beige</p>
+                <a href="{{ route('order-tracking') }}">
+                    <div class="navbar-order px-5 py-4 rounded-4 mt-4" id="waiting-paid">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="no-order d-flex">
+                                <img src="{{ url('assets/images/logo.png') }}" alt="" style="width: 61px; height: 32px;" class="me-2">
+                                <p class="mb-0 mt-1 fw-semibold" style="color: #737373;">No Order : F00000000001</p>
                             </div>
-                            <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
+                            <h6 class="mb-0 fw-bold status" style="color: #66525E;">Belum Bayar</h6>
                         </div>
-                    </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="order-item">
-                        <div class="d-flex align-items-center px-3 py-3">
-                            <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
-                            <div class="cart-description">
-                                <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
-                                <h6 class="mb-2 fw-bold">1x</h6>
-                                <p class="mb-0 rounded-3">Warna : Beige</p>
+                        <div class="divider-line mt-3"></div>
+                        <div class="order-item">
+                            <div class="d-flex align-items-center px-3 py-3">
+                                <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
+                                <div class="cart-description">
+                                    <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
+                                    <h6 class="mb-2 fw-bold">1x</h6>
+                                    <p class="mb-0 rounded-3">Warna : Beige</p>
+                                </div>
+                                <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
                             </div>
-                            <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
                         </div>
-                    </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="order-item">
-                        <div class="d-flex align-items-center px-3 py-3">
-                            <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
-                            <div class="cart-description">
-                                <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
-                                <h6 class="mb-2 fw-bold">1x</h6>
-                                <p class="mb-0 rounded-3">Warna : Beige</p>
+                        <div class="divider-line mt-3"></div>
+                        <div class="order-item">
+                            <div class="d-flex align-items-center px-3 py-3">
+                                <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
+                                <div class="cart-description">
+                                    <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
+                                    <h6 class="mb-2 fw-bold">1x</h6>
+                                    <p class="mb-0 rounded-3">Warna : Beige</p>
+                                </div>
+                                <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
                             </div>
-                            <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
                         </div>
-                    </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="order-item">
-                        <div class="d-flex align-items-center px-3 py-3">
-                            <img src="{{ url('assets/images/cart2.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
-                            <div class="cart-description">
-                                <h6 class="mb-2 fw-bold">Serenade Strips</h6>
-                                <h6 class="mb-2 fw-bold">1x</h6>
-                                <p class="mb-0 rounded-3">Warna : Pink</p>
+                        <div class="divider-line mt-3"></div>
+                        <div class="order-item">
+                            <div class="d-flex align-items-center px-3 py-3">
+                                <img src="{{ url('assets/images/cart1.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
+                                <div class="cart-description">
+                                    <h6 class="mb-2 fw-bold">Hijab Bella Square</h6>
+                                    <h6 class="mb-2 fw-bold">1x</h6>
+                                    <p class="mb-0 rounded-3">Warna : Beige</p>
+                                </div>
+                                <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 35.000</h6>
                             </div>
-                            <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 185.000</h6>
                         </div>
-                    </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="order-item">
-                        <div class="d-flex align-items-center px-3 py-3">
-                            <img src="{{ url('assets/images/cart3.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
-                            <div class="cart-description">
-                                <h6 class="mb-2 fw-bold">Scuba Slim-Fit Pants</h6>
-                                <h6 class="mb-2 fw-bold">1x</h6>
-                                <p class="mb-0 rounded-3">Warna : Beige</p>
+                        <div class="divider-line mt-3"></div>
+                        <div class="order-item">
+                            <div class="d-flex align-items-center px-3 py-3">
+                                <img src="{{ url('assets/images/cart2.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
+                                <div class="cart-description">
+                                    <h6 class="mb-2 fw-bold">Serenade Strips</h6>
+                                    <h6 class="mb-2 fw-bold">1x</h6>
+                                    <p class="mb-0 rounded-3">Warna : Pink</p>
+                                </div>
+                                <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 185.000</h6>
                             </div>
-                            <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 115.000</h6>
+                        </div>
+                        <div class="divider-line mt-3"></div>
+                        <div class="order-item">
+                            <div class="d-flex align-items-center px-3 py-3">
+                                <img src="{{ url('assets/images/cart3.png') }}" alt="" class="rounded-3 me-3" style="width: 90px;">
+                                <div class="cart-description">
+                                    <h6 class="mb-2 fw-bold">Scuba Slim-Fit Pants</h6>
+                                    <h6 class="mb-2 fw-bold">1x</h6>
+                                    <p class="mb-0 rounded-3">Warna : Beige</p>
+                                </div>
+                                <h6 class="mb-0 fw-bold ms-auto item-price" style="color: #66525E;">Rp. 115.000</h6>
+                            </div>
+                        </div>
+                        <div class="divider-line mt-3"></div>
+                        <div class="d-flex justify-content-end align-items-center py-3">
+                            <p class="fw-semibold mb-0" id="total-order" style="color: #8E8E93;">
+                                Total Pesanan: <span class="fw-bold mb-0 total-price" style="color: #66525E; font-size: 28px;">Rp. 0</span>
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-end align-items-center py-3">
+                            <a href="{{ route('payment') }}" class="btn btn-primary rounded-4 me-4 d-flex justify-content-center">Bayar Sekarang</a>
+                            <a href="{{ route('chat-customer') }}" class="btn btn-primary btn-edit-images rounded-4 d-flex justify-content-center">Hubungi Penjual</a>
                         </div>
                     </div>
-                    <div class="divider-line mt-3"></div>
-                    <div class="d-flex justify-content-end align-items-center py-3">
-                        <p class="fw-semibold mb-0" id="total-order" style="color: #8E8E93;">
-                            Total Pesanan: <span class="fw-bold mb-0 total-price" style="color: #66525E; font-size: 28px;">Rp. 0</span>
-                        </p>
-                    </div>
-                    <div class="d-flex justify-content-end align-items-center py-3">
-                        <a href="payment.html" class="btn btn-primary rounded-4 me-4 d-flex justify-content-center">Bayar Sekarang</a>
-                        <a href="" class="btn btn-primary btn-edit-images rounded-4 d-flex justify-content-center">Hubungi Penjual</a>
-                    </div>
-                </div>
+                </a>
                 <div class="navbar-order px-5 py-4 rounded-4 mt-4" id="empty-task">
                     <div class="d-flex flex-column justify-content-center align-items-center text-center">
                         <img src="{{ url('assets/images/empty-task.png') }}" alt="">
