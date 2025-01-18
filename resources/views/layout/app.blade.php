@@ -207,7 +207,7 @@
                         </button>
 
                         <!-- Logo (Right of Navbar Icon on Smaller Screens, Left Position on Larger Screens) -->
-                        <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ url('/dashboard') }}">
+                        <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ route('index') }}">
                             <img src="{{ url('assets/images/logo.png') }}" class="logo img-fluid" />
                         </a>
 
