@@ -18,7 +18,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/index-login', function () {
-    return view('index-login');
+    return view('b-login.index');
 })->name('index-login');
 
 Route::get('/profilecustomer', function () {
@@ -61,6 +61,10 @@ Route::get('/detailproduct', function () {
     return view('detailproduct');
 })->name('detailproduct');
 
+Route::get('/bl-detailproduct', function () {
+    return view('b-login.detailproduct');
+})->name('bl-detailproduct');
+
 Route::get('/ktgatasan', function () {
     return view('kategori.ktgatasan');
 })->name('ktgatasan');
@@ -68,6 +72,10 @@ Route::get('/ktgatasan', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
+
+Route::get('/bl-about-us', function () {
+    return view('b-login.about-us');
+})->name('bl-about-us');
 
 Route::get('/add-address', function () {
     return view('add-address');
