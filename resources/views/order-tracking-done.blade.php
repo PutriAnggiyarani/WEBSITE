@@ -2,6 +2,78 @@
 @section('content')
 <section id="profile">
     <div class="container-fluid padding-side">
+        <!-- Modal -->
+        <div class="modal fade" id="buyAgain" tabindex="-1" aria-labelledby="yourModalIdLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable d-flex justify-content-center">
+                <div class="modal-content modal-buyAgain rounded-4" style="background-color: #F0EEEF;">
+                    <div class="modal-header px-4 py-4">
+                        <h5 class="modal-title fw-bold position-absolute start-50 translate-middle-x" id="yourModalIdLabel" style="font-size: 18px">Tambah ke Keranjang</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body px-4">
+                        <div class="d-flex py-4 px-3 cart-box align-items-center rounded-4" style="background-color: #ffff">
+                            <input type="checkbox" class="custom-checkbox text-center me-4 item-checkbox" name="item1" id="item1" data-price="35000">
+                            <img src="{{ url('assets/images/cart1.png') }}" class="rounded-2 me-3" alt="">
+                            <div class="cart-description">
+                                <h6 class="fw-bold mb-0">Hijab Bella Square</h6>
+                                <p class="rounded-3 px-2 mt-2 mb-0 color-product">Warna : Beige</p>
+                            </div>
+                            <div class="cart-quantity d-flex flex-column ms-auto align-items-end">
+                                <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
+                            </div>
+                        </div>  
+                        <div class="d-flex py-4 px-3 cart-box align-items-center rounded-4 mt-4" style="background-color: #ffff">
+                            <input type="checkbox" class="custom-checkbox text-center me-4 item-checkbox" name="item1" id="item1" data-price="35000">
+                            <img src="{{ url('assets/images/cart1.png') }}" class="rounded-2 me-3" alt="">
+                            <div class="cart-description">
+                                <h6 class="fw-bold mb-0">Hijab Bella Square</h6>
+                                <p class="rounded-3 px-2 mt-2 mb-0 color-product">Warna : Beige</p>
+                            </div>
+                            <div class="cart-quantity d-flex flex-column ms-auto align-items-end">
+                                <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
+                            </div>
+                        </div> 
+                        <div class="d-flex py-4 px-3 cart-box align-items-center rounded-4 mt-4" style="background-color: #ffff">
+                            <input type="checkbox" class="custom-checkbox text-center me-4 item-checkbox" name="item1" id="item1" data-price="35000">
+                            <img src="{{ url('assets/images/cart1.png') }}" class="rounded-2 me-3" alt="">
+                            <div class="cart-description">
+                                <h6 class="fw-bold mb-0">Hijab Bella Square</h6>
+                                <p class="rounded-3 px-2 mt-2 mb-0 color-product">Warna : Beige</p>
+                            </div>
+                            <div class="cart-quantity d-flex flex-column ms-auto align-items-end">
+                                <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
+                            </div>
+                        </div> 
+                        <div class="d-flex py-4 px-3 cart-box align-items-center rounded-4 mt-4" style="background-color: #ffff">
+                            <input type="checkbox" class="custom-checkbox text-center me-4 item-checkbox" name="item1" id="item1" data-price="35000">
+                            <img src="{{ url('assets/images/cart2.png') }}" class="rounded-2 me-3" alt="">
+                            <div class="cart-description">
+                                <h6 class="fw-bold mb-0">Hijab Bella Square</h6>
+                                <p class="rounded-3 px-2 mt-2 mb-0 color-product">Warna : Beige</p>
+                            </div>
+                            <div class="cart-quantity d-flex flex-column ms-auto align-items-end">
+                                <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
+                            </div>
+                        </div> 
+                        <div class="d-flex py-4 px-3 cart-box align-items-center rounded-4 mt-4" style="background-color: #ffff">
+                            <input type="checkbox" class="custom-checkbox text-center me-4 item-checkbox" name="item1" id="item1" data-price="35000">
+                            <img src="{{ url('assets/images/cart3.png') }}" class="rounded-2 me-3" alt="">
+                            <div class="cart-description">
+                                <h6 class="fw-bold mb-0">Hijab Bella Square</h6>
+                                <p class="rounded-3 px-2 mt-2 mb-0 color-product">Warna : Beige</p>
+                            </div>
+                            <div class="cart-quantity d-flex flex-column ms-auto align-items-end">
+                                <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-edit-images rounded-4" data-bs-dismiss="modal">Batalkan</a>
+                        <a href="{{ route('cart') }}" class="btn btn-primary rounded-4">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="search d-none d-lg-block d-lg-none me-4 mb-4 w-100" id="search-form">
             <form class="position-relative align-items-center">
                 <a href="#" class="position-absolute top-50 start-0 translate-middle-y p-1 ms-3">
@@ -68,7 +140,7 @@
                             <div class="d-flex flex-column">
                                 <a href="#" class="btn btn-primary rounded-4" data-bs-toggle="modal" data-bs-target="#scrollableModal">Nilai</a>
                                 <a href="{{ route('chat-customer') }}" class="btn btn-primary btn-edit-images rounded-4 mt-3">Hubungi Admin</a>
-                                <a href="{{ route('detailproduct') }}" class="btn btn-primary btn-edit-images rounded-4 mt-3">Beli Lagi</a>
+                                <a href="#" class="btn btn-primary btn-edit-images rounded-4 mt-3" data-bs-toggle="modal" data-bs-target="#buyAgain">Beli Lagi</a>
                             </div>
                             <div class="modal fade" id="scrollableModal" tabindex="-1" aria-labelledby="scrollableModalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable d-flex justify-content-center">

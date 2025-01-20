@@ -1743,7 +1743,7 @@ footer {
 
 .cart-box {
     background-color: #F0EEEF;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .select-all-box {
@@ -3401,10 +3401,29 @@ left: 20px;
     padding-left: 10px;
 }
 
-.custom-title-font {
-    font-family: "Josefin Sans", sans-serif; /* Change to your desired font family */
+.modal-buyAgain {
+    height: 640px;
+    overflow: hidden;    /* Hide scrollbar on the modal body */
 }
 
-.custom-content-font {
-    font-family: "Josefin Sans", sans-serif; /* Change to your desired font family */
+@media(max-width: 768px) {
+    .modal-buyAgain .modal-header h5 {
+        font-size: 14px !important;
+    }
+    
+    .modal-buyAgain .cart-box .cart-description p {
+        font-size: 12px;
+    }
+
+    .modal-buyAgain .cart-box .cart-description h6 {
+        font-size: 14px;
+    }
+
+    .modal-buyAgain {
+        width: 380px !important;
+    }
+
+    .modal-buyAgain .modal-footer a {
+        font-size: 10px;
+    }
 }
