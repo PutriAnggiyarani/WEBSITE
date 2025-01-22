@@ -380,8 +380,8 @@
                                     <li class="nav-item px-3">
                                         <a class="nav-link p-0" aria-current="page" 
                                             href="{{ Request::route()->getName() === 'index-login' ? route('index-login') : 
-                                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ? 
-                                                route('index-login') : route('index')) }}" 
+                                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+                                                Request::route()->getName() === 'ktghijab' ? route('index-login') : route('index')) }}" 
                                             style="font-size: 14px;">
                                             <i class="fa-solid fa-house me-2 responsive-icon"></i>Beranda
                                         </a>
@@ -397,7 +397,13 @@
                                             </svg>Produk Kami
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
-                                            <li><a href="{{ route('ktghijab') }}" class="dropdown-item">Hijab</a></li>
+                                            <li>
+                                                <a href="{{ Request::route()->getName() === 'index-login' ? route('ktghijab') : 
+                                                    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+                                                        Request::route()->getName() === 'ktghijab' ? route('ktghijab') : route('bl-ktghijab')) }}" class="dropdown-item">
+                                                    Hijab
+                                                </a>
+                                            </li>
                                             <li><a href="{{ route('ktgatasan') }}" class="dropdown-item">Atasan</a></li>
                                             <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a></li>
                                             <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a></li>
@@ -406,7 +412,7 @@
                                     </li>                                    
                                     <li class="nav-item px-3">
                                         <a class="nav-link p-0" href="{{ Request::route()->getName() === 'index-login' ? route('about-us') :
-                                        (Request::route()->getName() === 'detailproduct' ? route('about-us') : route('bl-about-us')) }}"
+                                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'ktghijab' ? route('about-us') : route('bl-about-us')) }}"                                    
                                             style="font-size: 14px;"><i
                                                 class="fa-solid fa-circle-info me-2 responsive-icon"></i>Tentang
                                             Kami
@@ -431,7 +437,7 @@
                                 <img src="{{ url('assets/images/searchicon.png') }}" alt="Search Icon">
                             </a>
                         </div>
-                        @if (Route::is('index') || Route::is('bl-detailproduct') || Route::is('bl-about-us'))
+                        @if (Route::is('index') || Route::is('bl-detailproduct') || Route::is('bl-about-us') || Route::is('bl-ktghijab'))
                             <a href="#" class="btn btn-primary d-flex align-items-center"
                                 style="height: 42px; border-radius: 10px;" data-bs-toggle="modal"
                                 data-bs-target="#loginModal">Masuk

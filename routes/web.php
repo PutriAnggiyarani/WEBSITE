@@ -97,6 +97,10 @@ Route::get('/ktghijab', function () {
     return view('kategori.ktghijab');
 })->name('ktghijab');
 
+Route::get('/bl-ktghijab', function () {
+    return view('b-login.ktghijab');
+})->name('bl-ktghijab');
+
 Route::get('/ktglainnya', function () {
     return view('kategori.ktglainnya');
 })->name('ktglainnya');
