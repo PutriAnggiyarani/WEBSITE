@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('b-login.index');
 })->name('index');
 
 Route::get('/index-login', function () {
-    return view('b-login.index');
+    return view('index');
 })->name('index-login');
 
 Route::get('/profilecustomer', function () {

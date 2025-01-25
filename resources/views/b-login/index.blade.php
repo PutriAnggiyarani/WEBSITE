@@ -70,7 +70,7 @@
 
     <section id="about-us" class="mt-5">
         <div class="container-fluid padding-side" data-aos="fade-up">
-        <h3 class="display-3 text-center fw-semibold col-lg-4 offset-lg-4">
+        <h3 class="display-5 text-center fw-semibold col-lg-4 offset-lg-4">
             PRODUK BARU
         </h3>
         <div class="container-fluid mt-5  h-100">
@@ -271,11 +271,15 @@
 
     <section id="info" class="mt-5">
         <div class="container-fluid" data-aos="fade-up">
-        <h3 class="display-3 w-100 text-center fw-semibold">KATEGORI PRODUK</h3>
+        <h3 class="display-5 w-100 text-center fw-semibold">KATEGORI PRODUK</h3>
         <div class="row d-flex justify-content-center mt-5">
             <div class="col-md-2 text-center mb-4 mb-lg-0">
-            <img src="{{ url('assets/images/phijab.png') }}" alt="" class="rectangle-image" />
-            <p class="text-capitalize fw-bold mt-2">Hijab</p>
+                <a href="{{ Request::route()->getName() === 'index-login' ? route('ktghijab') : 
+                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+                                Request::route()->getName() === 'ktghijab' ? route('ktghijab') : route('bl-ktghijab')) }}">
+                    <img src="{{ url('assets/images/phijab.png') }}" alt="" class="rectangle-image" />
+                    <p class="text-capitalize fw-bold mt-2">Hijab</p>
+                </a>
             </div>
             <div class="col-md-2 text-center mb-4 mb-lg-0">
             <img src="{{ url('assets/images/patasan.png') }}" alt="" class="rectangle-image" />
@@ -299,7 +303,7 @@
 
     <section id="about-us" class="mt-5">
         <div class="container-fluid padding-side" data-aos="fade-up">
-        <h3 class="display-3 text-center fw-semibold col-lg-4 offset-lg-4">
+        <h3 class="display-6 text-center fw-semibold col-lg-4 offset-lg-4">
             PRODUK TERLARIS
         </h3>
         <div class="container-fluid mt-5 h-100">
@@ -501,7 +505,7 @@
 
     <section id="info" class="mt-5">
         <div class="container-fluid" data-aos="fade-up">
-        <h3 class="display-3 w-100 text-center fw-semibold">JAMINAN KAMI</h3>
+        <h3 class="display-5 w-100 text-center fw-semibold">JAMINAN KAMI</h3>
         <div class="row d-flex justify-content-center mt-5">
             <div class="col-md-4 text-center mb-4 mb-lg-0">
             <img src="{{ url('assets/images/boxtruck.png') }}" alt="" style="height: 153.99px" />
