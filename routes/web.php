@@ -129,6 +129,10 @@ Route::get('/faq', function () {
     return view('faq');
 });
 
+Route::get('/privasi-kebijakan', function () {
+    return view('privasi-kebijakan');
+});
+
 //Admin
 Route::get('/dashboard', function () {
     return view('admin.dashboard');
@@ -164,6 +168,10 @@ Route::get('/category', function () {
 
 Route::get('/listcategory', function () {
     return view('admin.listcategory');
+});
+
+Route::get('/detailcategory', function () {
+    return view('admin.detailkategori');
 });
 
 Route::get('/editkategori', function () {

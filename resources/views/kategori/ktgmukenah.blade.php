@@ -17,7 +17,10 @@
     <div class="content">
         <div class="ktg">
             <span>
-                <a href="halaman-beranda.html" class="breadcrumb-link">Beranda</a> >
+                <a href="{{ Request::route()->getName() === 'index-login' ? route('index-login') :
+    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+        Request::route()->getName() === 'ktghijab' ? route('index-login') : route('index')) }}"
+                    class="breadcrumb-link">Beranda</a> >
                 <span class="active">Hijab</span>
             </span>
         </div>
@@ -25,42 +28,72 @@
             <button id="toggle-filter" class="apply-button mobile-only">
                 <i class="fas fa-cog"></i>
             </button>
+
             <div class="sidebar" id="filter-sidebar">
                 <h3>Filter Produk</h3>
                 <hr>
+                <!-- Filter Berdasarkan Harga -->
                 <div class="filter-section">
-                    <label for="min-price">Price</label>
-                    <input type="number" id="min-price" placeholder="Harga Minimum">
-                    <input type="number" id="max-price" placeholder="Harga Maximum">
+                    <label for="min-price">Harga Minimum</label>
+                    <input type="number" id="min-price" placeholder="Masukkan harga minimum">
+
+                    <label for="max-price">Harga Maximum</label>
+                    <input type="number" id="max-price" placeholder="Masukkan harga maksimum">
                 </div>
-                <div class="filter-section">
-                    <label for="rating">Rating Produk</label>
-                    <div class="rating">
-                        <label>
-                            <span>⭐⭐⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
-                        <label>
-                            <span>⭐⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
-                        <label>
-                            <span>⭐⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
-                        <label>
-                            <span>⭐⭐</span>
-                            <input type="checkbox">
-                        </label><br>
-                        <label>
-                            <span>⭐</span>
-                            <input type="checkbox">
-                        </label><br>
+
+                <!-- Filter Berdasarkan Rating -->
+                <div class="d-flex justify-content-between mt-4">
+                    <h6 class="fw-bold">Rating Produk</h6>
+                    <span id="caretToggle" style="cursor: pointer;">
+                        <i id="caretIcon" class="fa-solid fa-caret-up" style="font-size: 18px;"></i>
+                    </span>
+                </div>
+                <div id="ratingContainer">
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="5">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="4">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="3">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="2">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="1">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
                     </div>
                 </div>
-                <button class="apply-button">Terapkan</button>
-            </div>
 
+                <!-- Tombol Terapkan -->
+                <button class="apply-button mt-3">Terapkan</button>
+            </div>
             <div class="product-list">
                 <div class="products">
                     <div class="product">

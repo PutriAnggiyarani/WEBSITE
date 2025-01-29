@@ -22,7 +22,7 @@
                                     </div>
                                     <p class="namaulasan">Serenade Stripes</p>
                                 </div>
-                                <div class="rating-box" id="ratingBox">
+                                <div class="rating-box" id="ratingBox mt-5">
                                     <span class="fa fa-star checked rating-icon"></span>
                                     <h6 class="rating-value">5.0</h6>
                                     <p class="rating-subtext">/5.0</p>

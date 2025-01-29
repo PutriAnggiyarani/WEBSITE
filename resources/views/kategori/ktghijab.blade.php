@@ -39,34 +39,57 @@
                 </div>
 
                 <!-- Filter Berdasarkan Rating -->
-                <div class="filter-section">
-                    <label for="rating">Rating Produk</label>
-                    <div class="rating">
-                        <label>
-                            <input type="checkbox">
-                            <span>⭐⭐⭐⭐⭐</span>
-                        </label>
-                        <label>
-                            <input type="checkbox">
-                            <span>⭐⭐⭐⭐</span>
-                        </label>
-                        <label>
-                            <input type="checkbox">
-                            <span>⭐⭐⭐</span>
-                        </label>
-                        <label>
-                            <input type="checkbox">
-                            <span>⭐⭐</span>
-                        </label>
-                        <label>
-                            <input type="checkbox">
-                            <span>⭐</span>
-                        </label>
+                <div class="d-flex justify-content-between mt-4">
+                    <h6 class="fw-bold">Rating Produk</h6>
+                    <span id="caretToggle" style="cursor: pointer;">
+                        <i id="caretIcon" class="fa-solid fa-caret-up" style="font-size: 18px;"></i>
+                    </span>
+                </div>
+                <div id="ratingContainer">
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="5">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="4">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="3">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="2">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked me-2" style="color: #fcaf23"></span>
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 rating-row" data-rating="1">
+                        <div class="d-flex">
+                            <span class="fa fa-star checked" style="color: #fcaf23"></span>
+                        </div>
+                        <input type="checkbox" class="custom-checkbox text-center">
                     </div>
                 </div>
 
                 <!-- Tombol Terapkan -->
-                <button class="apply-button">Terapkan</button>
+                <button class="apply-button mt-3">Terapkan</button>
             </div>
             <div class="product-list">
                 <div class="products">

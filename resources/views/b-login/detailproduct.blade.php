@@ -158,7 +158,8 @@
                     class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa-regular fa-message me-2"></i> Chat
                 </a>
-                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center" id="addtowishlist">
+                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center"
+                    id="addtowishlist">
                     <i class="fa fa-heart me-2"></i> Add To Wishlist
                 </a>
             </div>
@@ -266,6 +267,9 @@
                                     </div>
                                     <input type="checkbox" class="custom-checkbox text-center">
                                 </div>
+
+                                <!-- Tombol Terapkan -->
+                                <button class="apply-button mt-3">Terapkan</button>
                             </div>
                         </div>
                     </div>
@@ -436,7 +440,8 @@
                                 <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                             </div>
                         </div>
-                        <a href="{{ route('review-product') }}" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
+                        <a href="{{ route('review-product') }}" class="d-flex justify-content-end fw-bold mt-4"
+                            style="color: #66525E;">
                             <p>Lihat Semua Ulasan ></p>
                         </a>
                     </div>
@@ -600,16 +605,16 @@
                 cancelButtonColor: "#D0C9CD",
                 confirmButtonText: "Ya",
                 cancelButtonText: 'Batal'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
-                    title: "Action completed",
-                    text: "Do you want to log in?",
-                    icon: "info",
-                }).then(() => {
-                    // Show the login modal after the SweetAlert is confirmed
-                    $('#loginModal').modal('show');
-                });
+                        title: "Action completed",
+                        text: "Do you want to log in?",
+                        icon: "info",
+                    }).then(() => {
+                        // Show the login modal after the SweetAlert is confirmed
+                        $('#loginModal').modal('show');
+                    });
                 }
             });
         });
@@ -633,16 +638,16 @@
                 cancelButtonColor: "#D0C9CD",
                 confirmButtonText: "Ya",
                 cancelButtonText: 'Batal'
-                }).then((result) => {
+            }).then((result) => {
                 if (result.isConfirmed) {
                     Swal.fire({
-                    title: "Action completed",
-                    text: "Do you want to log in?",
-                    icon: "info",
-                }).then(() => {
-                    // Show the login modal after the SweetAlert is confirmed
-                    $('#loginModal').modal('show');
-                });
+                        title: "Action completed",
+                        text: "Do you want to log in?",
+                        icon: "info",
+                    }).then(() => {
+                        // Show the login modal after the SweetAlert is confirmed
+                        $('#loginModal').modal('show');
+                    });
                 }
             });
         });
@@ -657,7 +662,7 @@
             button.addEventListener('click', () => {
                 // Remove the 'selected' class from all buttons
                 colorButtons.forEach(btn => btn.classList.remove('selected'));
-                
+
                 // Add the 'selected' class to the clicked button
                 button.classList.add('selected');
             });
@@ -665,3 +670,8 @@
     });
 </script>
 @endsection
+
+{{-- Mengambil file style.css untuk navbar dan footer --}}
+@push('styles')
+    <link rel="stylesheet" href="{{ url('assets/css/style.css') }}">
+@endpush

@@ -60,7 +60,8 @@
                                                     <font style="vertical-align: inherit;">
                                                         <font
                                                             style="vertical-align: inherit;font-size: 14px;color:#000;font-weight: 400;font-family: Josefin Sans, serif;">
-                                                            Jl. Ir. Haji Juanda, Kabupaten Sidoarjo, Jawa Timur 61253</font>
+                                                            Jl. Ir. Haji Juanda, Kabupaten Sidoarjo, Jawa Timur 61253
+                                                        </font>
                                                     </font><br>
                                                 </td>
                                                 <td
@@ -171,7 +172,8 @@
                                 <td style="padding: 10px;vertical-align: top; font-family: Josefin Sans, serif; ">
                                     FP00001
                                 </td>
-                                <td style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
+                                <td
+                                    style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
                                     <img src="{{ url('assets/admin/img/product/product1.png') }}" alt="img" class="me-2"
                                         style="width:40px;height:40px;">
                                     Denim Stripe Vest
@@ -193,7 +195,8 @@
                                 <td style="padding: 10px;vertical-align: top; font-family: Josefin Sans, serif; ">
                                     FP00002
                                 </td>
-                                <td style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
+                                <td
+                                    style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
                                     <img src="{{ url('assets/admin/img/product/product2.png') }}" alt="img" class="me-2"
                                         style="width:40px;height:40px;">
                                     Button Up Charm
@@ -215,7 +218,8 @@
                                 <td style="padding: 10px;vertical-align: top; font-family: Josefin Sans, serif; ">
                                     FP00003
                                 </td>
-                                <td style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
+                                <td
+                                    style="padding: 10px;vertical-align: top; display: flex;align-items: center;font-family: Josefin Sans, serif;">
                                     <img src="{{ url('assets/admin/img/product/product3.png') }}" alt="img" class="me-2"
                                         style="width:40px;height:40px;">
                                     Kerudung
@@ -258,14 +262,10 @@
                             <input type="text" placeholder="JNT00000001">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 col-12" style="font-family: Josefin Sans, serif;">
+                    <div class="col-lg-3 col-sm-6 col-12">
                         <div class="form-group">
                             <label>Status</label>
-                            <select class="select">
-                                <option>Choose Status</option>
-                                <option>Selesai</option>
-                                <option>Proses</option>
-                            </select>
+                            <input type="text" placeholder="Selesai">
                         </div>
                     </div>
                     <div class="row">
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                     <div class="col-lg-12">
-                        <a href="javascript:void(0);" class="btn btn-submit me-2">Back</a>
+                        <a href="{{url('transaction')}}" class="btn btn-cancel">Back</a>
                     </div>
                 </div>
             </div>

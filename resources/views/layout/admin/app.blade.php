@@ -41,7 +41,7 @@
         <div class="header">
 
             <div class="header-left active">
-                <a href="index.html" class="logo">
+                <a href="{{url('dashboard')}}" class="logo">
                     <img src="{{ url('assets/admin/img/logo.png') }}" alt="">
                 </a>
                 <a href="index.html" class="logo-small">

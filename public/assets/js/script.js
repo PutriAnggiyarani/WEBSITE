@@ -155,6 +155,11 @@
         // Tampilkan elemen chat-content
         $('.chat-content').show();
     });
+
+    document.getElementById('addressForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Mencegah reload halaman
+        addAddress();
+    });
 })(jQuery);
 
 

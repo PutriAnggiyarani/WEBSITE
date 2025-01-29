@@ -36,20 +36,22 @@
                             <div class="image-upload">
                                 <input type="file">
                                 <div class="image-uploads">
-                                    <img src="{{url('assets/admin/img/icons/upload.svg')}}" alt="img">
+                                    <img src="assets/admin/img/icons/upload.svg" alt="img">
                                     <h4>Drag and drop a file to upload</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12">
-                        <a href="javascript:void(0);" class="btn btn-submit me-2">Submit</a>
-                        <a href="categorylist.html" class="btn btn-cancel">Batal</a>
-                    </div>
                 </div>
             </div>
+            <div class="col-lg-12">
+                <a href="javascript:void(0);" class="btn btn-submitcategory me-2">Submit</a>
+                <a href="{{url('listcategory')}}" class="btn btn-cancel">Batal</a>
+            </div>
         </div>
-
     </div>
+</div>
+
+</div>
 </div>
 @endsection

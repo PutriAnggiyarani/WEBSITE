@@ -307,7 +307,7 @@
                     </div>
                     <div class="col-lg-12">
                         <a href="javascript:void(0);" class="btn btn-transaksi me-2">Update</a>
-                        <a href="javascript:void(0);" class="btn btn-cancel">Batal</a>
+                        <a href="{{url('transaction')}}" class="btn btn-cancel">Batal</a>
                     </div>
                 </div>
             </div>

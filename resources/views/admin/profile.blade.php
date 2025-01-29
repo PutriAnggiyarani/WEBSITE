@@ -16,7 +16,7 @@
                     </div>
                     <div class="profile-top">
                         <div class="profile-content">
-                            <div class="profile-contentimg">
+                            <!-- <div class="profile-contentimg">
                                 <img src="{{ url('assets/img/profiles/avatar-1.png') }}" alt="img" id="blah">
                                 <div class="profileupload">
                                     <input type="file" id="imgInp">
@@ -27,7 +27,7 @@
                             <div class="profile-contentname">
                                 <h2>Putri Rohmatun</h2>
                                 <h4>Updates Your Photo and Personal Details.</h4>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- <div class="ms-auto">
                             <a href="javascript:void(0);" class="btn btn-submit me-2" id="saveButton">Save</a>

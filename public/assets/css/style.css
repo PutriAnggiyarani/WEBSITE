@@ -322,6 +322,18 @@ h6 {
     transition: all 0.4s ease-in-out;
 }
 
+.apply-button {
+    background-color: #70597b;
+    color: white;
+    padding: 5px;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Josefin Sans", sans-serif;
+}
+
 /* - Primary Buttons
 --------------------------------------------------------------*/
 .btn-primary {
@@ -1061,7 +1073,7 @@ iconify-icon.quote {
 
 .rectangle-image {
     /* Set a fixed height for the rectangle */
-    width: 210px;
+    width: 180px;
     object-fit: cover;
     /* Cover the area, cropping the image if necessary */
     border-radius: 100%;
@@ -2441,7 +2453,7 @@ footer {
     .detail-profile {
         bottom: -280%;
     }
-    
+
     #footer {
         margin-top: 130px;
     }
@@ -3393,6 +3405,15 @@ left: 20px;
     background-color: #E6E6E6;
 }
 
+.custom-image-container {
+    width: 420px;
+}
+
+.custom-btn-order {
+    font-size: 14px;
+    width: 220px;
+}
+
 .btn-review-product-responsive {
     width: 100px;
     height: 40px;
@@ -3403,14 +3424,15 @@ left: 20px;
 
 .modal-buyAgain {
     height: 640px;
-    overflow: hidden;    /* Hide scrollbar on the modal body */
+    overflow: hidden;
+    /* Hide scrollbar on the modal body */
 }
 
 @media(max-width: 768px) {
     .modal-buyAgain .modal-header h5 {
         font-size: 14px !important;
     }
-    
+
     .modal-buyAgain .cart-box .cart-description p {
         font-size: 12px;
     }

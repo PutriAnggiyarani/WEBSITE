@@ -7,13 +7,10 @@
                 <a href="#" class="position-absolute top-50 start-0 translate-middle-y p-1 ms-3">
                     <i class="fa-solid fa-magnifying-glass" style="color: #667479;"></i>
                 </a>
-                <input
-                    type="text"
-                    class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
-                    placeholder="Search something here!" style="color: #99A2A5; width: 100%; max-width: 400px;"
-                />
+                <input type="text" class="form-control bg-secondary border-0 rounded-5 px-4 py-2 ps-5"
+                    placeholder="Search something here!" style="color: #99A2A5; width: 100%; max-width: 400px;" />
             </form>
-        </div>  
+        </div>
         <div class="d-flex w-100">
             <div class="sidebar-profile px-4 py-4 rounded-4 me-5">
                 <div class="d-flex align-items-center">
@@ -51,23 +48,29 @@
                 <div class="navbar-order px-3 py-5 rounded-4">
                     <div class="d-flex justify-content-between align-items-center px-3">
                         <h4 class="mb-0 fw-bold" style="color: #66525E;">Daftar Alamat</h4>
-                        <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addAddressModal">Tambah Alamat Baru</a>
+                        <a href="javascript:void(0);" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#addAddressModal">Tambah Alamat Baru</a>
                     </div>
-                    <div class="address-item d-flex justify-content-between align-items-center mt-5 px-4 py-4 rounded-3">
+                    <div
+                        class="address-item d-flex justify-content-between align-items-center mt-5 px-4 py-4 rounded-3">
                         <div class="address-description">
                             <h6 class="mb-0 fw-bold">Natasha Putri</h6>
                             <p class="mb-0 mt-1" style="color: #737373;">+6281234567890</p>
-                            <p class="mb-0" style="color: #737373;">Jl. Ir. Haji Juanda, Betro, Kec. Sedati, Kabupaten Sidoarjo, Jawa Timur 61253</p>
+                            <p class="mb-0" style="color: #737373;">Jl. Ir. Haji Juanda, Betro, Kec. Sedati, Kabupaten
+                                Sidoarjo, Jawa Timur 61253</p>
                         </div>
                         <a href="javascript:void(0);" class="btn btn-primary btn-edit-images delete-button">Hapus</a>
-                    </div>          
+                    </div>
                 </div>
-                <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel" aria-hidden="true">
+                <div class="modal fade" id="addAddressModal" tabindex="-1" aria-labelledby="addAddressModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered d-flex justify-content-center">
                         <div class="modal-content modal-address rounded-4 px-3 py-3">
                             <div class="modal-header justify-content-center position-relative">
-                                <h5 class="modal-title fw-bold position-absolute start-50 translate-middle-x" id="addAddressModalLabel">Tambah Alamat Baru</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h5 class="modal-title fw-bold position-absolute start-50 translate-middle-x"
+                                    id="addAddressModalLabel">Tambah Alamat Baru</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
                                 <!-- Form Section -->
@@ -76,19 +79,25 @@
                                         <h6 class="fw-bold mb-4">Penerima</h6>
                                         <!-- Name Receiver Input -->
                                         <div class="mb-4 position-relative">
-                                            <input type="text" class="form-control rounded-3 py-2 custom-input" id="nameReceiver" placeholder="Nama Penerima" 
-                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                            <input type="text" class="form-control rounded-3 py-2 custom-input"
+                                                id="nameReceiver" placeholder="Nama Penerima"
+                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                                 onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                             <label for="nameReceiver" class="floating-label">Nama Penerima</label>
-                                            <div class="error-message mb-0" id="nameError" style="display:none; font-size: 12px; color: red;">Nama Penerima is required.</div>
+                                            <div class="error-message mb-0" id="nameError"
+                                                style="display:none; font-size: 12px; color: red;">Nama Penerima is
+                                                required.</div>
                                         </div>
                                         <!-- Phone Receiver Input -->
                                         <div class="mb-0 position-relative">
-                                            <input type="text" class="form-control rounded-3 py-2 custom-input" id="noReceiver" placeholder="No. Hp" 
-                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                            <input type="text" class="form-control rounded-3 py-2 custom-input"
+                                                id="noReceiver" placeholder="No. Hp"
+                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                                 onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                             <label for="noReceiver" class="floating-label">No. Hp</label>
-                                            <div class="error-message mb-0" id="phoneError" style="display:none; font-size: 12px; color: red;">No. Hp is required.</div>
+                                            <div class="error-message mb-0" id="phoneError"
+                                                style="display:none; font-size: 12px; color: red;">No. Hp is required.
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- Additional Address Details -->
@@ -96,47 +105,58 @@
                                         <h6 class="fw-bold mb-4">Lengkapi Detail Alamat</h6>
                                         <!-- City Input -->
                                         <div class="mb-4 position-relative">
-                                            <input type="text" class="form-control rounded-3 py-2 custom-input" id="city" placeholder="Kota & Kecamatan" 
-                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                            <input type="text" class="form-control rounded-3 py-2 custom-input"
+                                                id="city" placeholder="Kota & Kecamatan"
+                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                                 onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                             <label for="city" class="floating-label">Kota & Kecamatan</label>
-                                            <div class="error-message mb-0" id="cityError" style="display:none; font-size: 12px; color: red;">Kota & Kecamatan is required.</div>
+                                            <div class="error-message mb-0" id="cityError"
+                                                style="display:none; font-size: 12px; color: red;">Kota & Kecamatan is
+                                                required.</div>
                                         </div>
                                         <!-- Postal Code Input -->
                                         <div class="mb-4 position-relative">
-                                            <input type="text" class="form-control rounded-3 py-2 custom-input" id="posCode" placeholder="Kode Pos" 
-                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                            <input type="text" class="form-control rounded-3 py-2 custom-input"
+                                                id="posCode" placeholder="Kode Pos"
+                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                                 onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                             <label for="posCode" class="floating-label">Kode Pos</label>
-                                            <div class="error-message mb-0" id="postalError" style="display:none; font-size: 12px; color: red;">Kode Pos is required.</div>
+                                            <div class="error-message mb-0" id="postalError"
+                                                style="display:none; font-size: 12px; color: red;">Kode Pos is required.
+                                            </div>
                                         </div>
                                         <!-- Full Address Input -->
                                         <div class="mb-0 position-relative">
-                                            <textarea class="form-control rounded-3 py-2 custom-input" id="fullAddress" placeholder="Alamat Lengkap" 
-                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                            <textarea class="form-control rounded-3 py-2 custom-input" id="fullAddress"
+                                                placeholder="Alamat Lengkap"
+                                                onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                                 onblur="this.placeholder = this.getAttribute('data-placeholder');"></textarea>
                                             <label for="fullAddress" class="floating-label">Alamat Lengkap</label>
-                                            <div class="error-message mb-0" id="addressError" style="display:none; font-size: 12px; color: red;">Alamat Lengkap is required.</div>
+                                            <div class="error-message mb-0" id="addressError"
+                                                style="display:none; font-size: 12px; color: red;">Alamat Lengkap is
+                                                required.</div>
                                         </div>
                                     </div>
                                     <!-- Agreement Checkbox -->
                                     <div class="d-flex agreement align-items-center mt-3">
                                         <input type="checkbox" class="custom-checkbox me-3" id="agreementCheckbox">
-                                        <p class="mb-0">Saya Menyetuju Syarat & Ketentuan serta Kebijakan Privasi pengaturan alamat di Fmd.Id</p>
+                                        <p class="mb-0">Saya Menyetuju Syarat & Ketentuan serta Kebijakan Privasi
+                                            pengaturan alamat di Fmd.Id</p>
                                     </div>
                                     <!-- Add Address Button -->
-                                    <button type="button" class="btn btn-primary w-100 mt-3" id="addAddressButton" onclick="addAddress()">Tambah Alamat</button>
-                                </form>                                    
+                                    <button type="button" class="btn btn-primary w-100 mt-3" id="addAddressButton"
+                                        onclick="addAddress()">Tambah Alamat</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>                    
+            </div>
         </div>
     </div>
 </section>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         // Function to add a new address item with validation
         function addAddress() {
             let isValid = true;
@@ -220,7 +240,7 @@
         });
 
         // Event listener for delete button functionality using event delegation
-        document.querySelector('.navbar-order').addEventListener('click', function(event) {
+        document.querySelector('.navbar-order').addEventListener('click', function (event) {
             if (event.target.classList.contains('delete-button')) {
                 if (confirm('Are you sure you want to delete this address?')) {
                     const addressItem = event.target.closest('.address-item');
@@ -252,7 +272,7 @@
 
         // Clear error on input
         function clearErrorOnInput(field, errorElement) {
-            field.addEventListener('input', function() {
+            field.addEventListener('input', function () {
                 if (field.value.trim() !== "") {
                     field.style.borderColor = "";  // Reset border color
                     errorElement.style.display = "none";  // Hide error message
@@ -268,7 +288,7 @@
         clearErrorOnInput(fullAddress, addressError);
 
         // JavaScript to toggle the search form visibility when the icon is clicked
-        document.getElementById("search-icon-toggle").addEventListener("click", function() {
+        document.getElementById("search-icon-toggle").addEventListener("click", function () {
             var searchForm = document.getElementById("search-form");
             searchForm.classList.toggle("d-none");
         });

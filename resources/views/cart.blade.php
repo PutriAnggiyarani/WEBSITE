@@ -32,8 +32,8 @@
                         <p class="mb-0 fw-semibold itemPrice">1x Rp. 35.000</p>
                         <div class="icon-quantity-container d-flex mt-2">
                             <div class="icon-container d-flex align-items-center me-0 me-md-2">
-                                <a href=""><img src="{{ asset('assets/images/ldropdown.png') }}" alt="" id="favorite-product" class="me-2"></a>
-                                <a href=""><img src="{{ asset('assets/images/deleteicon.png') }}" alt="" id="delete-product"></a>
+                                <a href=""><img src="images/ldropdown.png" alt="" id="favorite-product" class="me-2"></a>
+                                <a href=""><img src="images/deleteicon.png" alt="" id="delete-product"></a>
                             </div>
                             <div class="quantity d-flex align-items-center rounded-4 px-3">
                                 <a href="#" class="btnMinus">-</a>

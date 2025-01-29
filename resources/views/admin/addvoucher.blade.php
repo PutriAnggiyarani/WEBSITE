@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-lg-12">
                         <a href="javascript:void(0);" class="btn btn-addvoucher me-2">Submit</a>
-                        <a href="{{ url('/addvoucher') }}" class="btn btn-cancel">Batal</a>
+                        <a href="{{ url('/promo') }}" class="btn btn-cancel">Batal</a>
                     </div>
                 </div>
             </div>

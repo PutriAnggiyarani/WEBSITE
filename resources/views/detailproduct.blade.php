@@ -158,7 +158,8 @@
                     class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center">
                     <i class="fa-regular fa-message me-2"></i> Chat
                 </a>
-                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center" id="addtowishlist">
+                <a href="" class="btn btn-outline-secondary flex-fill d-flex align-items-center justify-content-center"
+                    id="addtowishlist">
                     <i class="fa fa-heart me-2"></i> Add To Wishlist
                 </a>
             </div>
@@ -266,6 +267,8 @@
                                     </div>
                                     <input type="checkbox" class="custom-checkbox text-center">
                                 </div>
+                                <!-- Tombol Terapkan -->
+                                <button class="apply-button mt-3">Terapkan</button>
                             </div>
                         </div>
                     </div>
@@ -436,7 +439,8 @@
                                 <img src="{{ url('assets/images/reviewpict.png') }}" alt="">
                             </div>
                         </div>
-                        <a href="{{ route('review-product') }}" class="d-flex justify-content-end fw-bold mt-4" style="color: #66525E;">
+                        <a href="{{ route('review-product') }}" class="d-flex justify-content-end fw-bold mt-4"
+                            style="color: #66525E;">
                             <p>Lihat Semua Ulasan ></p>
                         </a>
                     </div>
@@ -629,7 +633,7 @@
             button.addEventListener('click', () => {
                 // Remove the 'selected' class from all buttons
                 colorButtons.forEach(btn => btn.classList.remove('selected'));
-                
+
                 // Add the 'selected' class to the clicked button
                 button.classList.add('selected');
             });

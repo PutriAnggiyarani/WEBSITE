@@ -37,8 +37,8 @@
     <link rel="stylesheet" type="text/css" href="{{ url('assets/css/style.css') }}" />
 
     <!-- CSS Alertify -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css"/>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.14.0/build/css/themes/bootstrap.min.css" />
 
     <!-- Stack Styles untuk halaman khusus -->
     @stack('styles')
@@ -198,8 +198,8 @@
         <div class="modal-dialog modal-login modal-dialog-centered d-flex justify-content-center">
             <div class="modal-content rounded-4" style="width: 600px">
                 <div class="modal-header px-4 mb-0 mt-2">
-                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center">
@@ -210,21 +210,23 @@
                         <p style="color: #595959;">Silakan login untuk melanjutkan Berbelanja</p>
                         <form action="#">
                             <div class="mb-4 position-relative">
-                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="email" placeholder="Alamat Email" 
-                                    onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="email"
+                                    placeholder="Alamat Email"
+                                    onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                     onblur="this.placeholder = this.getAttribute('data-placeholder');">
-                                    <label for="email" class="floating-label">Alamat Email</label>
+                                <label for="email" class="floating-label">Alamat Email</label>
                             </div>
                             <div class="mb-3 position-relative">
-                                <input type="password" class="form-control rounded-3 py-2 custom-input" id="password" placeholder="Password" 
-                                    onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';" 
+                                <input type="password" class="form-control rounded-3 py-2 custom-input" id="password"
+                                    placeholder="Password"
+                                    onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                     onblur="this.placeholder = this.getAttribute('data-placeholder');">
-                                    <label for="password" class="floating-label">Password</label>
+                                <label for="password" class="floating-label">Password</label>
                             </div>
                             <div class="text-end mb-3">
                                 <a href="#" style="font-size: 12px; color: #66525E;">Lupa Kata Sandi?</a>
                             </div>
-                            <a href="#" id="loginButton" class="btn btn-primary w-100 mb-4">Login</a>                     
+                            <a href="#" id="loginButton" class="btn btn-primary w-100 mb-4">Login</a>
                         </form>
                         <div class="text-center line-container px-5 mb-4">
                             <span class="line"></span>
@@ -232,13 +234,15 @@
                             <span class="line"></span>
                         </div>
                         <div class="d-flex justify-content-center mb-4">
-                            <a href="#" class="d-flex justify-content-center border align-items-center rounded-5" style="width: 340px; height: 50px; border-color: #66525E !important;">
+                            <a href="#" class="d-flex justify-content-center border align-items-center rounded-5"
+                                style="width: 340px; height: 50px; border-color: #66525E !important;">
                                 <img src="{{ url('assets/images/google.png') }}" alt="" class="me-4">
                                 <p class="mb-0 mt-1">Lanjutkan dengan Google</p>
                             </a>
                         </div>
                         <div class="text-center">
-                            <p style="color: #a7a7a7;">Belum punya akun? <span style="color: #66525E;"><a href="#" id="registerLink">Daftar Disini</a></span></p>
+                            <p style="color: #a7a7a7;">Belum punya akun? <span style="color: #66525E;"><a href="#"
+                                        id="registerLink">Daftar Disini</a></span></p>
                         </div>
                     </div>
                 </div>
@@ -254,8 +258,8 @@
         <div class="modal-dialog modal-login modal-dialog-centered d-flex justify-content-center">
             <div class="modal-content rounded-4" style="width: 600px">
                 <div class="modal-header px-4 mb-0 mt-2">
-                <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center">
@@ -266,21 +270,24 @@
                         <p style="color: #595959;">Buat akun untuk mulai menjelajah !</p>
                         <form action="#" id="registrationForm">
                             <div class="mb-4 position-relative">
-                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="username" placeholder="Username"
+                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="username"
+                                    placeholder="Username"
                                     onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                     onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                 <label for="username" class="floating-label">Username</label>
                                 <small class="text-danger error-message d-none">Username tidak boleh kosong</small>
                             </div>
                             <div class="mb-4 position-relative">
-                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="email" placeholder="Alamat Email"
+                                <input type="text" class="form-control rounded-3 py-2 custom-input" id="email"
+                                    placeholder="Alamat Email"
                                     onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                     onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                 <label for="email" class="floating-label">Alamat Email</label>
                                 <small class="text-danger error-message d-none">Alamat Email tidak boleh kosong</small>
                             </div>
                             <div class="mb-3 position-relative">
-                                <input type="password" class="form-control rounded-3 py-2 custom-input" id="password" placeholder="Password"
+                                <input type="password" class="form-control rounded-3 py-2 custom-input" id="password"
+                                    placeholder="Password"
                                     onfocus="this.setAttribute('data-placeholder', this.placeholder); this.placeholder = '';"
                                     onblur="this.placeholder = this.getAttribute('data-placeholder');">
                                 <label for="password" class="floating-label">Password</label>
@@ -290,11 +297,14 @@
                             <div class="agreement-container mt-3 mb-3">
                                 <div class="d-flex agreement align-items-center">
                                     <input type="checkbox" class="custom-checkbox me-3" id="agreementCheckbox">
-                                    <p class="mb-0">Dengan membuat akun, Anda harus menyetujui syarat & ketentuan kami</p>
+                                    <p class="mb-0">Dengan membuat akun, Anda harus menyetujui syarat & ketentuan kami
+                                    </p>
                                 </div>
-                                <small class="text-danger error-message d-none">Anda harus menyetujui syarat & ketentuan</small>
-                            </div>                                
-                            <button type="button" id="registerButton" class="btn btn-primary w-100 mb-4">Daftar</button>
+                                <small class="text-danger error-message d-none">Anda harus menyetujui syarat &
+                                    ketentuan</small>
+                            </div>
+                            <button type="button" id="registerButton" class="btn btn-primary w-100 mb-4"
+                                onclick="window.location.href='{{ route('index-login') }}'">Daftar</button>
                         </form>
                         <div class="text-center line-container px-5 mb-4">
                             <span class="line"></span>
@@ -302,13 +312,15 @@
                             <span class="line"></span>
                         </div>
                         <div class="d-flex justify-content-center mb-4">
-                            <a href="#" class="d-flex justify-content-center border align-items-center rounded-5" style="width: 340px; height: 50px; border-color: #66525E !important;">
+                            <a href="#" class="d-flex justify-content-center border align-items-center rounded-5"
+                                style="width: 340px; height: 50px; border-color: #66525E !important;">
                                 <img src="{{ url('assets/images/google.png') }}" alt="" class="me-4">
                                 <p class="mb-0 mt-1">Lanjutkan dengan Google</p>
                             </a>
                         </div>
                         <div class="text-center">
-                            <p style="color: #a7a7a7;">Sudah punya akun? <span style="color: #66525E;"><a href="#" id="loginLink">Login Disini</a></span></p>
+                            <p style="color: #a7a7a7;">Sudah punya akun? <span style="color: #66525E;"><a href="#"
+                                        id="loginLink">Login Disini</a></span></p>
                         </div>
                     </div>
                 </div>
@@ -328,10 +340,14 @@
                 </div>
                 <div class="modal-body">
                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="px-2 py-2" style="background-color: #D0C9CD; border-radius: 100%; width: fit-content;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48" style="color: #66525E;">
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M24 43.5c12.764-5.885 14.86-15.67 14.86-21.982V16.91S33.43 14.286 24 14.286S9.14 16.909 9.14 16.909v4.61c0 6.31 2.096 16.096 14.86 21.981"/>
-                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M32.013 14.96v-2.447a8.013 8.013 0 0 0-16.026 0v2.448m9.837 12.109a3.79 3.79 0 1 0-3.648 0a5.67 5.67 0 0 0-3.849 5.368h11.346a5.67 5.67 0 0 0-3.849-5.367"/>
+                        <div class="px-2 py-2"
+                            style="background-color: #D0C9CD; border-radius: 100%; width: fit-content;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48"
+                                style="color: #66525E;">
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M24 43.5c12.764-5.885 14.86-15.67 14.86-21.982V16.91S33.43 14.286 24 14.286S9.14 16.909 9.14 16.909v4.61c0 6.31 2.096 16.096 14.86 21.981" />
+                                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    d="M32.013 14.96v-2.447a8.013 8.013 0 0 0-16.026 0v2.448m9.837 12.109a3.79 3.79 0 1 0-3.648 0a5.67 5.67 0 0 0-3.849 5.368h11.346a5.67 5.67 0 0 0-3.849-5.367" />
                             </svg>
                         </div>
                         <h5 class="mt-3 fw-bold">Masukkan Kode OTP!</h5>
@@ -343,8 +359,11 @@
                             <input type="number" maxlength="1" class="otp-input" disabled />
                             <input type="number" maxlength="1" class="otp-input" disabled />
                         </div>
-                        <p class="mt-1" style="color: #8C8C8C;">Belum Menerima Kode OTP? <span style="color: #66525E;"><a href="#">Kirim Ulang</a></span></p>
-                        <a href="{{ route('index-login') }}" class="btn btn-primary d-flex justify-content-center align-items-center mt-1 mb-2" style="width: 250px;">Verifikasi</a>
+                        <p class="mt-1" style="color: #8C8C8C;">Belum Menerima Kode OTP? <span
+                                style="color: #66525E;"><a href="#">Kirim Ulang</a></span></p>
+                        <a href="{{ route('index-login') }}"
+                            class="btn btn-primary d-flex justify-content-center align-items-center mt-1 mb-2"
+                            style="width: 250px;">Verifikasi</a>
                     </div>
                 </div>
             </div>
@@ -364,7 +383,7 @@
                         </button>
 
                         <!-- Logo (Right of Navbar Icon on Smaller Screens, Left Position on Larger Screens) -->
-                        <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ route('index') }}">
+                        <a class="navbar-brand order-2 order-lg-1 ms-2" href="{{ route('index-login') }}">
                             <img src="{{ url('assets/images/logo.png') }}" class="logo img-fluid" />
                         </a>
 
@@ -378,17 +397,18 @@
                             <div class="offcanvas-body align-items-center">
                                 <ul class="navbar-nav mb-2 mb-lg-0">
                                     <li class="nav-item px-3">
-                                        <a class="nav-link p-0" aria-current="page" 
-                                            href="{{ Request::route()->getName() === 'index-login' ? route('index-login') : 
-                                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
-                                                Request::route()->getName() === 'ktghijab' ? route('index-login') : route('index')) }}" 
+                                        <a class="nav-link p-0" aria-current="page" href="{{ Request::route()->getName() === 'index-login' ? route('index-login') :
+    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+        Request::route()->getName() === 'ktghijab' ? route('index-login') : route('index')) }}"
                                             style="font-size: 14px;">
                                             <i class="fa-solid fa-house me-2 responsive-icon"></i>Beranda
                                         </a>
-                                    </li>                                    
+                                    </li>
                                     <li class="nav-item px-3 dropdown">
-                                        <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="font-size: 14px;">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024" class="me-2 responsive-icon">
+                                        <a class="nav-link p-0" data-bs-toggle="dropdown" href="#" role="button"
+                                            aria-expanded="false" style="font-size: 14px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                viewBox="0 0 1024 1024" class="me-2 responsive-icon">
                                                 <path fill="currentColor" fill-rule="evenodd"
                                                     d="M464 144c8.837 0 16 7.163 16 16v304c0 8.836-7.163 16-16 16H160c-8.837 0-16-7.164-16-16V160c0-8.837 7.163-16 16-16zm-52 68H212v200h200zm493.333
                                                     87.686c6.248 6.248 6.248 16.379 0 22.627l-181.02 181.02c-6.248 6.248-16.378 6.248-22.627 0l-181.019-181.02c-6.248-6.248-6.248-16.379 0-22.627l181.02-181.02c6.248-6.248
@@ -398,21 +418,26 @@
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 shadow">
                                             <li>
-                                                <a href="{{ Request::route()->getName() === 'index-login' ? route('ktghijab') : 
-                                                    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
-                                                        Request::route()->getName() === 'ktghijab' ? route('ktghijab') : route('bl-ktghijab')) }}" class="dropdown-item">
+                                                <a href="{{ Request::route()->getName() === 'index-login' ? route('ktghijab') :
+    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'about-us' ||
+        Request::route()->getName() === 'ktghijab' ? route('ktghijab') : route('bl-ktghijab')) }}"
+                                                    class="dropdown-item">
                                                     Hijab
                                                 </a>
                                             </li>
                                             <li><a href="{{ route('ktgatasan') }}" class="dropdown-item">Atasan</a></li>
-                                            <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a></li>
-                                            <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a></li>
-                                            <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a></li>
+                                            <li><a href="{{ route('ktgmukenah') }}" class="dropdown-item">Mukenah</a>
+                                            </li>
+                                            <li><a href="{{ route('ktgbawahan') }}" class="dropdown-item">Bawahan</a>
+                                            </li>
+                                            <li><a href="{{ route('ktglainnya') }}" class="dropdown-item">Lainnya</a>
+                                            </li>
                                         </ul>
-                                    </li>                                    
+                                    </li>
                                     <li class="nav-item px-3">
-                                        <a class="nav-link p-0" href="{{ Request::route()->getName() === 'index-login' ? route('about-us') :
-                                            (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'ktghijab' ? route('about-us') : route('bl-about-us')) }}"                                    
+                                        <a class="nav-link p-0"
+                                            href="{{ Request::route()->getName() === 'index-login' ? route('about-us') :
+    (Request::route()->getName() === 'detailproduct' || Request::route()->getName() === 'ktghijab' ? route('about-us') : route('bl-about-us')) }}"
                                             style="font-size: 14px;"><i
                                                 class="fa-solid fa-circle-info me-2 responsive-icon"></i>Tentang
                                             Kami
@@ -516,38 +541,57 @@
                                 <div class="dropdown-profile px-3 py-3 rounded-3 border-0">
                                     <a href="{{ route('profilecustomer') }}"
                                         class="dropdown-item d-flex align-items-center">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            class="me-3">
                                             <g fill="currentColor" fill-rule="evenodd" clip-rule="evenodd">
-                                            <path d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/><path d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 
-                                            1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 
-                                            0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21"/></g>
+                                                <path
+                                                    d="M16 9a4 4 0 1 1-8 0a4 4 0 0 1 8 0m-2 0a2 2 0 1 1-4 0a2 2 0 0 1 4 0" />
+                                                <path
+                                                    d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11s11-4.925 11-11S18.075 
+                                                                                            1 12 1M3 12c0 2.09.713 4.014 1.908 5.542A8.99 8.99 0 0 1 12.065 14a8.98 8.98 0 0 1 7.092 3.458A9 9 0 1 0 3 12m9 9a8.96 8.96 0 0 1-5.672-2.012A6.99 6.99 
+                                                                                            0 0 1 12.065 16a6.99 6.99 0 0 1 5.689 2.92A8.96 8.96 0 0 1 12 21" />
+                                            </g>
                                         </svg>
                                         <p class="mb-0 fw-semibold">Profil Saya</p>
                                     </a>
                                     <a href="{{ route('favorite') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
-                                            <path fill="currentColor" d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 
-                                            0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            class="me-3">
+                                            <path fill="currentColor"
+                                                d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812T2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 
+                                                                                            0 3.925 1.575T22 8.15q0 1.15-.387 2.25t-1.363 2.412t-2.625 2.963T13.45 19.7z" />
                                         </svg>
                                         <p class="mb-0 fw-semibold">Favorite Saya</p>
                                     </a>
                                     <a href="{{ route('order') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48" class="me-3">
-                                            <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><rect width="30" height="36" x="9" y="8" rx="2"/>
-                                            <path stroke-linecap="round" d="M18 4v6m12-6v6m-14 9h16m-16 8h12m-12 8h8"/></g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"
+                                            class="me-3">
+                                            <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
+                                                <rect width="30" height="36" x="9" y="8" rx="2" />
+                                                <path stroke-linecap="round" d="M18 4v6m12-6v6m-14 9h16m-16 8h12m-12 8h8" />
+                                            </g>
                                         </svg>
                                         <p class="mb-0 fw-semibold">Pesanan Saya</p>
                                     </a>
-                                    <a href="{{ route('add-address') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3">
-                                            <path fill="currentColor" d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 
-                                            12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5"/>
+                                    <a href="{{ route('add-address') }}"
+                                        class="dropdown-item d-flex align-items-center mt-4">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            class="me-3">
+                                            <path fill="currentColor"
+                                                d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 
+                                                                                            12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5" />
                                         </svg>
                                         <p class="mb-0 fw-semibold">Daftar Alamat</p>
                                     </a>
                                     <a href="{{ route('index') }}" class="dropdown-item d-flex align-items-center mt-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="me-3"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                            <path d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2"/><path d="M9 12h12l-3-3m0 6l3-3"/></g>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            class="me-3">
+                                            <g fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2">
+                                                <path
+                                                    d="M14 8V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2v-2" />
+                                                <path d="M9 12h12l-3-3m0 6l3-3" />
+                                            </g>
                                         </svg>
                                         <p class="mb-0 fw-semibold">Keluar</p>
                                     </a>
@@ -555,9 +599,9 @@
                             </div>
                         @endif
                         {{-- @if (!Route::is('index') || Route::is('bl-detailproduct') || Route::is('bl-about-us'))
-                                
-                            </div>
-                        @endif --}}
+
+                    </div>
+                    @endif --}}
                 </div>
             </div>
             </div>
@@ -586,8 +630,10 @@
                         <li class="nav-item"><a href="{{ url('/howtobuy') }}" class="p-0">How To Buy</a></li>
                         <li class="nav-item"><a href="{{ url('/faq') }}" class="p-0">FAQ</a></li>
                         <!-- Add Informasi items only for mobile view -->
-                        <li class="nav-item mb-3 d-block d-md-none"><a href="{{ route('about-us') }}" class="p-0">Tentang Kami</a></li>
-                        <li class="nav-item mb-3 d-block d-md-none"><a href="#" class="p-0">Privasi dan Kebijakan</a>
+                        <li class="nav-item mb-3 d-block d-md-none"><a href="{{ route('about-us') }}"
+                                class="p-0">Tentang Kami</a></li>
+                        <li class="nav-item mb-3 d-block d-md-none"><a href="{{url('privasi-kebijakan')}}"
+                                class="p-0">Privasi dan Kebijakan</a>
                         </li>
                     </ul>
                 </div>
@@ -597,7 +643,8 @@
                     <h1 class="fw-bold" style="font-size: 16px">INFORMASI:</h1>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a href="{{ route('about-us') }}" class="p-0">Tentang Kami</a></li>
-                        <li class="nav-item"><a href="#" class="p-0">Privasi dan Kebijakan</a></li>
+                        <li class="nav-item"><a href="{{url('privasi-kebijakan')}}" class="p-0">Privasi dan
+                                Kebijakan</a></li>
                     </ul>
                 </div>
                 <!-- Sosial Media Kami -->
@@ -657,7 +704,8 @@
     <script src="{{ url('https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')}}"></script>
-    {{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> --}}
+    {{--
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> --}}
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             // Select the button and add a click event listener
@@ -770,14 +818,14 @@
 
         document.getElementById('loginButton').addEventListener('click', function (event) {
             event.preventDefault(); // Prevent default link behavior
-        
+
             // Close the login modal
             let loginModalElement = document.getElementById('loginModal');
             let loginModalInstance = bootstrap.Modal.getInstance(loginModalElement); // Get existing modal instance
             if (loginModalInstance) {
                 loginModalInstance.hide();
             }
-        
+
             // Show the otpModal with options to close when clicking outside
             let otpModalElement = document.getElementById('otpModal');
             let otpModalInstance = new bootstrap.Modal(otpModalElement, {
@@ -786,23 +834,23 @@
             });
             otpModalInstance.show();
         });
-        
+
         document.querySelectorAll('.otp-input').forEach((input, index, inputs) => {
             input.addEventListener('input', function (e) {
                 const value = e.target.value;
-                
+
                 // Allow only one digit
                 if (value.length > 1) {
                     e.target.value = value.charAt(0); // Keep only the first character
                 }
-    
+
                 // Enable the next input and focus on it
                 if (value && index < inputs.length - 1) {
                     inputs[index + 1].disabled = false;
                     inputs[index + 1].focus();
                 }
             });
-    
+
             input.addEventListener('keydown', function (e) {
                 // Move to the previous input on Backspace
                 if (e.key === 'Backspace' && e.target.value === '' && index > 0) {
@@ -810,29 +858,29 @@
                 }
             });
         });
-        document.getElementById('registerLink').addEventListener('click', function(event) {
+        document.getElementById('registerLink').addEventListener('click', function (event) {
             event.preventDefault(); // Prevent default link behavior
-    
+
             // Close the login modal
             const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
             if (loginModal) {
                 loginModal.hide();
             }
-    
+
             // Show the register modal
             const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
             registerModal.show();
-        }); 
+        });
 
-        document.getElementById('loginLink').addEventListener('click', function(event) {
+        document.getElementById('loginLink').addEventListener('click', function (event) {
             event.preventDefault(); // Prevent default link behavior
-    
+
             // Close the register modal
             const registerModal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
             if (registerModal) {
                 registerModal.hide();
             }
-    
+
             // Show the login modal
             const loginModal = new bootstrap.Modal(document.getElementById('loginModal'));
             loginModal.show();
@@ -843,7 +891,7 @@
             const inputs = document.querySelectorAll('#registrationForm .form-control');
             const checkbox = document.getElementById('agreementCheckbox');
             const checkboxError = checkbox.nextElementSibling.nextElementSibling; // Error message
-            
+
             inputs.forEach(input => {
                 const errorMessage = input.nextElementSibling.nextElementSibling; // Find the small element
                 if (!input.value.trim()) {
@@ -855,7 +903,7 @@
                     input.classList.remove('border-danger');
                 }
             });
-    
+
             // Check if the checkbox is checked
             if (!checkbox.checked) {
                 isValid = false;
@@ -864,7 +912,7 @@
             } else {
                 checkboxError.classList.add('d-none'); // Hide error
             }
-    
+
             if (isValid) {
                 alert('Form is valid. Proceed to registration.');
             }

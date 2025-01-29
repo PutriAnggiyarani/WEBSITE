@@ -1318,6 +1318,19 @@ div#global-loader,
     transition: all .2s ease;
 }
 
+.btn-submitcategory {
+    min-width: 120px;
+    background: #7a5a5a;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 10px;
+    border-radius: 20px;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
 .btn-ulasan {
     min-width: 120px;
     background: #7a5a5a;
@@ -8808,7 +8821,6 @@ small {
 
 .user-img {
     border-radius: 50%;
-    border: 1px solid #ddd;
 }
 
 .chat-user-info h5 {
@@ -8865,4 +8877,45 @@ small {
     /* Spasi antar tombol */
     align-items: center;
     /* Ratakan tombol dalam grup */
+}
+
+.rating-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-icon {
+    color: #fcaf23;
+    font-size: 38px;
+    margin-right: 15px;
+}
+
+.rating-icon {
+    color: #fcaf23;
+    font-size: 38px;
+    margin-right: 15px;
+}
+
+.rating-value {
+    font-size: 60px;
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+.rating-subtext {
+    align-self: flex-end;
+    font-size: 26px;
+    color: #999999;
+    margin: 0;
+}
+
+.filter-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border-radius: 15px;
 }

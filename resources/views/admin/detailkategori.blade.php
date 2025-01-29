@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="col-lg-12">
-                <a href="{{ url('/product')}}" class="btn btn-cancel"
+                <a href="{{ url('/listcategory')}}" class="btn btn-cancel"
                     style="background-color: #66525E; color: #fff;">Back</a>
             </div>
         </div>

@@ -33,7 +33,7 @@
                 <div class="page-header">
                     <h4>Voucher Pengguna</h4>
                     <div class="page-btn ms-auto">
-                        <a href="{{ url('/addproduct')}}" class="btn btn-added"><img
+                        <a href="{{ url('/addvoucher')}}" class="btn btn-added"><img
                                 src="{{ url('assets/admin/img/icons/plus.svg') }}" alt="img" class="me-1">Tambah Voucher
                             Baru</a>
                     </div>
@@ -67,7 +67,7 @@
                                     <a class="me-3" href="{{ url('/editvoucher') }}"><img
                                             src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
-                                    <a class="me-3 " href="javascript:void(0);"><img
+                                    <a class="confirm-text" href="javascript:void(0);"><img
                                             src="{{ url('assets/admin/img/icons/delete1.svg') }}" alt="img">
                                     </a>
                                 </td>
@@ -90,8 +90,8 @@
                                     <a class="me-3" href="{{ url('/editvoucher') }}"><img
                                             src="{{ url('assets/admin/img/icons/edit.svg') }}" alt="img">
                                     </a>
-                                    <a class="me-3 " href="javascript:void(0);"><img
-                                            src="{{ url('assets/admin/img/icons/delete1.svg') }}" alt="img">
+                                    <a class="confirm-text" href="javascript:void(0);">
+                                        <img src="{{ url('assets/admin/img/icons/delete.svg') }}" alt="img">
                                     </a>
                                 </td>
                             </tr>
