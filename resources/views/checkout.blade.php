@@ -459,23 +459,6 @@
             }
         });
 
-        // Function to toggle button state
-        function toggleButtonState() {
-            var checkbox = document.getElementById('agreementCheckbox');
-            var button = document.getElementById('addAddressButton');
-
-            // Enable the button if the checkbox is checked, otherwise disable it
-            if (checkbox.checked) {
-                button.removeAttribute("disabled"); // Enable button
-            } else {
-                button.setAttribute("disabled", "true"); // Disable button
-            }
-        }
-        // Initial state check
-        toggleButtonState(); // Call this on page load to set the initial button state
-        // Assign the toggle function to the checkbox
-        document.getElementById('agreementCheckbox').addEventListener('change', toggleButtonState);
-
         // Function to handle adding a new address
         function addAddress() {
             // Collect form input values
@@ -607,6 +590,14 @@
             } else {
                 addressList.style.marginTop = "0px"; // Reset margin when at the top
             }
+        });
+
+        document.getElementById('changeAddress').addEventListener('click', function () {
+            document.querySelectorAll('.modal-backdrop').forEach(backdrop => backdrop.remove()); // Remove leftover backdrops
+            document.body.classList.remove('modal-open'); // Ensure body can scroll normally
+
+            const addAddressModal = new bootstrap.Modal(document.getElementById('addAddressModal'));
+            addAddressModal.show();
         });
 
         // Attach event listeners to existing "Pilih" buttons (if any)
